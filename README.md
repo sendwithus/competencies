@@ -1,7 +1,7 @@
 # Competencies
 
-Sendwithus has built out a list of internal competency documents that describe many of the skills you need to succeed.
-We wanted to open source these documents so that other smaller sized organizations can use them as a starting point.
+Sendwithus has built out a list of internal competency documents that describe many of the skills you need to succeed here.
+We wanted to open source these documents so that other organizations can use them as a starting point for career development and compensation conversations.
 
 Sendwithus bundles these competencies into role definition documents that have a list of all the competencies you need to excel in that role.  These role documents were not published here as they contain a lot of Sendwithus specific information that would make re-use difficult.
 
