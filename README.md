@@ -10,6 +10,7 @@ Sendwithus stores our competencies in Google drive internally and we decided aga
 
 ## Pull Request process
 Currently, we don't accept PRs from the community on this repository.  We wanted to try and accomplish bringing changes back from the community, but the merging process back to Google drive was considered unweildy.  So, at this time, we have a publish only process that you can sync from the upstream fork whenever there are changes.  
+If you have a proposal for a whole new competency please add it in the form of a GitHub issue with a link to a public Gist that we can collaborate on without having to merge.
 
 ## Competency Document Structure
 
