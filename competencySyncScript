@@ -1,7 +1,7 @@
 function testRequests() {
   //Set active spreadsheet
   var sheet = SpreadsheetApp.getActiveSpreadsheet();
-  var personalAccessToken = '6603def2d75344fe537f5493655108ddb1444d9b';
+  var personalAccessToken = "";
   
   //Request to GitHub REST API v3
   var repoContent = UrlFetchApp.fetch("https://api.github.com/repos/sendwithus/competencies/contents?access_token=" + personalAccessToken);
@@ -16,12 +16,7 @@ function testRequests() {
     var fileData = UrlFetchApp.fetch(repoContent[i].url + "&access_token=" + personalAccessToken);
     fileData = JSON.parse(fileData);
     var fileContentEncoded = fileData.content;
-    var fileDecodedLines = decodedStrLines(fileContentEncoded); //decodes each line in file, returns string array
-    
-    //iterate over each line in file
-    for (fileLineIndex=0; fileLineIndex<fileDecodedLines.length; fileLineIndex++) {
-      //Logger.log(fileContentDecodedLines[fileLineIndex]);
-    }
+    var fileDecodedLines = decodeStrLines(fileContentEncoded); //decodes each line in file, returns string array
   }
   
   //Get names of all files in a Drive folder:
@@ -47,22 +42,16 @@ function testRequests() {
               //Convert line to markdown
               //Add line to GitHub file
         }
-        //var blob = file.getAs(MimeType.PDF); //gets contents of file as blob
       }
     }
   }
 }
 
-function decodedStrLines(encodedStr) {
+function decodeStrLines(encodedStr) {
   //This function converts an encoded string into an array of decoded lines
-  var encodedStrLines = getLinesOfStr(encodedStr); //converts string to array of each line
-  Logger.log(encodedStrLines);
-  var decodedStrLines = [];
   
-  //Decode each line one at a time
-  for (lineIndex=0; lineIndex<encodedStrLines.length; lineIndex++) {
-    decodedStrLines[lineIndex] = decodeBase64Str(encodedStrLines[lineIndex]);
-  }
+  var decodedStr = decodeBase64Str(encodedStr); //decode entire string
+  var decodedStrLines = getLinesOfStr(decodedStr); //separate decoded string into lines
   
   return decodedStrLines;
 }
@@ -73,9 +62,24 @@ function decodeBase64Str(encodedStr) {
   return decodedStr;
 }
 
+function encodeBase64Str(str) {
+  //This function takes a plain string and encodes it in base 64
+  var encodedStr = Utilities.base64Encode(str);
+  return encodedStr;
+}
+
 function getLinesOfStr(strToSplit) {
   //This function returns an array of lines of input string
   strToSplit = strToSplit.toString(); //ensures that input is type string
   var strSplit = strToSplit.split(/\r?\n/);
   return strSplit;
+}
+
+function addLineToGitHub() {
+}
+
+function convertFileToMarkdown() {
+  /*This function will take an array of lines in plain text and convert each line
+    to markdown format based on the formatting in the original file.
+  */
 }
