@@ -1,0 +1,85 @@
+function testRequests() {
+  //Set active spreadsheet
+  var sheet = SpreadsheetApp.getActiveSpreadsheet();
+  var personalAccessToken = "";
+  
+  //Request to GitHub REST API v3
+  var repoContent = UrlFetchApp.fetch("https://api.github.com/repos/sendwithus/competencies/contents?access_token=" + personalAccessToken);
+  repoContent = JSON.parse(repoContent); //gets content of repo as JS object
+  
+  var githubFileNames = [];
+  
+  //Iterate through each file in the repo:
+  for (i=0; i<repoContent.length; i++) {
+    githubFileNames[i] = repoContent[i].name; //stores name of each GitHub file in array
+    //Request data for each file:
+    var fileData = UrlFetchApp.fetch(repoContent[i].url + "&access_token=" + personalAccessToken);
+    fileData = JSON.parse(fileData);
+    var fileContentEncoded = fileData.content;
+    var fileDecodedLines = decodeStrLines(fileContentEncoded); //decodes each line in file, returns string array
+  }
+  
+  //Get names of all files in a Drive folder:
+  var folder = DriveApp.getFoldersByName('testFolder'); //get folder as object from Drive
+  while (folder.hasNext()) {
+    var files = folder.next().getFiles(); //get files from folder
+    while (files.hasNext()) { //for each file in the folder
+      var file = files.next();
+      var fileName = file.getName(); //get the file name
+      if (fileName != 'TEMPLATE') { //ignore files with name 'TEMPLATES'
+        var indexOfNameInGithubFileNames = githubFileNames.indexOf(fileName);
+        
+        //Checks if Drive file exists in GitHub repo (by file name)
+        if (indexOfNameInGithubFileNames != -1) { //indexOf() returns -1 if value does not exist in array
+          //The Drive file exists already in the GitHub repo:
+            //update file
+        }
+        else {
+          //The Drive file doesn't exists in the GitHub repo:
+            //create new branch called "Drive file name>-add"
+            //create new file in branch
+            //for each line in Drive file:
+              //Convert line to markdown
+              //Add line to GitHub file
+        }
+      }
+    }
+  }
+}
+
+function decodeStrLines(encodedStr) {
+  //This function converts an encoded string into an array of decoded lines
+  
+  var decodedStr = decodeBase64Str(encodedStr); //decode entire string
+  var decodedStrLines = getLinesOfStr(decodedStr); //separate decoded string into lines
+  
+  return decodedStrLines;
+}
+
+function decodeBase64Str(encodedStr) {
+  var decodedStrAsByteArray = Utilities.base64Decode(encodedStr); //returns decoded string as a byte array
+  var decodedStr = Utilities.newBlob(decodedStrAsByteArray).getDataAsString(); //converts byte array to string
+  return decodedStr;
+}
+
+function encodeBase64Str(str) {
+  //This function takes a plain string and encodes it in base 64
+  var encodedStr = Utilities.base64Encode(str);
+  return encodedStr;
+}
+
+function getLinesOfStr(strToSplit) {
+  //This function returns an array of lines of input string
+  strToSplit = strToSplit.toString(); //ensures that input is type string
+  var strSplit = strToSplit.split(/\r?\n/);
+  return strSplit;
+}
+
+function addLineToGitHub() {
+}
+
+function convertFileToMarkdown() {
+  /*This function will take an array of lines in plain text and convert each line
+    to markdown format based on the formatting in the original file.
+  */
+}
