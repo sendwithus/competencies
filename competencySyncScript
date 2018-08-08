@@ -1,7 +1,7 @@
 function testRequests() {
   //Set active spreadsheet
   var sheet = SpreadsheetApp.getActiveSpreadsheet();
-  var personalAccessToken = 'dc810b4b4cd4128c3282a6c54494112ab0cc892a';
+  var personalAccessToken = '';
   
   //Request to GitHub REST API v3
   var repoContent = UrlFetchApp.fetch("https://api.github.com/repos/sendwithus/competencies/contents?access_token=" + personalAccessToken);
