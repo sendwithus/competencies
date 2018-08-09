@@ -1,8 +1,8 @@
+//Get GitHub Personal access token from spreadsheet
+var sheet = SpreadsheetApp.getActiveSpreadsheet();
+var personalAccessToken = readFromCell(sheet.getActiveSheet(), 1, 1);
+
 function testRequests() {
-  //Set active spreadsheet
-  var sheet = SpreadsheetApp.getActiveSpreadsheet();
-  var personalAccessToken = "";
-  
   //Request to GitHub REST API v3
   var repoContent = UrlFetchApp.fetch("https://api.github.com/repos/sendwithus/competencies/contents?access_token=" + personalAccessToken);
   repoContent = JSON.parse(repoContent); //gets content of repo as JS object
@@ -16,7 +16,7 @@ function testRequests() {
     var fileData = UrlFetchApp.fetch(repoContent[i].url + "&access_token=" + personalAccessToken);
     fileData = JSON.parse(fileData);
     var fileContentEncoded = fileData.content;
-    var fileDecodedLines = decodeStrLines(fileContentEncoded); //decodes each line in file, returns string array
+    var fileContentDecoded = decodeBase64Str(fileContentEncoded);
   }
   
   //Get names of all files in a Drive folder:
@@ -32,54 +32,36 @@ function testRequests() {
         //Checks if Drive file exists in GitHub repo (by file name)
         if (indexOfNameInGithubFileNames != -1) { //indexOf() returns -1 if value does not exist in array
           //The Drive file exists already in the GitHub repo:
-            //update file
+            //update file via API request
         }
         else {
           //The Drive file doesn't exists in the GitHub repo:
-            //create new branch called "Drive file name>-add"
+            //create new branch called "<file-name-no-spaces>-<date>" or "<file-name-no-spaces>-<commit-no.>"
             //create new file in branch
-            //for each line in Drive file:
-              //Convert line to markdown
-              //Add line to GitHub file
+            //Add Drive file content to Github via API request
         }
       }
     }
   }
 }
 
-function decodeStrLines(encodedStr) {
-  //This function converts an encoded string into an array of decoded lines
-  
-  var decodedStr = decodeBase64Str(encodedStr); //decode entire string
-  var decodedStrLines = getLinesOfStr(decodedStr); //separate decoded string into lines
-  
-  return decodedStrLines;
-}
-
 function decodeBase64Str(encodedStr) {
+  //This function decodes a string that is encoded in Base 64
   var decodedStrAsByteArray = Utilities.base64Decode(encodedStr); //returns decoded string as a byte array
   var decodedStr = Utilities.newBlob(decodedStrAsByteArray).getDataAsString(); //converts byte array to string
   return decodedStr;
 }
 
 function encodeBase64Str(str) {
-  //This function takes a plain string and encodes it in base 64
+  //This function takes a string and encodes it in base 64
   var encodedStr = Utilities.base64Encode(str);
   return encodedStr;
 }
 
-function getLinesOfStr(strToSplit) {
-  //This function returns an array of lines of input string
-  strToSplit = strToSplit.toString(); //ensures that input is type string
-  var strSplit = strToSplit.split(/\r?\n/);
-  return strSplit;
-}
-
-function addLineToGitHub() {
-}
-
-function convertFileToMarkdown() {
-  /*This function will take an array of lines in plain text and convert each line
-    to markdown format based on the formatting in the original file.
-  */
+function readFromCell(sheet, row, col) {
+  //THIS FUNCTION WILL NOT GO IN THE FINAL SCRIPT IN GITHUB
+  //This function gets the value of a specified cell
+  var range = sheet.getRange(row, col);
+  var cellValue = range.getDisplayValue(); //gets value of cell as string always, not object if value exists as object
+  return cellValue;
 }
