@@ -2,6 +2,13 @@
 var sheet = SpreadsheetApp.getActiveSpreadsheet();
 var personalAccessToken = readFromCell(sheet.getActiveSheet(), 1, 1);
 
+var prCounter = 1;
+
+//Config:
+var repoName = "competencies";
+var driveFolderNames = ["testFolder"];
+var excludedFileNames = ["TEMPLATES"];
+
 function testRequests() {
   //Request to GitHub REST API v3
   var repoContent = UrlFetchApp.fetch("https://api.github.com/repos/sendwithus/competencies/contents?access_token=" + personalAccessToken);
@@ -28,11 +35,12 @@ function testRequests() {
       var fileName = file.getName(); //get the file name
       if (fileName != 'TEMPLATE') { //ignore files with name 'TEMPLATES'
         var indexOfNameInGithubFileNames = githubFileNames.indexOf(fileName);
-        
         //Checks if Drive file exists in GitHub repo (by file name)
         if (indexOfNameInGithubFileNames != -1) { //indexOf() returns -1 if value does not exist in array
           //The Drive file exists already in the GitHub repo:
-            //update file via API request
+            //update file via API PUT request:
+              //get sha of file
+              //get contents of Drive file as string
         }
         else {
           //The Drive file doesn't exists in the GitHub repo:
@@ -44,6 +52,116 @@ function testRequests() {
     }
   }
 }
+
+function getChangedDriveFiles(folders) {
+  var folders = ["testFolder"];
+  var folder = DriveApp.getFoldersByName(folders[0]);
+  
+  while (folder.hasNext()) {
+    var files = folder.next().getFiles();
+    while (files.hasNext()) { //for each file in the folder
+      var file = files.next();
+      var fileData = {
+        "fileName" : file.getName()
+        //"fileDecodedContent" : file.getAs(contentType) //HOW DO I GET AS A STRING???????
+      };
+      
+      var fileBlob = file.getBlob();
+      var output = fileBlob.getDataAsString();
+      
+      var fileText = file.getAs(MimeType.PDF);
+      Logger.log(fileText);
+    }
+  }
+}
+
+function createCommit(fileName, fileContent) {
+  fileName = "testFile1";
+  fileContent = "HELOELOELOELOLEO";
+  //Create data:
+  var commitMessage = "Updated " + fileName + ".";
+  var branchName = "branch-" + prCounter.toString();
+  var fileContent = encodeBase64Str(fileContent);
+  var url = "https://api.github.com/repos/sendwithus/" + repoName + "/contents/" + fileName +"?ref=master&access_token=" + personalAccessToken;
+  var fileData = UrlFetchApp.fetch(url);
+  fileData = JSON.parse(fileData);
+  var sha = fileData.sha;
+  
+  if (branchExists(branchName) == false) {
+    //create new branch with name branchName
+  }
+  
+  var content = {
+    "message" : commitMessage,
+    "content" : fileContent,
+    "sha" : sha,
+    "branch" : branchName
+  };
+  
+  var options = {
+    "method" : "put",
+    "contentType" : "application/json",
+    "payload" : JSON.stringify(content)
+  };
+  
+  UrlFetchApp.fetch(url, options);
+}
+
+function createPullRequest(branchName) {
+  //THE REQUEST WILL FAIL IF A PR IS ALREADY ATTENDING TO THE SAME FILES
+  //This function will take all the commits that have been made to a branch and create a pr to merge them to master
+  var title = "PULL REQUEST WORKED AGAIN!";
+  var head = "test-branch";
+  var base = "master";
+  var body = "CONTENTS OF PULL REQUEST"; //body is a comment/message left in the pr
+  var url = "https://api.github.com/repos/sendwithus/competencies/pulls?access_token=" = personalAccessToken;
+  
+  var content = {
+    "title" : title,
+    "head" : head,
+    "base" : base,
+    "body" : body
+  };
+  
+  var options = {
+    "method" : "post",
+    "contentType" : "application/json",
+    "payload" : JSON.stringify(content)
+  };
+  
+  UrlFetchApp.fetch(url, options);
+  prCounter ++;
+}
+
+//PSEUDO CODE FOR MAIN()
+//function main() {
+  //Get contents of Drive folder by config name
+  //Iterate through contents of folder and put all files changed since last execution into array of objects
+  //Get contents of GitHub repo by config name,  via API request
+  //Iterate through contents of repo and put all files into array of objects
+  //For each file in array, check if file exists in GitHub repo array already (compare by name)
+  //If file exists:
+    //get sha from file object
+    //get url: base url + file name
+    //Encode file contents
+    //Add encoded file contents to new var
+    //Create commit message: "Update #<update counter>."
+    //Add all of the stuff to JSON object
+    //Send PUT request to API with JSON object as data field
+    //Handle response JSON somehow?
+  //If file doesn't exist:
+    //Add file name to new var
+    //Encode file contents
+    //Add encoded file contents to new var
+    //Create commit message: "Creating file."
+    //Add all vars to JSON object
+    //send the data via a PUT request to the GitHub API
+  //Handle response JSON somehow?
+  //Save date and time of last runtime of the script in variable
+  
+  //Possible errors:
+    //duplicate files in either Drive or GitHub (multiple files with the same name)
+//}
 
 function decodeBase64Str(encodedStr) {
   //This function decodes a string that is encoded in Base 64
@@ -64,4 +182,20 @@ function readFromCell(sheet, row, col) {
   var range = sheet.getRange(row, col);
   var cellValue = range.getDisplayValue(); //gets value of cell as string always, not object if value exists as object
   return cellValue;
+}
+
+function branchExists(branchNameToCheck) {
+  //This function checks if a branch exists in a GitHub repo
+  branchNameToCheck = branchNameToCheck.toString();
+  var url = "https://api.github.com/repos/sendwithus/" + repoName + "/branches?access_token=" + personalAccessToken;
+  var branchData = UrlFetchApp.fetch(url);
+  var branches = JSON.parse(branchData);
+  
+  for (branchIndex=0; branchIndex<branches.length; branchIndex++) {
+    if (branches[branchIndex].name == branchNameToCheck) {
+      return true;
+    }
+  }
+  
+  return false;
 }
