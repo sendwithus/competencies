@@ -1,0 +1,1 @@
+# Competency - <br /><br />How do you prove it?<br />You produce code that has clean separations between the MVC lines.<br />React data flow.<br />MVVM - Knockout?s approach.<br /><br /><br />How do you improve it?<br />Read about the various ways people are separating out their models and views:<br />https://ember-redux.com/ddau/<br /><br /><br />
