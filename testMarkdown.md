@@ -1,3 +1,3 @@
 # Header
 * list item
-- list item
+<br />- list item
