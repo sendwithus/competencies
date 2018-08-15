@@ -1,1 +1,1 @@
-Competency - <br /><br />How do you prove it?<br /><br />How do you improve it?<br />Gang of Four: Patterns<br /><br /><br />
+# Competency - <br /><br />How do you prove it?<br /><br />How do you improve it?<br />Gang of Four: Patterns<br /><br /><br />
