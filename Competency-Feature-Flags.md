@@ -1,0 +1,1 @@
+Competency - Feature Flags<br /><br />How do you prove it?<br /><br />How do you improve it?<br />Learn Martin Fowler?s take on the nuances: https://martinfowler.com/articles/feature-toggles.html<br /><br /><br />
