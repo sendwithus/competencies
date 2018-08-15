@@ -1,1 +1,1 @@
-# Competency - IDE - Visual Studio Code<br /><br />How do you prove it?<br /><br />How do you improve it?<br />Watch the tech drop: https://youtu.be/YOyWw80iaYk<br /><br /><br />
+Competency - IDE - Visual Studio Code<br /><br />How do you prove it?<br /><br />How do you improve it?<br />Watch the tech drop: https://youtu.be/YOyWw80iaYk<br /><br /><br />
