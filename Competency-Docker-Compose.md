@@ -1,1 +1,1 @@
-# Competency - Docker Compose<br />Docker compose is a simple way to get all your docker containers running locally.<br /><br />How do you prove it?<br /><br />How do you improve it?<br /><br />
+Competency - Docker Compose<br />Docker compose is a simple way to get all your docker containers running locally.<br /><br />How do you prove it?<br /><br />How do you improve it?<br /><br />
