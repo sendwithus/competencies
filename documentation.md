@@ -7,19 +7,25 @@ The script takes values from the config spreadsheet. First, it gets the contents
 ## How to use the script:
 To use the Competency script to sync your Google Drive folders to GitHub, first, create a Google Spreadsheet. To attach the script to your spreadsheet, go to <b>Tools > Script editor</b> and paste in the contents of [the script](https://raw.githubusercontent.com/sendwithus/competencies/master/competencySyncScript.gs).
 
+<b>Notes about the script:
+- The spreadsheet must contain values for each cell in the mock spreadsheet below marked with *.
+- The folder names in row (i.e. the contents of a Google Drive folder in row 8 will go into the GitHub folder with the name specified in the corresponding column in row 10). This means that for each value in row 8, there must be a value in the corresponding column in row 10.
+- For each row there is a `...`, you can add as many values as needed to that row.
+</b>
+
 |    | A                                   | B                      | C     |
 |----|-------------------------------------|------------------------|-------|
 | 1  | <b>Github Personal access token:</b>       |                        |
-| 2  | *Github Personal access token*      |                        |
+| 2  | *Github Personal access token**      |                        |
 | 3  | <b>Email:</b>                              |                        |
-| 4  | *Email address*                     |                        |
+| 4  | *Email address**                     |                        |
 | 5  | <b>Repo name:</b>                          |                        |
-| 6  | *Repo name*                         |                        |
+| 6  | *Repo name**                         |                        |
 | 7  | <b>Source Google Drive folder name(s):</b> |                        |
-| 8  | *Folder name 1*                     | *Folder name 2*        | *...* |
+| 8  | *Folder name 1**                     | *Folder name 2*        | *...* |
 | 9  | <b>Destination GitHub Folder Name(s):</b>  |
-| 10 | *Folder name 1*                     | *Folder name 2*        | *...* |
+| 10 | *Folder name 1**                     | *Folder name 2*        | *...* |
 | 11 | <b>Excluded File Name(s):</b>              |
 | 12 | *Excluded file name 1*              | *Excluded file name 1* | *...* |
 | 13 | <b>Branch name:</b>                        |
-| 14 | *branch name*                       |
+| 14 | *branch name**                       |
