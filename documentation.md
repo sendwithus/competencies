@@ -7,10 +7,10 @@ The script takes values from the config spreadsheet. First, it gets the contents
 ## How to use the script:
 To use the Competency script to sync your Google Drive folders to GitHub, first, create a Google Spreadsheet. To attach the script to your spreadsheet, go to <b>Tools > Script editor</b> and paste in the contents of [the script](https://raw.githubusercontent.com/sendwithus/competencies/master/competencySyncScript.gs).
 
-<b>Notes about the script:
+<b>Notes about spreadsheet configuration:
 - The spreadsheet must contain values for each cell in the mock spreadsheet below marked with *.
 - The folder names in row (i.e. the contents of a Google Drive folder in row 8 will go into the GitHub folder with the name specified in the corresponding column in row 10). This means that for each value in row 8, there must be a value in the corresponding column in row 10.
-- For each row there is a `...`, you can add as many values as needed to that row.
+- If a row has a cell with `...`, you can add as many values as needed to that row.
 </b>
 
 |    | A                                   | B                      | C     |
