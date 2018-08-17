@@ -26,8 +26,7 @@ To use the Competency script, first create a Google Spreadsheet, following the g
 | 13 | <b>Branch name:</b>                        |
 | 14 | *branch name**                       |
 
-### Notes about spreadsheet configuration:
-<b>
+<b>Notes about spreadsheet configuration:
 - The spreadsheet must contain values for each cell in the mock spreadsheet below marked with *.
 - The folder names in row (i.e. the contents of a Google Drive folder in row 8 will go into the GitHub folder with the name specified in the corresponding column in row 10). This means that for each value in row 8, there must be a value in the corresponding column in row 10.
 - If a row has a cell with `...`, you can add as many values as needed to that row.
