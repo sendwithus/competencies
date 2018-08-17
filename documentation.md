@@ -1,4 +1,6 @@
-# Development Instructions
+# Development
+
+## What the script is:
 The [Competency script](https://github.com/sendwithus/competencies/blob/master/competencySyncScript.gs) is what makes this project work. The script is written in Google Apps Script, a language based off of JavaScript that is specific to the G Suite products. The scrit takes configuration values from the Google Spreadsheet to which it is attached. You are free to use the script for your own projects. Follow the instructions below to start syncing your Google Drive documents to GitHub.
 
 ## What the script does:
