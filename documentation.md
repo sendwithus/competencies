@@ -7,8 +7,8 @@ The script takes values from the config spreadsheet. First, it gets the contents
 ## How to use the script:
 To use the Competency script to sync your Google Drive folders to GitHub, first, create a Google Spreadsheet. To attach the script to your spreadsheet, go to <b>Tools > Script editor</b> and paste in the contents of [the script](https://raw.githubusercontent.com/sendwithus/competencies/master/competencySyncScript.gs).
 
-|    | A                                   | B                      | C     | D | E | F | G | H | I |
-|----|-------------------------------------|------------------------|-------|---|---|---|---|---|---|
+|    | A                                   | B                      | C     | D |
+|----|-------------------------------------|------------------------|-------|---|
 | 1  | <b>Github Personal access token:</b>       |                        |
 | 2  | *Github Personal access token*      |                        |
 | 3  | <b>Email:</b>                              |                        |
