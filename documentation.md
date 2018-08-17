@@ -1,5 +1,5 @@
 # Development Instructions
-The Competency script is what makes this project work. The script is attached to a Google Spreadsheet containing configuration values. The script is written in Google Apps Script, a language based off of JavaScript that is specific to the G Suite products.
+The [Competency script](https://github.com/sendwithus/competencies/blob/master/competencySyncScript.gs) is what makes this project work. The script is attached to a Google Spreadsheet containing configuration values. The script is written in Google Apps Script, a language based off of JavaScript that is specific to the G Suite products.
 
 ## What the script does:
 The script takes values from the config spreadsheet. It first gets the contents of all files in the specified Google Drive folders. If a file already exists in the competencies repo, any changes will be updated, or, if the file does not exist, a new file will be created in GitHub. It then commits all new files and changed files to the specified branch name. After all commits have been made, a pull request is created to merge the branch to `master`. An email will be sent to the configured address with a link to the pull request in GitHub. Don't worry if you delete the branch after merging - the script will create it again.
