@@ -74,7 +74,7 @@ function getDriveFiles(driveFolderId) {
         var fileSrc = DocumentApp.openById(file.getId()); //get document as Document object
         var fileNameWithoutSpaces = removeSpacesFromStr(fileName);
         var fileTextMarkdown = convertToMarkdown(fileSrc);
-        
+       
         //Store file data in object
         var fileObject = {
           "name" : fileName,
@@ -538,7 +538,6 @@ function findPrefix(inSrc, element, listCounters) {
   if (!inSrc) {
     if (element.getType()===DocumentApp.ElementType.PARAGRAPH) {
       var paragraphObj = element;
-      Logger.log(paragraphObj.getHeading());
       switch (paragraphObj.getHeading()) {
         // Add a # for each heading level. No break, so we accumulate the right number.
         case DocumentApp.ParagraphHeading.HEADING6: prefix+="#";
