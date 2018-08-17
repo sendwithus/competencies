@@ -9,7 +9,7 @@ The script takes values from the config spreadsheet. It first gets the contents 
 ## How to use the script:
 To use the Competency script, first create a Google Spreadsheet, following the guidelines and mock spreadsheet below. Once you have your spreadsheet set up, you will need to attach the script. In your spreadsheet, go to <b>Tools > Script editor</b> and paste in the contents of [the script](https://raw.githubusercontent.com/sendwithus/competencies/master/competencySyncScript.gs). If this is a new spreadsheet, run the `triggers()` function in your script editor. This will install the trigger in your script, which will run your script once a week. Since the script runs on a time-based trigger, the only work you have to do is merge the pull request when you get an email!
 
-|    | A                                   | B                      | C     |
+|    | A                                   | B                      | C           |
 |----|-------------------------------------|------------------------|-------|
 | 1  | <b>Github Personal access token:</b>       |                        |
 | 2  | *Github Personal access token**      |                        |
