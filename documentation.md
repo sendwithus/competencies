@@ -1,11 +1,11 @@
-# Documentation
+# Development Instructions
 The Competency script is what makes this project work. The script is attached to a Google Spreadsheet containing configuration values. The script is written in Google Apps Script, a language based off of JavaScript that is specific to the G Suite products.
 
 ## What the script does:
 The script takes values from the config spreadsheet. First, it gets the contents of all files in the specified Google Drive folders. It then commits all the changes to GitHub. If a file already exists in the competencies repo, any changes will be updated. If a file doesn't exist in the repo, it will be created and filled with the contents of the Google Drive file. After all commits have been made, 
 
 ## How to use the script:
-To use the Competency script to sync your Google Drive folders to GitHub, first, create a spreadsheet with the following configuration values
+To use the Competency script to sync your Google Drive folders to GitHub, first, create a Google Spreadsheet. To attach the script to your spreadsheet, go to <b>Tools > Script editor</b> and paste in the contents of [the script](https://raw.githubusercontent.com/sendwithus/competencies/master/competencySyncScript.gs).
 
 |    | A                                   | B                      | C     | D | E | F | G | H | I |
 |----|-------------------------------------|------------------------|-------|---|---|---|---|---|---|
