@@ -9,17 +9,17 @@ To use the Competency script to sync your Google Drive folders to GitHub, first,
 
 |    | A                                   | B                      | C     | D | E | F | G | H | I |
 |----|-------------------------------------|------------------------|-------|---|---|---|---|---|---|
-| 1  | <b>Github Personal access token:</b>       |                        |       |   |   |   |   |   |   |
-| 2  | *Github Personal access token*      |                        |       |   |   |   |   |   |   |
-| 3  | <b>Email:</b>                              |                        |       |   |   |   |   |   |   |
-| 4  | *Email address*                     |                        |       |   |   |   |   |   |   |
-| 5  | <b>Repo name:</b>                          |                        |       |   |   |   |   |   |   |
-| 6  | *Repo name*                         |                        |       |   |   |   |   |   |   |
-| 7  | <b>Source Google Drive folder name(s):</b> |                        |       |   |   |   |   |   |   |
-| 8  | *Folder name 1*                     | *Folder name 2*        | *...* |   |   |   |   |   |   |
-| 9  | <b>Destination GitHub Folder Name(s):</b>  |                        |       |   |   |   |   |   |   |
-| 10 | *Folder name 1*                     | *Folder name 2*        | *...* |   |   |   |   |   |   |
-| 11 | <b>Excluded File Name(s):</b>              |                        |       |   |   |   |   |   |   |
-| 12 | *Excluded file name 1*              | *Excluded file name 1* | *...* |   |   |   |   |   |   |
-| 13 | <b>Branch name:</b>                        |                        |       |   |   |   |   |   |   |
-| 14 | *branch name*                       |                        |       |   |   |   |   |   |   |
+| 1  | <b>Github Personal access token:</b>       |                        |
+| 2  | *Github Personal access token*      |                        |
+| 3  | <b>Email:</b>                              |                        |
+| 4  | *Email address*                     |                        |
+| 5  | <b>Repo name:</b>                          |                        |
+| 6  | *Repo name*                         |                        |
+| 7  | <b>Source Google Drive folder name(s):</b> |                        |
+| 8  | *Folder name 1*                     | *Folder name 2*        | *...* |   |
+| 9  | <b>Destination GitHub Folder Name(s):</b>  |                        |
+| 10 | *Folder name 1*                     | *Folder name 2*        | *...* |   |
+| 11 | <b>Excluded File Name(s):</b>              |                        |
+| 12 | *Excluded file name 1*              | *Excluded file name 1* | *...* |   |
+| 13 | <b>Branch name:</b>                        |                        |
+| 14 | *branch name*                       |                        |       |   |
