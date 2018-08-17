@@ -1,7 +1,7 @@
 # Development
 
 ## What the script is:
-The [Competency script](https://github.com/sendwithus/competencies/blob/master/competencySyncScript.gs) is what makes this project work. The script is written in Google Apps Script, a language based off of JavaScript that is specific to the G Suite products. The script takes configuration values from the Google Spreadsheet to which it is attached. You are free to use the script for your own projects. Follow the instructions below to start syncing your Google Drive documents to GitHub.
+[`competencySyncScript.gs`](https://github.com/sendwithus/competencies/blob/master/competencySyncScript.gs) is what makes this project work. The script is written in Google Apps Script, a language based off of JavaScript that is specific to the G Suite products. The script takes configuration values from the Google Spreadsheet to which it is attached. You are free to use the script for your own projects. Follow the instructions below to start syncing your Google Drive documents to GitHub.
 
 ## What the script does:
 The script's job is to go through the entire process of syncing your Drive files to GitHub. It first gets the contents of all files in the configured Google Drive folders. If a file already exists in the GitHub repo, any changes will be updated, or, if the file does not exist, a new file will be created in GitHub. It then commits all new files and changed files to the specified branch name. After all commits have been made, a pull request is created to merge the branch to `master`. An email will be sent to the configured address with a link to the pull request in GitHub. Don't worry if you delete the branch after merging - the script will create it again.
