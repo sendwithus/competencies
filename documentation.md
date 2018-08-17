@@ -9,12 +9,6 @@ The script takes values from the config spreadsheet. It first gets the contents 
 ## How to use the script:
 To use the Competency script, first create a Google Spreadsheet, following the guidelines and mock spreadsheet below. Once you have your spreadsheet set up, you will need to attach the script. In your spreadsheet, go to <b>Tools > Script editor</b> and paste in the contents of [the script](https://raw.githubusercontent.com/sendwithus/competencies/master/competencySyncScript.gs). If this is a new spreadsheet, run the `triggers()` function in your script editor. This will install the trigger in your script, which will run your script once a week. Since the script runs on a time-based trigger, the only work you have to do is merge the pull request when you get an email!
 
-<b>Notes about spreadsheet configuration:
-- The spreadsheet must contain values for each cell in the mock spreadsheet below marked with *.
-- The folder names in row (i.e. the contents of a Google Drive folder in row 8 will go into the GitHub folder with the name specified in the corresponding column in row 10). This means that for each value in row 8, there must be a value in the corresponding column in row 10.
-- If a row has a cell with `...`, you can add as many values as needed to that row.
-</b>
-
 |    | A                                   | B                      | C     |
 |----|-------------------------------------|------------------------|-------|
 | 1  | <b>Github Personal access token:</b>       |                        |
@@ -31,3 +25,9 @@ To use the Competency script, first create a Google Spreadsheet, following the g
 | 12 | *Excluded file name 1*              | *Excluded file name 1* | *...* |
 | 13 | <b>Branch name:</b>                        |
 | 14 | *branch name**                       |
+
+<b>Notes about spreadsheet configuration:
+- The spreadsheet must contain values for each cell in the mock spreadsheet below marked with *.
+- The folder names in row (i.e. the contents of a Google Drive folder in row 8 will go into the GitHub folder with the name specified in the corresponding column in row 10). This means that for each value in row 8, there must be a value in the corresponding column in row 10.
+- If a row has a cell with `...`, you can add as many values as needed to that row.
+</b>
