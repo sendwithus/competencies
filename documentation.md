@@ -18,11 +18,11 @@ To use the Competency script, first create a Google Spreadsheet, following the g
 | 5  | <b>Repo name:</b>                          |                        |
 | 6  | *Repo name**                         |                        |
 | 7  | <b>Source Google Drive folder name(s):</b> |                        |
-| 8  | *Folder name 1**                     | *Folder name 2*        | *...* |
+| 8  | *Folder name 1**                     | *Folder name 2*        |    *...*    |
 | 9  | <b>Destination GitHub Folder Name(s):</b>  |
-| 10 | *Folder name 1**                     | *Folder name 2*        | *...* |
+| 10 | *Folder name 1**                     | *Folder name 2*        |    *...*    |
 | 11 | <b>Excluded File Name(s):</b>              |
-| 12 | *Excluded file name 1*              | *Excluded file name 1* | *...* |
+| 12 | *Excluded file name 1*              | *Excluded file name 1* |    *...*    |
 | 13 | <b>Branch name:</b>                        |
 | 14 | *branch name**                       |
 
