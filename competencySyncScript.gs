@@ -307,10 +307,7 @@ function getRowContents(row, col) {
 }
 
 function isInRow(value, rowContents) {
-  if (rowContents.indexOf(value) != -1) {
-    return true;
-  }
-  return false;
+  return (rowContents.indexOf(value) !== -1);
 }
 
 function getRedirectUrl(url) {
@@ -326,10 +323,7 @@ function getRedirectUrl(url) {
 
 function isLinkToDriveDoc(url) {
   var driveBaseUrl = "https://docs.google.com/document";
-  if (url.indexOf(driveBaseUrl) > -1) {
-    return true;
-  }
-  return false;
+  return (url.indexOf(driveBaseUrl) !== -1);
 }
 
 function getPath(folderName) {
