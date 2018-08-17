@@ -11,9 +11,7 @@ var repoName = readFromCell(sheet, 6, 1);
 var driveFolderNames = getRowContents(8, 1);
 var githubFolderNames = getRowContents(10, 1);
 var excludedFileNames = getRowContents(12, 1);
-
-//Initialize branch name (only one branch will be used forever!):
-var branchName = "update-competency-docs";
+var branchName = readFromCell(sheet, 14, 1);
 
 /**************************************************************************************/
 //Main:
