@@ -322,7 +322,7 @@ function getRedirectUrl(url) {
 }
 
 function isLinkToInternalDoc(url) {
-  var internalUrls = ["docs.google.com/document", "github.com/sendwithus", "github.com/techdroplabs"];
+  var internalUrls = ["docs.google.com/document", "github.com/sendwithus", "github.com/techdroplabs", "https://youtube.com"];
   for (internalUrlsIndex=0; internalUrlsIndex<internalUrls.length; internalUrlsIndex++) {
     if (url.indexOf(internalUrls[internalUrlsIndex]) != -1) {
       return true;
