@@ -321,9 +321,14 @@ function getRedirectUrl(url) {
   return githubFileUrl;
 }
 
-function isLinkToDriveDoc(url) {
-  var driveBaseUrl = "https://docs.google.com/document";
-  return (url.indexOf(driveBaseUrl) !== -1);
+function isLinkToInternalDoc(url) {
+  var internalUrls = ["docs.google.com/document", "github.com/sendwithus", "github.com/techdroplabs", "https://youtube.com"];
+  for (internalUrlsIndex=0; internalUrlsIndex<internalUrls.length; internalUrlsIndex++) {
+    if (url.indexOf(internalUrls[internalUrlsIndex]) != -1) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function getPath(folderName) {
@@ -371,10 +376,10 @@ function convertToMarkdown(doc) {
   for (var i = 0; i < numChildren; i++) {
     var child = doc.getActiveSection().getChild(i);
     
-    //Remove any links to internal Drive documents:
+    //Remove any links to internal documents:
     var childLinkUrl = child.asText().getLinkUrl();
     if (childLinkUrl != null) {
-      if (isLinkToDriveDoc(childLinkUrl)) {
+      if (isLinkToInternalDoc(childLinkUrl)) {
         //Remove link
         child.asText().editAsText().insertText(0, "").setLinkUrl("");
       }
