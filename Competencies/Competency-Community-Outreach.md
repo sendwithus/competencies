@@ -8,7 +8,7 @@ You go out into the community to promote Sendwithus and add value
 
 * Get involved in volunteer events/organizations
 
-* Organize volunteers for Sendwithus and non-Sedwithus related events
+* Organize volunteers for Sendwithus and non-Sendwithus related events
 
 ## How do you prove it?
 
@@ -16,7 +16,7 @@ You help organize events outside the Sendwithus brand.
 
 You communicate with community partners about their events and how to work with them.
 
-You partner with community organizations and individuals to promote Sendwthus events.
+You partner with community organizations and individuals to promote Sendwithus events.
 
 ## How do you improve it?
 
