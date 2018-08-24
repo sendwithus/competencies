@@ -22,3 +22,5 @@ Learn about testing from various sources (example: [https://www.youtube.com/watc
 
 Learn dependency injection as it is critical to good testing: [https://stackoverflow.com/questions/130794/what-is-dependency-injection](https://stackoverflow.com/questions/130794/what-is-dependency-injection) [https://martinfowler.com/articles/injection.html](https://martinfowler.com/articles/injection.html) 
 
+Watch the data fixture factory talk by Colin: [https://www.youtube.com/watch?v=eaZGmhojgXk&list=PLuUddVpCIxLWWtdCq2vyRTWaOI7TSpPn7&index=9&t=0s](https://www.youtube.com/watch?v=eaZGmhojgXk&list=PLuUddVpCIxLWWtdCq2vyRTWaOI7TSpPn7&index=9&t=0s)
+
