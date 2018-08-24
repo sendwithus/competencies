@@ -36,6 +36,8 @@ Learn some JQ: [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 
 Learn Vim: [https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85) 
 
+Security and groups in linux: [https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils)
+
 Badasify your shell: [http://jilles.me/badassify-your-terminal-and-shell/](http://jilles.me/badassify-your-terminal-and-shell/) 
 
 Don't use cat, use bat: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat)
