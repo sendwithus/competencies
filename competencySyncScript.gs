@@ -1,6 +1,6 @@
 //Competency Sync Script
 
-/**************************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////////////////
 //Config:
 var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
@@ -13,19 +13,11 @@ var githubFolderNames = getRowContents(10, 1);
 var excludedFileNames = getRowContents(12, 1);
 var branchName = readFromCell(sheet, 14, 1);
 
-/**************************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////////////////
 //Main:
 function main() {
   var errors = [];
-  var githubRepoFilesDataUrl = "https://api.github.com/repos/sendwithus/" + repoName + "/contents?ref=master&access_token=" + personalAccessToken;
-  var githubRepoFilesData = UrlFetchApp.fetch(githubRepoFilesDataUrl);
-  githubRepoFilesData = JSON.parse(githubRepoFilesData);
-  
-  //Get names of all files in GitHub repo:
-  var githubFileNames = [];
-  for (githubFilesIndex=0; githubFilesIndex<githubRepoFilesData.length; githubFilesIndex++) {
-    githubFileNames[githubFilesIndex] = githubRepoFilesData[githubFilesIndex].name;
-  }
+  //var githubRepoFilesDataUrl = "https://api.github.com/repos/sendwithus/" + repoName + "/contents?ref=master&access_token=" + personalAccessToken;
   
   //Creates branch if none exists with config name:
   if (branchExists(branchName) == false) {
@@ -35,10 +27,21 @@ function main() {
   for (n=0; n<driveFolderNames.length; n++) {
     var driveFolderId = DriveApp.getFoldersByName(driveFolderNames[n]).next().getId();
     var driveFiles = getDriveFiles(driveFolderId);
-    //var driveFiles = getDriveFiles(driveFolderNames[n]);
+    
+    
+    var githubRepoFilesDataUrl = "https://api.github.com/repos/sendwithus/" + repoName + "/contents/" + githubFolderNames[n] + "?ref=master&access_token=" + personalAccessToken;
+    var githubRepoFilesData = UrlFetchApp.fetch(githubRepoFilesDataUrl);
+    githubRepoFilesData = JSON.parse(githubRepoFilesData);
+    
+    //Get names of all files in GitHub repo:
+    var githubFileNames = [];
+    for (githubFilesIndex=0; githubFilesIndex<githubRepoFilesData.length; githubFilesIndex++) {
+      githubFileNames[githubFilesIndex] = githubRepoFilesData[githubFilesIndex].name;
+    }
     
     //Commit files to GitHub:
     for (driveFilesIndex=0; driveFilesIndex<driveFiles.length; driveFilesIndex++) {
+    
       //Get data from object:
       var driveFileName = driveFiles[driveFilesIndex].name;
       var driveFileNameWithoutSpaces = driveFiles[driveFilesIndex].nameWithoutSpaces;
@@ -46,7 +49,7 @@ function main() {
       var driveFileContent = driveFiles[driveFilesIndex].content;
       
       //Create file if none exists:
-      if (githubFileNames.indexOf(driveFileNameWithoutSpaces) == -1) { //file does not exist in GitHub already
+      if (githubFileNames.indexOf(driveFileNameWithExtNoSpaces) == -1) { //file does not exist in GitHub already
         createFile(driveFileName, driveFileNameWithoutSpaces, driveFileNameWithExtNoSpaces, driveFileContent, githubFolderNames[n], errors); //create new file in GitHub repo
       }
       
@@ -57,7 +60,7 @@ function main() {
   createPullRequest(errors);
 }
 
-/**************************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////////////////
 //Functions:
 function getDriveFiles(driveFolderId) {
   var driveFiles = [], driveFileIndex = 0;
@@ -254,7 +257,7 @@ function sendErrorEmail(err) {
   MailApp.sendEmail(emailAddress, "Competency Sync Error", "The Competency Sync Google script received the following error: " + err);
 }
 
-/**************************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////////////////
 //Sub-functions:
 function decodeBase64Str(encodedStr) {
   //This function decodes a string that is encoded in Base 64
@@ -310,17 +313,6 @@ function isInRow(value, rowContents) {
   return (rowContents.indexOf(value) !== -1);
 }
 
-function getRedirectUrl(url) {
-  //This function returns the url for a GitHub file in the repo: some competency docs link to other competency docs
-  //This is to prevent external people from getting the url to our internal docs via GitHub
-  var doc = DocumentApp.openByUrl(url);
-  var docName = doc.getName();
-  var docNameWithoutSpaces = removeSpacesFromStr(docName);
-  var githubFileName = docNameWithoutSpaces + ".md";
-  var githubFileUrl = "https://github.com/sendwithus/" + repoName + "/blob/master/" + githubFileName;
-  return githubFileUrl;
-}
-
 function isLinkToInternalDoc(url) {
   var internalUrls = ["docs.google.com/document", "github.com/sendwithus", "github.com/techdroplabs", "https://youtube.com"];
   for (internalUrlsIndex=0; internalUrlsIndex<internalUrls.length; internalUrlsIndex++) {
@@ -347,7 +339,7 @@ function getPath(folderName) {
   return path;
 }
 
-/**************************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////////////////
 //Triggers:
 function triggers() {
   //Trigger to update Competency Docs every week
@@ -358,7 +350,7 @@ function triggers() {
     .create();
 }
 
-/**************************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////////////////
 //Markdown:
 function convertToMarkdown(doc) {
   var numChildren = doc.getActiveSection().getNumChildren();
