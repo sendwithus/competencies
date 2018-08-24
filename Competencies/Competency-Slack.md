@@ -44,3 +44,9 @@ Learn keyboard shortcuts: [https://get.slack.help/hc/en-us/articles/201374536-Sl
 
 Add an emoji to the slack interface - [https://sendwithus.slack.com/customize/emoji](https://sendwithus.slack.com/customize/emoji)
 
+# Slack (Advanced)
+
+## How do you prove it?
+
+## How do you improve it?
+

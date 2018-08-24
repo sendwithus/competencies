@@ -22,6 +22,8 @@ Memorize the basic set of commands ([https://www.git-tower.com/blog/git-cheat-sh
 
 Learn hub ([https://github.com/github/hub](https://github.com/github/hub)) 
 
+Git Extras for common use-cases -[ https://github.com/tj/git-extras](https://github.com/tj/git-extras)
+
 # Competency - Git & GitHub - Advanced
 
 Have achieved all the things for the basic competency and additionally can administer GitHub {teams, orgs, security} and help with advanced git issues.
