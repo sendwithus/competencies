@@ -12,6 +12,7 @@ var driveFolderNames = getRowContents(8, 1);
 var githubFolderNames = getRowContents(10, 1);
 var excludedFileNames = getRowContents(12, 1);
 var branchName = readFromCell(sheet, 14, 1);
+var wordInTitleToExclude = "Private";
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //Main:
@@ -73,7 +74,8 @@ function getDriveFiles(driveFolderId) {
       var file = files.next();
       var fileType = file.getMimeType().toString();
       var fileName = file.getName(); //get the file name
-      if (isInRow(fileName, excludedFileNames) == false) { //fileName is not excluded
+      
+      if (isInRow(fileName, excludedFileNames) == false && substrFoundCaseInsensitive(wordInTitleToExclude, fileName) == false) { //fileName is allowed by config
         var fileSrc = DocumentApp.openById(file.getId()); //get document as Document object
         var fileNameWithoutSpaces = removeSpacesFromStr(fileName);
         var fileTextMarkdown = convertToMarkdown(fileSrc);
@@ -337,6 +339,10 @@ function getPath(folderName) {
     path += "/" + pathPoints[pathIndex].toString();
   }
   return path;
+}
+
+function substrFoundCaseInsensitive(substr, str) {
+  return (str.toLowerCase().indexOf(substr.toLowerCase()) !== -1);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
