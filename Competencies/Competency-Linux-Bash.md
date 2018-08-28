@@ -6,7 +6,7 @@ All of our infrastructure and development environments are based in Unix so prof
 
 You can open a terminal, connect to a remote machine, dig around, find, modify and delete files.
 
-Use curl and wget to interact with rest services.
+Use curl or wget to interact with rest services.
 
 You can explain basic security on linux.
 
@@ -37,6 +37,8 @@ Learn some JQ: [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 Learn Vim: [https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85) 
 
 Security and groups in linux: [https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils)
+
+Vim adventure game: [https://vim-adventures.com/](https://vim-adventures.com/)
 
 Badasify your shell: [http://jilles.me/badassify-your-terminal-and-shell/](http://jilles.me/badassify-your-terminal-and-shell/) 
 
