@@ -28,3 +28,11 @@ Datadog is essential to being a competent debugger at Sendwithus. We also use th
 
 * Datadog: [https://www.datadoghq.com/apm/](https://www.datadoghq.com/apm/)
 
+* Trace sampling: [https://docs.datadoghq.com/tracing/getting_further/trace_sampling_and_storage/](https://docs.datadoghq.com/tracing/getting_further/trace_sampling_and_storage/)
+
+* Namespace naming: [https://docs.datadoghq.com/tracing/getting_further/metrics_namespace/](https://docs.datadoghq.com/tracing/getting_further/metrics_namespace/)
+
+* Analytics [https://docs.datadoghq.com/tracing/analytics/](https://docs.datadoghq.com/tracing/analytics/)
+
+* Logs explorer [https://docs.datadoghq.com/logs/explorer/](https://docs.datadoghq.com/logs/explorer/)
+
