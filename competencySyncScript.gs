@@ -12,6 +12,7 @@ var driveFolderNames = getRowContents(8, 1);
 var githubFolderNames = getRowContents(10, 1);
 var excludedFileNames = getRowContents(12, 1);
 var branchName = readFromCell(sheet, 14, 1);
+var wordToExclude = "Private";
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //Main:
@@ -73,8 +74,11 @@ function getDriveFiles(driveFolderId) {
       var file = files.next();
       var fileType = file.getMimeType().toString();
       var fileName = file.getName(); //get the file name
-      if (isInRow(fileName, excludedFileNames) == false) { //fileName is not excluded
-        var fileSrc = DocumentApp.openById(file.getId()); //get document as Document object
+      var fileSrc = DocumentApp.openById(file.getId()); //get document as Document object
+      var titleElement = getTitleElementOfDoc(file);
+      var textToCheck = fileName + titleElement;
+      
+      if (isInRow(fileName, excludedFileNames) == false && substrFoundCaseInsensitive(wordToExclude, textToCheck) == false) { //fileName is allowed by config
         var fileNameWithoutSpaces = removeSpacesFromStr(fileName);
         var fileTextMarkdown = convertToMarkdown(fileSrc);
        
@@ -257,6 +261,17 @@ function sendErrorEmail(err) {
   MailApp.sendEmail(emailAddress, "Competency Sync Error", "The Competency Sync Google script received the following error: " + err);
 }
 
+function getTitleElementOfDoc(file) {
+  var doc = DocumentApp.openById(file.getId());
+  var numChildren = doc.getBody().getNumChildren();
+  for (var i=0; i<numChildren; i++) {
+    var child = doc.getBody().getChild(i);
+    if (child.getType() == DocumentApp.ElementType.PARAGRAPH && child.getHeading() == DocumentApp.ParagraphHeading.TITLE) {
+      return child.asText().getText();
+    }
+  }
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////////
 //Sub-functions:
 function decodeBase64Str(encodedStr) {
@@ -337,6 +352,10 @@ function getPath(folderName) {
     path += "/" + pathPoints[pathIndex].toString();
   }
   return path;
+}
+
+function substrFoundCaseInsensitive(substr, str) {
+  return (str.toLowerCase().indexOf(substr.toLowerCase()) !== -1);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
