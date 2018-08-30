@@ -12,6 +12,7 @@ To use `competencySyncScript.gs`, first create a Google Spreadsheet, following t
 ## GitHub Personal Access Token
 A GitHub personal access token is a key that allows a user to access their GitHub information throught the GitHub API. In order for the script to work, you will need to create a GitHub personal access token. Click on the icon in the top right corner of your GitHub homepage, then click <b>Settings > Developer settings > Personal access tokens > Generate new token</b>. Make sure to store your token somewhere secure, such as a password manager.
 
+## Spreadsheet Configuration
 |    | A                                   | B                      | C           |
 |----|-------------------------------------|------------------------|-------|
 | 1  | <b>Github Personal access token:</b>       |                        |
