@@ -33,4 +33,4 @@ A GitHub personal access token is a key that allows a user to access their GitHu
 <b>Notes about spreadsheet configuration:</b>
 - The spreadsheet must contain values for each cell in the mock spreadsheet below marked with *.
 - The folder names in row (i.e. the contents of a Google Drive folder in row 8 will go into the GitHub folder with the name specified in the corresponding column in row 10). This means that for each value in row 8, there must be a value in the corresponding column in row 10.
-- If a row has a cell with `...`, you can add as many values as needed to that row.
+- If a row in the mock spreadsheet above has a cell with `...`, you can add as many values as needed to that row.
