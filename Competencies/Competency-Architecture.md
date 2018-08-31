@@ -16,6 +16,8 @@ Show that you know how to move from one architecture to another.
 
 Have a conversation about a problem. An architect should want to communicate, asking questions to explore the problem with you. They should not rely on you to have your problem fully thought out. They should be able to help guide you by recognizing tacit knowledge and eliciting important details. A bad sign is jumping to a solution too quickly. A good sign is an effort to achieve mutual understanding of the problem before solving it.
 
+You have built 3 architecturally important systems and they have proven value and resilience. 
+
 ## How do you improve it?
 
 Learn all the things: [https://github.com/binhnguyennus/awesome-scalability](https://github.com/binhnguyennus/awesome-scalability)
