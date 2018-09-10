@@ -16,7 +16,7 @@ Interviews themselves can take a few different forms, but often they involve a f
 
 * Your low score candidates, if hired, are statistically removed from the company early.
 
-* You can reference internal benchmarks of excellence for the roles your hire for without these benchmarks being affected by excternal influences.
+* You can reference internal benchmarks of excellence for the roles your hire for without these benchmarks being affected by external influences.
 
 ## How do you improve it?
 
