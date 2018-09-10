@@ -14,5 +14,5 @@ Be empathic.  Turns out you can learn this and/or improve it: [https://www.psych
 
 Try and give positive feedback once a day to someone.
 
-Don't touch british people: [https://www.psychologytoday.com/ca/blog/threat-management/201709/touching-co-workers](https://www.psychologytoday.com/ca/blog/threat-management/201709/touching-co-workers)
+Don't touch people (especially british people): [https://www.psychologytoday.com/ca/blog/threat-management/201709/touching-co-workers](https://www.psychologytoday.com/ca/blog/threat-management/201709/touching-co-workers)
 
