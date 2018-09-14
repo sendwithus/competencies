@@ -4,7 +4,7 @@ Lever is our Applicant Tracking System. It is a tool for tracking all applicants
 
 ## How do you prove it?
 
-Every candidate is noted and triaged to the applicable pipeline stages within Lever and communicated with on a timely basis. Very little passes by your notice, you are manage the candidates and the Hiring Manager holding them accountable for managing their candidate pool.  
+Every candidate is noted and triaged to the applicable pipeline stages within Lever and communicated with on a timely basis. Very little passes by your notice, you manage the candidates and the Hiring Manager holding them accountable for managing their candidate pool.  
 
 ## How do you improve it?
 

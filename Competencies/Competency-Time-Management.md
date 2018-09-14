@@ -16,7 +16,7 @@ Learn how to prioritize tasks as they come in to the sprint
 
 Decide what can be pushed from the current sprint and what needs to be addressed quickly. 
 
-Breakdown goals and projects into achieveable tasks
+Breakdown goals and projects into achievable tasks
 
-Balance project time with "interrruption" tasks and projects
+Balance project time with "interruption" tasks and projects
 

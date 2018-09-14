@@ -8,7 +8,7 @@ The office is in a general state of cleanliness and organized.
 
 Basic necessities are in stock and maintained to certain levels (milk, cream, printer paper, etc)
 
-You process requests from the team quickly and communicate what is happening (taken care of, back logged, added to office wish list, etc).
+You process requests from the team quickly and communicate what is happening (taken care of, backlogged, added to office wish list, etc).
 
 Bills and invoices are paid or sent to appropriate teams for payment. 
 
