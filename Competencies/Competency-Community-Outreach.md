@@ -24,5 +24,5 @@ Go to more community events.
 
 Work on community projects, meetups, events.
 
-Connect community leaders and organizations with SWUbies interseted in volunteering.
+Connect community leaders and organizations with SWUbies interested in volunteering.
 
