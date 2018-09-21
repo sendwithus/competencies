@@ -8,7 +8,7 @@ You know how to use the different edit modes.
 
 You know the structures of the drive layout and where your documents should belong
 
-You know have a plethora of beautiful, well constructed docs to show.
+You have a plethora of beautiful, well constructed docs to show.
 
 ## How do you improve it?
 
