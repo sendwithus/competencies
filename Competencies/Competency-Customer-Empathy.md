@@ -2,13 +2,13 @@
 
 Customer empathy is the ability to put yourself in the customer's metaphorical shoes and understand why it is the way they feel. If we didn't understand the customer then we wouldn't really know what problems they have and how we can solve them.
 
-## How do you prove it?
-
 You understand why a user might be frustrated?
 
 The questions you ask help get to the root of the problem
 
 You feel ownership for any bugs and pain you have mistakenly caused
+
+## How do you prove it?
 
 You consistently get positive reviews from your customer feedback mechanisms.
 

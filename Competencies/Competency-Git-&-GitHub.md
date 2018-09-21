@@ -54,3 +54,5 @@ Clean a repository's history of all files larger than 200kb.
 
 Build a GitHub PR plugin.
 
+~/.gitconfig add `autocorrect = -1` turns on autocorrect on your git commands.  So `git statsu` --> `git status` automatically.  :
+

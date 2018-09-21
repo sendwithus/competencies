@@ -2,6 +2,12 @@
 
 ## How do you prove it?
 
+You can show the growth of the skillset of your direct reports.
+
+You can show the growth of your direct reports into more senior roles.
+
+You can show the change to other roles within the company.
+
 ## How do you improve it?
 
 Connect people with experts in your reports chosen field.

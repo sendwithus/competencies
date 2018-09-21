@@ -8,11 +8,11 @@ You have inbox zero.
 
 You have asana inbox zero.
 
-You use your calendar to plan large tasks.
+You use your calendar to plan large chunks of uninterrupted time to complete tasks.
 
 You know where to store reference data and never lose track of it.
 
-You never let projects with multiple steps get blocked or stall.
+You have a system that never let projects with multiple steps get blocked or stall.
 
 When projects have tasks that are dependent on other people you never lose track of those tasks and nag appropriately. 
 

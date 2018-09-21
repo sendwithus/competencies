@@ -1,6 +1,6 @@
 # Competency - User Audits
 
-All of our systems need to be audited regularly to make sure that only the correct users exist, and those users that exist have the correct 
+All of our systems need to be audited regularly to make sure that only the correct users exist, and those users that exist have the correct access.
 
 ## How do you prove it?
 
