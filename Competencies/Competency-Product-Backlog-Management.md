@@ -32,3 +32,7 @@ Read agile estimation: [https://www.amazon.com/Agile-Estimating-Planning-Mike-Co
 
 Techniques to break up stories in sprint planning: [http://agileforall.com/resources/how-to-split-a-user-story/](http://agileforall.com/resources/how-to-split-a-user-story/) 
 
+Read about the product owner role:
+
+[https://www.romanpichler.com/romans-books/agile-product-management-with-scrum/](https://www.romanpichler.com/romans-books/agile-product-management-with-scrum/)
+
