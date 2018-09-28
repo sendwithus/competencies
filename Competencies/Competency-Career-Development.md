@@ -6,7 +6,7 @@ You can show the growth of the skillset of your direct reports.
 
 You can show the growth of your direct reports into more senior roles.
 
-You can show the change to other roles within the company.
+You can show the change of your direct reports to other roles within the company.
 
 ## How do you improve it?
 
