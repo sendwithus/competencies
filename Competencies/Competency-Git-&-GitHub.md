@@ -8,7 +8,7 @@ Great at Pull Requests
 
 ## How do you prove it?
 
-You can clone a project, create a branch, handling merge conflicts, squashing, create a pull request.
+You can clone a project, create a branch, handle merge conflicts, squash, create a pull request.
 
 Do a code review on a Pull Request.
 

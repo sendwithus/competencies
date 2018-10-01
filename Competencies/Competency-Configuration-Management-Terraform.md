@@ -14,7 +14,7 @@ You can create a module from scratch that will start an aws instance using the l
 
 You can create a RDS instance using an external module.
 
-You know how to prevent multiple people to deploy at the same time.
+You can explain Terraform lock state and enforce it.
 
 You can, in case of emergency or corrupted state, interact with the terraform state file.
 
