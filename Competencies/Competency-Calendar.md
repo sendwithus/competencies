@@ -30,6 +30,8 @@ You book a meeting room or phone booth for meeting attendees who are in another 
 
 You review and audit your recurring meetings every quarter, to see which you should keep and which can be reduced in frequency (from every week to every two weeks) or canceled altogether. 
 
+You don't create merge conflicts without discussing them with those you created them for.
+
 Special notice for public facing meetings - You never accidentally expose invitees email address as you restrict attendance visibility.
 
 ## How do you improve it?
