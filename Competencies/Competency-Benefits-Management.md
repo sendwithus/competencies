@@ -16,6 +16,8 @@ You learn about our specific benefits providers, details of our plans and how to
 
 You can walk a team member through their benefits package allowing them to make informed decisions. 
 
+You have an insider knowledge of how to navigate the complexities of both US & Canadian benefits programs. 
+
  
 
 # Competency - Benefits Management Advanced
@@ -24,7 +26,9 @@ You can walk a team member through their benefits package allowing them to make 
 
 You can troubleshoot most issues directly with the insurance company
 
-You can show established relationships with reps at the insurance provider and at the broker
+You can show established relationships with reps at the insurance provider and at the broker.
+
+You are responsible for managing the renewal process for both the US and Canadian teams. 
 
 ## How do you improve it?
 

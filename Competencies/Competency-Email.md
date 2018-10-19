@@ -8,9 +8,11 @@ You should consider email as a formal way of communicating, especially with exte
 
 Your emails are professional and well structured.  
 
+You respond in timely fashion - a good pattern is to review your inbox twice a day and ensure everything has been responded to.
+
 You spell check your emails before you send them.
 
-Your emails have a signature.
+If you correspond outside of Sendwithus your emails have a signature.
 
 You anticipate questions and answer them in the original email reducing back and forth.
 

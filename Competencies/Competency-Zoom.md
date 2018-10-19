@@ -10,3 +10,7 @@ Install the Zoom Chrome Scheduler, that adds a "Zoom" button when you're making 
 
 There is an option to unmute the mic when you hold down space which is useful if you're in a loud environment to stop background noise flooding the call.
 
+Learn how the microphones should be setup 
+
+https://docs.google.com/document/d/13M0ZkX4AjNd3424Pvp9T2NmPFKyfdyxV5jQIYM9IsEE/edit
+

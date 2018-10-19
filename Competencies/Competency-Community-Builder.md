@@ -10,7 +10,7 @@ In YYJ this is increasing the amount of tech community here.
 
 You've used up all your community days.
 
-You can pitch Battlesnake and Startup slam the Sendwithus community run events.
+You can pitch Battlesnake and Startup Slam (the Sendwithus community run events).
 
 You attend community events.
 
