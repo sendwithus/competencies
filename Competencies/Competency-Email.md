@@ -34,3 +34,19 @@ Email Signature Instructions located here: [https://docs.google.com/open?id=1O7c
 
 Here's an email from Elon Musk: [https://www.inc.com/justin-bariso/this-email-from-elon-musk-to-tesla-employees-descr.html](https://www.inc.com/justin-bariso/this-email-from-elon-musk-to-tesla-employees-descr.html)
 
+Gmail navigation pro-tips (from jem?): 
+
+* When viewing a list, `j` and `k` will go up and down the list (vim style).
+
+    * From there, you can use `x` to toggle select messages
+
+    * `e` will archive the selected message(s)
+
+    * `enter` will take you in to the currently highlighted message
+
+* when viewing an email, the `[` and `]` hotkeys will *archive the current message and navigate* to the next (or previous) message in your inbox. 
+
+    * If you want to navigate without automatically archiving, `j` / `k`
+
+    * `e` shortcut will archive the current message then send you back to the list view
+
