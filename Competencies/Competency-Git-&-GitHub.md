@@ -56,3 +56,13 @@ Build a GitHub PR plugin.
 
 ~/.gitconfig add `autocorrect = -1` turns on autocorrect on your git commands.  So `git statsu` --> `git status` automatically.  :
 
+If using GitHub apps Status Checks, you can [skip Status Checks](https://help.github.com/articles/about-status-checks/#skipping-and-requesting-checks-for-individual-commits) on a per-commit basis (instead of closing quote, add two new lines, followed by `skip-checks: true`)```$ git commit -m "Update README.
+
+>
+
+>
+
+skip-checks: true
+
+```
+
