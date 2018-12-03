@@ -38,6 +38,8 @@ Show the app you built on top of API.
 
 You manage multiple boards that are useful for the company
 
+You can seamlessly create new board for projects, retire old ones, and move tasks around accordingly. 
+
 How do you improve?
 
 Use the API to build an application of some kind: [https://asana.com/developers](https://asana.com/developers)
