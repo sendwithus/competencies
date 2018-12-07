@@ -1,4 +1,4 @@
-# Competency - Running Meetings
+# Competency - Successful Meetings
 
 The value of meeting notes is that they capture the decisions, outcomes, and next steps.
 
@@ -14,11 +14,23 @@ A successful meeting always has:
 
 * The right attendees as invited and as optional
 
-* A chair and a notetaker (not always the same person). This can be decided at the beginning of the meeting.
+* A chair and a notetaker- ideally not the same person doing both. This can be decided at the beginning of the meeting.
 
 * Meeting notes sent out after the meeting
 
     * Meeting notes aren't a long transcription of the meeting, or what was said. Rather, meeting notes capture two things: outcomes/decisions, and action items. That is: what did we decide, and what are we doing next to act on those decisions? See below.
+
+* It is the responsibility of each attendee to review the agenda prior to the meeting and read the relevant material or topics. 
+
+**Running Meetings**
+
+Meetings are one of the most effective ways in which we work together. It's crucial that we ensure that we use the time well. 
+
+* If you scheduled the meeting, you are the chair unless you've delegated this role to someone else
+
+* It is up to the chair to ensure someone is taking notes
+
+* It is the chair's responsibility to ensure that the meeting agenda items are covered and to be timekeeper
 
 **Meeting Notes**
 
@@ -32,9 +44,9 @@ Here are the expectations for meeting notes:
 
     * Date
 
-    * Action items/next steps
+    * **Action items/next steps**
 
-    * Decisions made
+    * **Decisions made**
 
     * Optional: more detailed notes. 
 
