@@ -18,6 +18,8 @@ Pick a UI Javascript framework and build a website based on existing backend ser
 
 Create some codepens
 
+Learn the laws of UX: [https://lawsofux.com/](https://lawsofux.com/)
+
 **React:** 
 
 Do the tutorial: [https://reactjs.org/tutorial/tutorial.html](https://reactjs.org/tutorial/tutorial.html) 
