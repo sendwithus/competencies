@@ -50,6 +50,8 @@ Post the poll in slack after a meeting
 
 "I don't think I need to be in this meeting"
 
+Learn how the microphones work: [https://docs.google.com/document/d/13M0ZkX4AjNd3424Pvp9T2NmPFKyfdyxV5jQIYM9IsEE/edit](https://docs.google.com/document/d/13M0ZkX4AjNd3424Pvp9T2NmPFKyfdyxV5jQIYM9IsEE/edit)
+
 
 
 Competency - Meetings - Advanced
