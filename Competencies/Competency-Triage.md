@@ -10,7 +10,7 @@ Everyone in the company trusts the triage process and understands the timelines 
 
 Everyone in the company knows the expected format (even if they don't use it) of feature ideas and bug reports.
 
-When new ideas are rejected the rejectee understands why this is not making it into the product and you reject them in a way that doesn't hurt their feelings and leaves them wanting to contribute more.
+When new ideas are rejected the rejectee understands why this is not making it into the product and you reject them in a way that doesn't hurt their feelings and leaves them still wanting to contribute.
 
 ## How do you improve it?
 
