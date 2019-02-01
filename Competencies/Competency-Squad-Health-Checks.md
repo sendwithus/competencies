@@ -1,16 +1,16 @@
 # Competency - Squad Health Checks
 
-A lot of companies experiment with ways of measuring and visualizing how their teams are doing. A systemic approach with clear visualization can reduce some of the guessiness.
+Squad health check is a clear visualization technique for measuring how a team is doing.  
 
 ## How do you prove it?
 
-* You have run through the "Squad Health Check" exercise more than once with your teammates
+* You have run through the Squad Health Check exercise more than once with your teammates
 
 * You're able to discuss who the health check model is for, and some of the benefits of reviewing team cohesion
 
 * You can speak to why this exercise should carry with it no incentives
 
-* You're familiar with (or have improved upon) the structure of the Squad Healtch Check RTB template. 
+* You can give examples of for each of the measures used  with your team's Squad Health Check.
 
 * Team mates are generally satisfied that the exercise happens on a quarterly basis, and the previous results are reviewed at the start of the next session.
 
