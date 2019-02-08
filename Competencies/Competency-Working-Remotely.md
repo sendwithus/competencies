@@ -1,8 +1,6 @@
 # Competency - Working Remotely
 
-Working for a tech company brings with it the incredible privilege of enabling workers to work remotely! Since we're all working on our laptops every day already, we can use the power of the internet to connect with one another virtually when the need arises. Some folks go remote so they can take on more of a nomadic lifestyle, while others working remote might opt for a coworking space so they can still "come in" every morning.
-
-But working remotely isn't all fun and games. With great power comes great responsibility. Folks that are competent in the "working remotely" competency take additional steps to ensure their collaborating effectively despite any distance.
+Working remotely != working from home, we have remote offices.
 
 ## How do you prove it?
 
@@ -18,7 +16,9 @@ But working remotely isn't all fun and games. With great power comes great respo
 
 * On slack, you make use of status channels and always ensure your team knows where you're at and whether you're available.
 
-* You make use of slack statuses to communicate when you're away
+* Slack statuses: You make use of slack statuses to communicate when you're around or away, and you know to post in #swubie-status if you want to let the most folks know about your status
+
+* Make sure that Asana is your source of truth for any important notes (or that documents are linked to asana whenever possible)
 
 * Ask your manager about working remotely more frequently
 
