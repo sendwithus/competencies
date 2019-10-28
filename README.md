@@ -1,3 +1,5 @@
+Note - this is a fork of https://github.com/sendwithus/competencies
+
 # Competencies
 
 Sendwithus has built out a list of internal competency documents that describe many of the skills you need to succeed here.
