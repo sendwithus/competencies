@@ -30,3 +30,12 @@ Learn about speaking: [http://go.ted.com/JAos8A](http://go.ted.com/JAos8A)
 
 Make people feel heard: It's important for diffusing conversations that the person you're talking to hears you hearing them.
 
+**Avoiding Airplane Crashes type communication**
+
+Five steps:
+
+- Opening or attention getter - Address the individual: "Hey Chief," or "Captain Smith," or "Bob," or whatever name or title will get the person's attention.
+- State your concern - Express your analysis of the situation in a direct manner while owning your emotions about it. "I'm concerned that we may not have enough fuel to fly around this storm system," or "I'm worried that the roof might collapse."
+- State the problem as you see it - "We're showing only 40 minutes of fuel left," or "This building has a lightweight steel truss roof, and we may have fire extension into the roof structure."
+- State a solution - "Let's divert to another airport and refuel," or "I think we should pull some tiles and take a look with the thermal imaging camera before we commit crews inside."
+- Obtain agreement (or buy-in) - "Does that sound good to you, Captain?"
