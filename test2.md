@@ -4,3 +4,6 @@
 <skills>
 figure skating
 </skills>
+
+
+<inherit doc="../test3.md"/>

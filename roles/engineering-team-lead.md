@@ -1,6 +1,8 @@
 # Engineering - Team Lead
 
-## What it's like to work here
+<searchspring-overview.snippet/>
+
+## What it's like to be a team lead
 We believe in a servant leadership, with team leads helping to enable their teams build the best software they can in the fastest and safest way possible.
 Team leads are responsible for managing their team as well as leading them.   For leadership in the way in  which software is built, to management of helping 
 the developers grow in their career.
@@ -8,7 +10,6 @@ Where possible, development teams are aligned behind a specific part of the prod
 SearchSpring is split between 5 geographic areas in many different time zones so you will need to become adept and distributed working and familiar with the tools that facilitate this.
 You set aside an hour a week for each of your reports, and in this 1:1 you discuss career development, work issues, life issues impacting work, and help resolve.
 
-<equitable-workplace.snippet/>
 
 ### Why you might like it
 You're not afraid of dealing with conflict, and can approach difficult situations with candor and humility.
@@ -32,9 +33,6 @@ You enjoy working with others and helping mentor developers at all skill levels.
 
 <what-you-need.snippet/>
 
-### Expected to have
-
-
 ### Expected to have at least 50% of these and learn the rest
 
 <skills>
@@ -53,3 +51,8 @@ Mentoring
 
 ### You should have most of the following 
 <inherit doc="engineering-senior-developer.md"/>
+
+
+<benefits.snippet/>
+
+<equitable-workplace.snippet/>

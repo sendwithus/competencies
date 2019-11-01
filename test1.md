@@ -7,3 +7,5 @@ breakdancing
 
 ## comment that shouldn't appear
 <inherit doc="../test2.md"/>
+
+a

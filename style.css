@@ -201,12 +201,15 @@ h1, h2, h3 {
 .skill-group a:hover {
   background-color: #BBBBFF;
 }
+
 .skill-group a {
   display: inline-block;
   background-color: #DDDDFF;
   border-radius: 3px;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin-right: 3px;
   margin-bottom: 4px;
   font-size: 0.8em;
@@ -219,4 +222,48 @@ h1, h2, h3 {
 
 h4 a, h4 a:visited {
   color: black;
+}
+
+.group-heading {
+  font-size: 0.8em;
+}
+
+table.group {
+  border-spacing: 0;
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 2px;
+}
+
+table.group td {
+  border: none;
+  padding: 0;
+  padding-top: 3px;
+  padding-right: 5px;
+  margin: 0;
+}
+
+table.group td.group {
+  padding: 3px;
+  padding: 5px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+
+table.group th {
+  padding: 0;
+  border: none;
+}
+
+table.group tr {
+  background-color: none;
+  border-top: none;
+}
+
+table.group tr:nth-child(2n) {
+  background-color: none;
 }

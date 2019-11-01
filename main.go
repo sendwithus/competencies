@@ -22,44 +22,52 @@ func main() {
 		if strings.HasSuffix(file.Name(), ".md") {
 			fmt.Println(file.Name())
 			filename := "roles/" + file.Name()
-			data, _ := ioutil.ReadFile(filename)
+			html, title, err := processFile(filename)
 			if err != nil {
 				panic(err)
 			}
-			markdown, err := processSnippets(string(data))
-			if err != nil {
-				panic(err)
-			}
-			markdown, err = processInherits(markdown)
-			if err != nil {
-				panic(err)
-			}
-			markdown, err = linkSkills(markdown)
-			if err != nil {
-				panic(err)
-			}
-
-			html := blackfriday.Run([]byte(markdown))
 			styleData, _ := ioutil.ReadFile("style.css")
-			pageTitle := "title"
 			preContent := `<html>
 <head>
-	<title>` + pageTitle + `</title>
+	<title>` + title + `</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type='text/css'>` + singleLine(styleData) + `</style>
 </head>
 <body>
 	<div id='content'>
 `
-			postContent := `
-	</div>
-</body>
-</html>`
-			output := preContent + string(html) + string(postContent)
+			postContent := "</div></body></html>"
+			output := preContent + html + string(postContent)
 			ioutil.WriteFile("dist/roles/"+file.Name()[:len(file.Name())-3]+".html", []byte(output), 0644)
 
 		}
 	}
+}
+
+func processFile(filename string) (string, string, error) {
+	data, err := ioutil.ReadFile(filename)
+	if err != nil {
+		panic(err)
+	}
+	markdown, err := processSnippets(string(data))
+	if err != nil {
+		panic(err)
+	}
+	title := getTitle(markdown)
+	markdown, err = processInherits(markdown)
+	if err != nil {
+		panic(err)
+	}
+	markdown, err = linkSkills(markdown)
+	if err != nil {
+		panic(err)
+	}
+	html := blackfriday.Run([]byte(markdown))
+	return string(html), title, nil
+}
+
+func getTitle(content string) string {
+	return strings.TrimSpace(strings.Split(content, "\n")[0][1:])
 }
 
 func singleLine(text []byte) string {
@@ -132,11 +140,11 @@ func processSkills(filename string, contents string) string {
 	firstLine := strings.SplitN(string(contents), "\n", 2)[0]
 	regex := regexp.MustCompile(`(?s)<skills>([^<]+)</skills>`)
 	match := regex.FindStringSubmatch(string(contents))
-	return "#### <a href=\"" + filename + "\">" + strings.TrimSpace(firstLine[1:]) + "</a>\n" + match[0]
+	return "\n#### <a href=\"" + filename + "\">" + strings.TrimSpace(firstLine[1:]) + "</a>\n" + match[0]
 }
 
 func linkSkills(contents string) (string, error) {
-	group := regexp.MustCompile(`^[0-9]+ of (.+)$`)
+	group := regexp.MustCompile(`^([0-9]+) of (.+)$`)
 	regex := regexp.MustCompile(`(?s)<skills>([^<]+)</skills>`)
 	matches := regex.FindAllStringSubmatch(string(contents), -1)
 	for _, match := range matches {
@@ -148,14 +156,16 @@ func linkSkills(contents string) (string, error) {
 			}
 			groupMatches := group.FindStringSubmatch(split)
 			if len(groupMatches) > 0 {
-				groupResult, err := createGroup(groupMatches[1])
+				groupResult, err := createGroup(groupMatches[1], groupMatches[2])
 				if err != nil {
 					return "", err
 				}
 				result += groupResult
 			} else {
+
+				split, level := getLevelFromName(split)
 				additionalCSS := checkCompetency(split)
-				result += "<a " + additionalCSS + "href=\"" + createHREF(split) + "\">" + strings.TrimSpace(split) + "</a>"
+				result += "<a " + additionalCSS + "href=\"" + createHREF(split) + "\">" + strings.ToLower(strings.TrimSpace(split)) + makeLevel(level) + "</a>"
 			}
 		}
 		result += "</div>"
@@ -164,12 +174,25 @@ func linkSkills(contents string) (string, error) {
 	return contents, nil
 }
 
+func getLevelFromName(name string) (string, string) {
+	level := "1"
+	index := strings.Index(name, ":")
+
+	if index != -1 {
+		level = name[index+1:]
+		name = name[0:index]
+	}
+	return name, level
+}
+
 // lazy load competencies
 var competencies []string
 
-func createGroup(group string) (string, error) {
+func createGroup(count string, group string) (string, error) {
 	fmt.Println("creating group: " + group)
-	result := "<div class=\"group\"><span>" + group + "</span>"
+	group, level := getLevelFromName(group)
+
+	result := "<table class=\"group\"><tr><td><span class=\"group-heading\">" + group + " (" + count + " of)" + "</span></td><td class=\"group\" valign=\"top\"> "
 	if len(competencies) == 0 {
 		fileInfos, err := ioutil.ReadDir("competencies")
 		if err != nil {
@@ -181,11 +204,17 @@ func createGroup(group string) (string, error) {
 	}
 	for _, competency := range competencies {
 		if strings.HasPrefix(competency, strings.ToLower(strings.ReplaceAll(group, " ", "-"))+"-") {
-			result += "<a href=\"" + createHREF(competency) + "\">" + camel(group, competency) + "</a>"
+			result += "<a href=\"" + createHREF(competency) + "\">" + camel(group, competency) + makeLevel(level) + "</a>"
 		}
 	}
-	result += "</div>"
+	result += "</td></tr></table>"
 	return result, nil
+}
+func makeLevel(level string) string {
+	if level == "1" {
+		return ""
+	}
+	return ": level " + level
 }
 
 func camel(group string, competency string) string {

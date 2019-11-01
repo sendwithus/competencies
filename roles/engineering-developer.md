@@ -23,10 +23,6 @@ TBD
 <skills>
 Coding
 Research
-1 of Specialization
-Dev Ops
-1 of Language
-1 of IDE
 Feature Flags
 GitHub
 Deployments
@@ -38,12 +34,13 @@ Fire Handling
 Docker
 Kubernetes
 Long term coding
-Configuration Management - Chef
-Configuration Management - Terraform
 Customer Empathy
 Asana
 Google Drive:2
 Slack:2
+1 of Configuration Management
+1 of Language
+1 of IDE
 </skills>
 
 ### You should have most of the following
