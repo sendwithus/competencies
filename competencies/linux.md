@@ -1,4 +1,4 @@
-# Competency - Linux/Bash
+# Competency - Linux
 
 All of our infrastructure and development environments are based in Unix so proficiency here is very important. Linux is an open source variant of Unix based on Linus Torvalds' kernel.
 

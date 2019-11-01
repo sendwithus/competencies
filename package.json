@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "showdown": "^1.9.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "mock-fs": "^4.10.2",
+    "rewire": "^4.0.1"
+  }
+}
