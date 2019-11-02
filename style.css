@@ -215,9 +215,9 @@ h1, h2, h3 {
   font-size: 0.8em;
 }
 
-.skill-group a.bad {
-  color: white;
-  background-color: red;
+.skill-group a.missing {
+  color: grey;
+  background-color: white;
 }
 
 h4 a, h4 a:visited {

@@ -23,7 +23,6 @@ TBD
 <skills>
 Communication
 Computers
-Critical Thinker
 Email
 Zoom
 Calendar
@@ -31,6 +30,9 @@ Google Drive
 Slack 
 Community builder
 Human
+Empathy 
+Asana
+Miro
 Recruiter
 Security
 1Password

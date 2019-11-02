@@ -165,7 +165,11 @@ func linkSkills(contents string) (string, error) {
 
 				split, level := getLevelFromName(split)
 				additionalCSS := checkCompetency(split)
-				result += "<a " + additionalCSS + "href=\"" + createHREF(split) + "\">" + strings.ToLower(strings.TrimSpace(split)) + makeLevel(level) + "</a>"
+				href := createHREF(split)
+				if additionalCSS != "" {
+					href = "https://github.com/SearchSpring/competencies/new/master/competencies"
+				}
+				result += "<a " + additionalCSS + "href=\"" + href + "\">" + strings.ToLower(strings.TrimSpace(split)) + makeLevel(level) + "</a>"
 			}
 		}
 		result += "</div>"
@@ -227,7 +231,7 @@ func checkCompetency(file string) string {
 	filename := "competencies/" + cleanFile(file)
 	_, err := os.Stat(filename)
 	if os.IsNotExist(err) {
-		return "class=\"bad\" "
+		return "class=\"missing\" "
 	}
 	return ""
 }
