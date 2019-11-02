@@ -27,16 +27,20 @@ func main() {
 				panic(err)
 			}
 			styleData, _ := ioutil.ReadFile("style.css")
+			appData, _ := ioutil.ReadFile("app.js")
 			preContent := `<html>
 <head>
 	<title>` + title + `</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type='text/css'>` + singleLine(styleData) + `</style>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 </head>
 <body>
 	<div id='content'>
 `
-			postContent := "</div></body></html>"
+			postContent := "</div></body><script>\n" + string(appData) + "\n</script></html>"
 			output := preContent + html + string(postContent)
 			ioutil.WriteFile("dist/roles/"+file.Name()[:len(file.Name())-3]+".html", []byte(output), 0644)
 

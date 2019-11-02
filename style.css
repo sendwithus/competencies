@@ -267,3 +267,7 @@ table.group tr {
 table.group tr:nth-child(2n) {
   background-color: none;
 }
+
+.add-button, .person-chooser {
+  float:right;
+}
