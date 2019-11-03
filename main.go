@@ -273,7 +273,7 @@ func cleanFile(file string) string {
 	if strings.HasSuffix(file, ":2") || strings.HasSuffix(file, ":3") || strings.HasSuffix(file, ":4") {
 		file = file[0 : len(file)-2]
 	}
-	return file + ".md"
+	return strings.ToLower(file) + ".md"
 }
 
 func createHREF(name string) string {

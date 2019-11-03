@@ -271,7 +271,7 @@ table.group tr:nth-child(2n) {
   opacity: 1;
 }
 
-.sheet-link, .trash-link {
+.sheet-link, .trash-link, .sign-in-link, .sign-out-link {
   float: right;
   font-size: 12px;
   font-weight: bold;
