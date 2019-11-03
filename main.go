@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -20,7 +19,7 @@ func main() {
 
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".md") {
-			fmt.Println(file.Name())
+			log.Println(file.Name())
 			filename := "roles/" + file.Name()
 			html, title, err := processFile(filename)
 			if err != nil {
@@ -183,7 +182,6 @@ func createSkillLink(name string, check bool) string {
 	name, level := getLevelFromName(name)
 	classes := ""
 	href := createHREF(name)
-	github := "<a title=\"go to competency github page\" class=\"github-link\" target=\"_blank\" href=\"" + href + "\"><i class=\"fab fa-github\"></i></a> "
 	drive := " <a title=\"add this competency to the google sheet for tracking\" style=\"display:none\" class=\"drive-link\" href=\"javascript:;\"><i class=\"fab fa-google-drive\"></i></a>"
 	if check {
 		exists := checkCompetency(name)
@@ -192,6 +190,7 @@ func createSkillLink(name string, check bool) string {
 			href = "https://github.com/SearchSpring/competencies/new/master/competencies"
 		}
 	}
+	github := "<a title=\"go to competency github page\" class=\"github-link\" target=\"_blank\" href=\"" + href + "\"><i class=\"fab fa-github\"></i></a> "
 	classes += " " + name2Id(name)
 	classes += " competency"
 
@@ -220,7 +219,6 @@ func getLevelFromName(name string) (string, string) {
 var competencies []string
 
 func createGroup(count string, group string) (string, error) {
-	fmt.Println("creating group: " + group)
 	group, _ = getLevelFromName(group)
 
 	result := "<table class=\"group\"><tr><td><span class=\"group-heading\">" + group + " (" + count + " of)" + "</span></td><td class=\"group\" valign=\"top\"> "

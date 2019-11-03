@@ -8,21 +8,33 @@ let currentSheetId = ''
 
 $(document).ready(function (event) {
     $('h1').append($(
-        '<span id="button-group">' +
-        ' <button id="addButton" class="add-button">add</button> ' +
-        ' <a title="view associated google sheet" class="sheet-link" target="_blank" id="sheetLink" href=""></a> ' +
-        ' <select class="person-chooser" id="personChooser"></select>' + 
+        '<span style="display:none" id="buttonGroup">' +
+        ' <a title="view associated google sheet" class="sheet-link" target="_blank" id="sheetLink" href="">' +
+        '<i class="icon fab fa-google-drive"></i>' +
+        '</a> ' +
+        ' <a title="add a person to the dropdown" class="sheet-link" id="addButton" href="javascript:;">' +
+        '<i class="icon fas fa-user-plus"></i>' +
+        '</a> ' +
+        ' <select class="person-chooser" id="personChooser"></select> ' +
+        ' <a title="delete this person from the dropdown" class="trash-link" id="deleteButton" href="javascript:;">' +
+        '<i class="icon fas fa-user-minus"></i>' +
+        '</a> ' +
         '</span> '
     ))
     $('#addButton').on('click', () => {
         let response = prompt('enter spreadsheet ID')
-        checkForSheet(response)
+        if (response && response !== '') {
+            checkForSheet(response)
+        }
+    })
+    $('#deleteButton').on('click', () => {
+        removeSelected()
     })
     $('#personChooser').on('change', () => {
         $.cookie('selectedPerson', getSelected())
         checkForSheet(getSelected())
     })
-    $('.drive-link').on('click', (e)=>{
+    $('.drive-link').on('click', (e) => {
         let el = $(e.target).parent().parent();
         let name = el.text().trim()
         let id = $(el).attr('id')
@@ -31,14 +43,19 @@ $(document).ready(function (event) {
     loadCookieValues()
     gapi.load('client:auth2', initClient);
 });
+function removeSelected() {
+    delete people[currentSheetId]
+    $.cookie('people', people)
+    $.cookie('selectedPerson', '')
+    $("#personChooser option[value='" + currentSheetId + "']").remove();
+    checkForSheet(getSelected())
 
+}
 function addInProgress(id, name) {
-    console.log(id, name)
-
-    $('.drive-link', $('#' + id)).fadeOut(()=>{
+    $('.drive-link', $('#' + id)).fadeOut(() => {
         $('.' + id).addClass('in-progress')
     });
-    
+
     var params = {
         spreadsheetId: currentSheetId,
         range: 'Sheet1!A2:B',
@@ -49,26 +66,28 @@ function addInProgress(id, name) {
         'range': 'Sheet1!A2:B',
         'majorDimension': 'ROWS',
         'values': [
-            [ name, '0']
+            [name, '0']
         ]
     }
 
-    gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody).then(function(response) {
-        console.log(response)
-    }, function(reason) {
+    gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody).then(function (response) {
+        // expected path.
+    }, function (reason) {
         console.error('error: ' + reason.result.error.message);
     });
 }
 
 function getSelected() {
+    if ($('#personChooser').children("option:selected").length == 0) { return ''; }
     return $('#personChooser').children("option:selected").val();
 }
 
 function loadCookieValues() {
-    people = $.cookie('people')
-    if (!people) {
+    peopleLoaded = $.cookie('people')
+    if (!peopleLoaded) {
         return
     }
+    people = peopleLoaded
     let selectedPerson = $.cookie('selectedPerson')
     for (person in people) {
         createOption(person, people[person], selectedPerson == person)
@@ -77,8 +96,10 @@ function loadCookieValues() {
 
 
 function checkForSheet(sheetId) {
-    console.log('checking for sheet: ' + sheetId)
-
+    $('.competency').removeClass('complete')
+    $('.competency').removeClass('in-progress')
+    $('.drive-link').show()
+    $('.fa-check').remove()
     if (!sheetId || sheetId === '') {
         alert('must select a sheet ID or add one using the add button.')
         return
@@ -91,10 +112,12 @@ function checkForSheet(sheetId) {
     gapi.client.sheets.spreadsheets.values.get(params).then(function (response) {
         currentSheetId = sheetId
         $('#sheetLink').attr('href', 'https://docs.google.com/spreadsheets/d/' + sheetId);
-        $('#sheetLink').html('<i class="icon fab fa-google-drive"></i>')
         let values = response.result.values
         let name = values[0][0]
-        console.log(values)
+        if (!name || name.trim() === '') {
+            alert('must have name in cell A1 - add a name then try again')
+            return;
+        }
         personValues = {}
         for (var i = 1; i < values.length; i++) {
             personValues[values[i][0]] = values[i][1]
@@ -104,22 +127,24 @@ function checkForSheet(sheetId) {
             addName(name, sheetId)
         }
         checkOffCompetencies()
+        setSelected(sheetId)
     }).catch((err) => {
         $('#sheetLink').html('')
         $('#sheetLink').attr('href', '')
-        console.log('error', err)
+        console.error('error', err)
     });
 }
+
+function setSelected(sheetId) {
+    $('#personChooser').val(sheetId);
+    $.cookie('selectedPerson', sheetId)
+}
 function checkOffCompetencies() {
-    $('.competency').removeClass('complete')
-    $('.competency').removeClass('in-progress')
-    $('.drive-link').show()
-    $('.fa-check').remove()
+
     for (skill in personValues) {
         let id = name2Id(skill)
         let level = parseInt(personValues[skill])
-        console.log('checking: ' , '.' + id)
-        $('.' + id).each((i, el)=>{
+        $('.' + id).each((i, el) => {
             $('.drive-link', $(el)).hide();
             if (level === 0) {
                 $(el).addClass('in-progress')
@@ -140,7 +165,6 @@ function createOption(sheetId, name, selected) {
 }
 
 function initClient() {
-    console.log('init client')
     var SCOPE = 'https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive';
 
     gapi.client.init({
@@ -166,13 +190,16 @@ function addName(name, sheetId) {
 function updateSignInStatus(isSignedIn) {
     if (isSignedIn) {
         email = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail();
-        checkForSheet(getSelected())
+        $('#buttonGroup').fadeIn()
+        if (getSelected() || getSelected() !== '') {
+            checkForSheet(getSelected())
+        }
     } else {
         gapi.auth2.getAuthInstance().signIn();
     }
 }
 
-String.prototype.replaceAll = function(search, replacement) {
+String.prototype.replaceAll = function (search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
 };

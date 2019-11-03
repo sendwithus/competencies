@@ -11,7 +11,6 @@ body {
   padding: 0;
 }
 
-
 body>#content {
   margin: 0px;
   border: 1px solid #e1e4e8;
@@ -192,6 +191,7 @@ h1, h2, h3 {
 a.drive-link:hover, a.github-link:hover {
   opacity: 1;
 }
+
 a.drive-link, a.github-link {
   opacity: 0.5;
 }
@@ -264,20 +264,21 @@ table.group tr:nth-child(2n) {
 }
 
 .add-button, .person-chooser {
-  float:right;
+  float: right;
 }
 
-.sheet-link:hover {
-  opacity:1;
+.sheet-link:hover, .trash-link:hover {
+  opacity: 1;
 }
-  .sheet-link {
-  float:right;
-  font-size:12px;
+
+.sheet-link, .trash-link {
+  float: right;
+  font-size: 12px;
   font-weight: bold;
-  margin-left:4px;
-  margin-right:4px;
-  margin-top:3px;
-  opacity:0.5;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 3px;
+  opacity: 0.5;
 }
 
 span.complete {
@@ -294,13 +295,13 @@ span i {
   color: blue;
 }
 
-#button-group {
+#buttonGroup {
   position: fixed;
   background-image: linear-gradient(#FFaaaa, white);
-  opacity:0.8;
-  top:0;
-  right:0;
+  opacity: 0.8;
+  top: 0;
+  right: 0;
   padding: 10px 40px;
   border-radius: 2px;
-  width:100%;
+  width: 100%;
 }
