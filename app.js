@@ -8,9 +8,11 @@ let currentSheetId = ''
 
 $(document).ready(function (event) {
     $('h1').append($(
-        ' <span id="button-group"><a class="sheet-link" target="_blank" id="sheetLink" href=""></a>' +
+        '<span id="button-group">' +
         ' <button id="addButton" class="add-button">add</button> ' +
-        ' <select class="person-chooser" id="personChooser"></select></span>'
+        ' <a title="view associated google sheet" class="sheet-link" target="_blank" id="sheetLink" href=""></a> ' +
+        ' <select class="person-chooser" id="personChooser"></select>' + 
+        '</span> '
     ))
     $('#addButton').on('click', () => {
         let response = prompt('enter spreadsheet ID')

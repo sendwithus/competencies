@@ -267,10 +267,17 @@ table.group tr:nth-child(2n) {
   float:right;
 }
 
-.sheet-link {
+.sheet-link:hover {
+  opacity:1;
+}
+  .sheet-link {
   float:right;
   font-size:12px;
   font-weight: bold;
+  margin-left:4px;
+  margin-right:4px;
+  margin-top:3px;
+  opacity:0.5;
 }
 
 span.complete {
@@ -289,13 +296,11 @@ span i {
 
 #button-group {
   position: fixed;
-  background-color: white;
+  background-image: linear-gradient(#FFaaaa, white);
   opacity:0.8;
   top:0;
   right:0;
-  border: 1px solid #e1e4e8;
   padding: 10px 40px;
   border-radius: 2px;
-  margin-left: auto;
-  margin-right: auto;
+  width:100%;
 }

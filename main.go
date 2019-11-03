@@ -16,7 +16,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	os.MkdirAll("dist/roles", os.ModePerm)
+	os.MkdirAll("docs", os.ModePerm)
 
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".md") {
@@ -45,7 +45,7 @@ func main() {
 `
 			postContent := "</div></body><script>\n" + string(appData) + "\n</script></html>"
 			output := preContent + html + string(postContent)
-			ioutil.WriteFile("dist/roles/"+file.Name()[:len(file.Name())-3]+".html", []byte(output), 0644)
+			ioutil.WriteFile("docs/"+file.Name()[:len(file.Name())-3]+".html", []byte(output), 0644)
 
 		}
 	}
@@ -179,11 +179,12 @@ func linkSkills(contents string) (string, error) {
 }
 
 func createSkillLink(name string, check bool) string {
+	name = strings.ReplaceAll(name, "-", " ")
 	name, level := getLevelFromName(name)
 	classes := ""
 	href := createHREF(name)
-	github := "<a class=\"github-link\" target=\"_blank\" href=\"" + href + "\"><i class=\"fab fa-github\"></i></a> "
-	drive := " <a style=\"display:none\" class=\"drive-link\" href=\"javascript:;\"><i class=\"fab fa-google-drive\"></i></a>"
+	github := "<a title=\"go to competency github page\" class=\"github-link\" target=\"_blank\" href=\"" + href + "\"><i class=\"fab fa-github\"></i></a> "
+	drive := " <a title=\"add this competency to the google sheet for tracking\" style=\"display:none\" class=\"drive-link\" href=\"javascript:;\"><i class=\"fab fa-google-drive\"></i></a>"
 	if check {
 		exists := checkCompetency(name)
 		if !exists {
