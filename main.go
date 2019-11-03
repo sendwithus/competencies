@@ -33,9 +33,12 @@ func main() {
 	<title>` + title + `</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type='text/css'>` + singleLine(styleData) + `</style>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script>
+	
 	<script src="https://apis.google.com/js/api.js"></script>
 	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </head>
 <body>
 	<div id='content'>
@@ -166,20 +169,39 @@ func linkSkills(contents string) (string, error) {
 				}
 				result += groupResult
 			} else {
-
-				split, level := getLevelFromName(split)
-				additionalCSS := checkCompetency(split)
-				href := createHREF(split)
-				if additionalCSS != "" {
-					href = "https://github.com/SearchSpring/competencies/new/master/competencies"
-				}
-				result += "<a " + additionalCSS + "href=\"" + href + "\">" + strings.ToLower(strings.TrimSpace(split)) + makeLevel(level) + "</a>"
+				result += createSkillLink(split, true)
 			}
 		}
 		result += "</div>"
 		contents = strings.ReplaceAll(contents, match[0], result)
 	}
 	return contents, nil
+}
+
+func createSkillLink(name string, check bool) string {
+	name, level := getLevelFromName(name)
+	classes := ""
+	href := createHREF(name)
+	github := "<a class=\"github-link\" target=\"_blank\" href=\"" + href + "\"><i class=\"fab fa-github\"></i></a> "
+	drive := " <a style=\"display:none\" class=\"drive-link\" href=\"javascript:;\"><i class=\"fab fa-google-drive\"></i></a>"
+	if check {
+		exists := checkCompetency(name)
+		if !exists {
+			classes += "missing"
+			href = "https://github.com/SearchSpring/competencies/new/master/competencies"
+		}
+	}
+	classes += " " + name2Id(name)
+	classes += " competency"
+
+	return "<span id=\"" + name2Id(name) + "\" level=\"" + level + "\" class=\"" + classes + "\">" + github +
+		strings.ToLower(strings.TrimSpace(name)) + makeLevel(level) +
+		drive +
+		"</span>"
+}
+
+func name2Id(name string) string {
+	return "c-" + strings.ToLower(strings.ReplaceAll(strings.ReplaceAll(name, " ", ""), "-", ""))
 }
 
 func getLevelFromName(name string) (string, string) {
@@ -198,7 +220,7 @@ var competencies []string
 
 func createGroup(count string, group string) (string, error) {
 	fmt.Println("creating group: " + group)
-	group, level := getLevelFromName(group)
+	group, _ = getLevelFromName(group)
 
 	result := "<table class=\"group\"><tr><td><span class=\"group-heading\">" + group + " (" + count + " of)" + "</span></td><td class=\"group\" valign=\"top\"> "
 	if len(competencies) == 0 {
@@ -212,7 +234,9 @@ func createGroup(count string, group string) (string, error) {
 	}
 	for _, competency := range competencies {
 		if strings.HasPrefix(competency, strings.ToLower(strings.ReplaceAll(group, " ", "-"))+"-") {
-			result += "<a href=\"" + createHREF(competency) + "\">" + camel(group, competency) + makeLevel(level) + "</a>"
+			competency = competency[0 : len(competency)-3]
+			link := createSkillLink(competency, false)
+			result += link //  "<a href=\"" + createHREF(competency) + "\">" + camel(group, competency) + makeLevel(level) + "</a>"
 		}
 	}
 	result += "</td></tr></table>"
@@ -231,13 +255,13 @@ func camel(group string, competency string) string {
 	return competency
 }
 
-func checkCompetency(file string) string {
+func checkCompetency(file string) bool {
 	filename := "competencies/" + cleanFile(file)
 	_, err := os.Stat(filename)
 	if os.IsNotExist(err) {
-		return "class=\"missing\" "
+		return false
 	}
-	return ""
+	return true
 }
 
 func cleanFile(file string) string {
@@ -250,5 +274,5 @@ func cleanFile(file string) string {
 }
 
 func createHREF(name string) string {
-	return "https://github.com/searchspring/competencies/blob/master/competencies/" + cleanFile(name)
+	return "https://github.com/SearchSpring/competencies/blob/master/competencies/" + cleanFile(name)
 }

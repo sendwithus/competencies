@@ -8,21 +8,12 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  padding: 30px;
+  padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 5px;
-  }
-  body>#content {
-    padding: 0px 20px 20px 20px !important;
-  }
-}
 
 body>#content {
   margin: 0px;
-  max-width: 900px;
   border: 1px solid #e1e4e8;
   padding: 10px 40px;
   padding-bottom: 20px;
@@ -198,11 +189,14 @@ h1, h2, h3 {
   /* Darker */
 }
 
-.skill-group a:hover {
-  background-color: #BBBBFF;
+a.drive-link:hover, a.github-link:hover {
+  opacity: 1;
+}
+a.drive-link, a.github-link {
+  opacity: 0.5;
 }
 
-.skill-group a {
+.skill-group span {
   display: inline-block;
   background-color: #DDDDFF;
   border-radius: 3px;
@@ -215,7 +209,7 @@ h1, h2, h3 {
   font-size: 0.8em;
 }
 
-.skill-group a.missing {
+.skill-group span.missing {
   color: grey;
   background-color: white;
 }
@@ -224,8 +218,9 @@ h4 a, h4 a:visited {
   color: black;
 }
 
-.group-heading {
+span.group-heading {
   font-size: 0.8em;
+  background-color: white;
 }
 
 table.group {
@@ -270,4 +265,37 @@ table.group tr:nth-child(2n) {
 
 .add-button, .person-chooser {
   float:right;
+}
+
+.sheet-link {
+  float:right;
+  font-size:12px;
+  font-weight: bold;
+}
+
+span.complete {
+  background-color: green;
+  color: white;
+}
+
+span.in-progress {
+  background-color: orange;
+  color: black;
+}
+
+span i {
+  color: blue;
+}
+
+#button-group {
+  position: fixed;
+  background-color: white;
+  opacity:0.8;
+  top:0;
+  right:0;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
