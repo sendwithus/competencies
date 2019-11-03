@@ -16,7 +16,7 @@ func main() {
 		log.Fatal(err)
 	}
 	os.MkdirAll("docs", os.ModePerm)
-
+	indexHTML := "<html><head><title>index</title></head><body>"
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".md") {
 			log.Println(file.Name())
@@ -25,6 +25,8 @@ func main() {
 			if err != nil {
 				panic(err)
 			}
+			htmlFilename := file.Name()[:len(file.Name())-3] + ".html"
+			indexHTML += "<a href=\"" + htmlFilename + "\">" + title + "</a><br>"
 			styleData, _ := ioutil.ReadFile("style.css")
 			appData, _ := ioutil.ReadFile("app.js")
 			preContent := `<html>
@@ -44,10 +46,12 @@ func main() {
 `
 			postContent := "</div></body><script>\n" + string(appData) + "\n</script></html>"
 			output := preContent + html + string(postContent)
-			ioutil.WriteFile("docs/"+file.Name()[:len(file.Name())-3]+".html", []byte(output), 0644)
+			ioutil.WriteFile("docs/"+htmlFilename, []byte(output), 0644)
 
 		}
 	}
+	indexHTML += "</body></html>"
+	ioutil.WriteFile("docs/index.html", []byte(indexHTML), 0644)
 }
 
 func processFile(filename string) (string, string, error) {
