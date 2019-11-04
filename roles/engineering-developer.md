@@ -40,3 +40,12 @@ Slack:2
 
 ### You should have most of the following
 <inherit doc="base.md"/>
+
+
+-----------------
+
+<searchspring-overview.snippet/>
+
+<benefits.snippet/>
+
+<equitable-workplace.snippet/>
