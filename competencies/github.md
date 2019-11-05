@@ -24,7 +24,7 @@ Learn hub ([https://github.com/github/hub](https://github.com/github/hub))
 
 Git Extras for common use-cases -[ https://github.com/tj/git-extras](https://github.com/tj/git-extras)
 
-# Competency - Git & GitHub - Advanced
+# Competency - GitHub - Level 2
 
 Have achieved all the things for the basic competency and additionally can administer GitHub {teams, orgs, security} and help with advanced git issues.
 
@@ -43,6 +43,8 @@ You understand and can modify configuration in .git/config.
 ## How do you improve it?
 
 Read ALL the github manual ([https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)) and build prototypes.
+
+Learn how to set up machine users: https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users
 
 Read blogs about people doing weird things to git (like using it as a database [https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/](https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/)) 
 
