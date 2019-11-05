@@ -3,7 +3,8 @@
 ## What it's like to be a senior developer
 A senior developers primary job is to create code and architect solutions.  
 
-<basecamp.snippet>
+<technologies.snippet/>
+<basecamp.snippet/>
 
 SearchSpring is split between five geographic areas in many different time zones so you will need to become adept and distributed working and familiar with the tools that facilitate this.
 You set asside time each week to learn about new technologies and help less senior programmers get better, though pair programming and knowledge sharing.

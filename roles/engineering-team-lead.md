@@ -4,7 +4,8 @@
 We believe in a servant leadership, with team leads helping to enable their teams build the best software they can in the fastest and safest way possible.
 Team leads are responsible for managing their team as well as leading them.  Leading the way in which software is built and helping the developers grow in their careers.
 
-At SearchSpring, development teams are aligned behind a specific part of the product and we develop software using Basecamp's Shape Up methodology.  https://basecamp.com/shapeup
+<technologies.snippet/>
+<basecamp.snippet/>
 
 SearchSpring is split between five geographic areas in many different time zones so you will need to become adept and distributed working and familiar with the tools that facilitate this.
 You set aside an hour a week for each of your direct reports, and in this 1:1 you discuss career development, work issues, life issues impacting work.

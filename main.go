@@ -88,14 +88,14 @@ func singleLine(text []byte) string {
 
 func processSnippets(text string) (string, error) {
 	regex := regexp.MustCompile(`<([a-z\-]+\.snippet)/>`)
-	splits := regex.FindAllString(text, -1)
+	splits := regex.FindAllStringSubmatch(text, -1)
 	for _, split := range splits {
-		name := split[1 : len(split)-2]
+		name := split[1]
 		snippet, err := ioutil.ReadFile("snippets/" + name)
 		if err != nil {
-			return "", err
+			panic(err)
 		}
-		text = strings.ReplaceAll(text, split, string(snippet))
+		text = strings.ReplaceAll(text, split[0], string(snippet))
 	}
 	return text, nil
 }
