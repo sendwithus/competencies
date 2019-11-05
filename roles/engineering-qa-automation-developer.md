@@ -4,7 +4,7 @@
 
 ## What You'll Do
 In this role you'll to help enable and encourage our developers to design and implement tests in an efficient way by providing them with the right tools, frameworks and infrastructure.  We use cypress.io as our e2e framework and you will help train our developers in the use of this tool and how to structure their work to allow for good e2e tests so they can become capable in this area.  You'll also be responsible for ensuring the build systems runs all our tests in a way that helps our software development process and ensures our product quality.
-A percentage of your time will also be building product. 
+A percentage of your time will also be building product.   You set asside time each week to learn about new technologies and help less senior programmers get better, though pair programming and knowledge sharing.
 
 <technologies.snippet/>
 <basecamp.snippet/>
