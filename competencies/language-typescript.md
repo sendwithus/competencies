@@ -1,6 +1,6 @@
 # Competency - Language TypeScript
 
->TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. - [Wikepedia](https://en.wikipedia.org/wiki/TypeScript)
+>TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. - [Wikipedia](https://en.wikipedia.org/wiki/TypeScript)
 
 ## How do you prove it?
 
