@@ -4,7 +4,7 @@ Slack is an instant messaging platform built for business.  We use it internally
 
 There are lots of channels and lots of noise in slack, so it is a good idea to become proficient in this tool. 
 
-Sendwithus values transparency, so as a rule, channels are mostly public and open to everyone and where it makes sense, we try to have conversations in public channels rather than DM'ing.
+We value transparency, so as a rule, channels are mostly public and open to everyone and where it makes sense, we try to have conversations in public channels rather than DM'ing.
 
 If there isn't a good channel to have this conversation, consider adding a new channel!
 
@@ -32,11 +32,11 @@ You have appropriately set notification settings for channels.
 
 Channels you create have a purpose set as part of the creation.
 
+You know how to use reminders.
+
 You think about the useful lifespan of a channel and set a reminder in slack to check whether this channel is still useful.
 
 ## How do you improve it?
-
-Join the #slack-fu channel and ask questions.
 
 Create your own channel and try things out and see what happens.
 
