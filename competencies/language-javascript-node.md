@@ -36,3 +36,5 @@ Build some software.
 
 What this video from Soundcloud on how to use functional programming to reduce code boilerplate. [https://www.youtube.com/watch?v=kA4-b7hvWhg](https://www.youtube.com/watch?v=kA4-b7hvWhg)
 
+Try out instant TDD in your IDE with Wallaby - https://wallabyjs.com/
+
