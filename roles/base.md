@@ -6,7 +6,6 @@ General skills needed to excel at SearchSpring
 Communication
 Computers
 Email
-Zoom
 Calendar
 Google Drive
 Slack 
