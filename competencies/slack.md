@@ -22,7 +22,7 @@ You know how to use search and advanced search.
 
 You edit messages appropriately.
 
-You know how to use snippets and posts.
+You know how to use snippets.
 
 You know how to pin items and what they're useful for.
 
