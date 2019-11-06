@@ -44,9 +44,18 @@ Learn keyboard shortcuts: [https://get.slack.help/hc/en-us/articles/201374536-Sl
 
 Add an emoji to the slack interface - [https://sendwithus.slack.com/customize/emoji](https://sendwithus.slack.com/customize/emoji)
 
-# Slack (Advanced)
+# Slack Level 2
 
 ## How do you prove it?
+You've built a slack integration with webhooks or you've built a slack application.
+You've built a custom action in slack.
+You can administer slack effectively 
+- Single/Multi channel guests and set appropriate expiration on those guests.
+- Slack Migrations
 
 ## How do you improve it?
+
+Go to the admin panel and play.
+Try building a slack application.
+
 
