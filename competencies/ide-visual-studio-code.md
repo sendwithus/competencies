@@ -10,7 +10,8 @@ You can refactor code, extracting methods, and renaming variables globally in at
 You know how to run tests from within the IDE.  
 You can use the debugger effectively.  
 You can update your preferences json file and override settings for desired behaviour.  
-You know how to change the indenting and encoding settings for your project.  
+You know how to change the indenting, encoding, and line ending settings for your project.  
+You know how to use the source control features.  
 
 ## How do you improve it?
 
