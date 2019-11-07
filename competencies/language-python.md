@@ -1,5 +1,7 @@
 # Competency - Language Python
 
+Python is a dynamic language that uses spaces for structured blocks of code.  Python is most used for Data Engineering/Data Science and Web Development.
+
 ## How do you prove it?
 
 For code you have submitted, your code reviews get little syntactic corrections.
@@ -10,11 +12,11 @@ You can explain to someone the differences between this language and another lan
 
 You can describe the kinds of problem the language solves very well and the problems it's not a great fit for.
 
-You understand packaging paradigms for the language.
+You understand packaging paradigms for the language for both publishing and dependency management.
 
 You have a good understanding of the resources and where to go if you're stuck.
 
-You understand how third party libraries are used, access, their lifecycle and security implications.
+You understand how third party libraries are used, accessed, their lifecycle and security implications.
 
 ## How do you improve it?
 
@@ -39,6 +41,4 @@ Read the PEP8 style guide: [https://www.python.org/dev/peps/pep-0008/](https://w
 * Pip (and other package managers)
 
 * Virtualenv
-
-* Link to chris' startup slam talk
 
