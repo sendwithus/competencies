@@ -16,45 +16,34 @@ func main() {
 		log.Fatal(err)
 	}
 	os.MkdirAll("docs", os.ModePerm)
-	indexHTML := "<html><head><title>index</title></head><body>"
+	indexHTML := ""
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".md") {
 			log.Println(file.Name())
 			filename := "roles/" + file.Name()
-			html, title, err := processFile(filename)
+			html, title, err := processHTML(filename)
 			if err != nil {
 				panic(err)
 			}
+			text := processText(filename)
 			htmlFilename := file.Name()[:len(file.Name())-3] + ".html"
 			indexHTML += "<a href=\"" + htmlFilename + "\">" + title + "</a><br>"
-			styleData, _ := ioutil.ReadFile("style.css")
-			appData, _ := ioutil.ReadFile("app.js")
-			preContent := `<html>
-<head>
-	<title>` + title + `</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type='text/css'>` + singleLine(styleData) + `</style>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script>
-	
-	<script src="https://apis.google.com/js/api.js"></script>
-	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-</head>
-<body>
-	<div id='content'>
-`
-			postContent := "</div></body><script>\n" + string(appData) + "\n</script></html>"
-			output := preContent + html + string(postContent)
-			ioutil.WriteFile("docs/"+htmlFilename, []byte(output), 0644)
-
+			ioutil.WriteFile("docs/"+htmlFilename, []byte(html), 0644)
+			ioutil.WriteFile("docs/hire-"+htmlFilename, []byte(text), 0644)
 		}
 	}
-	indexHTML += "</body></html>"
-	ioutil.WriteFile("docs/index.html", []byte(indexHTML), 0644)
+
+	ioutil.WriteFile("docs/index.html", []byte(createIndexPage(indexHTML)), 0644)
 }
 
-func processFile(filename string) (string, string, error) {
+func createIndexPage(html string) string {
+	return "<html><head><title>Competency Base Role Definitions</title></head><body><h1>Competency Base Role Definitions</h1>" +
+		"<p>This application displays a list of role definitions and competencies that are needed in that role.  You can sign in to google drive to attach a spreadsheet to a role that will track progress of an employee through that role.</p>" +
+		"<p>Click on a role below to get started</p>" +
+		html + "<footer><a style=\"position:absolute; bottom:10px;\" href=\"privacy.html\">Privacy Policy</a></footer></body></html>"
+}
+
+func processHTML(filename string) (string, string, error) {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
 		panic(err)
@@ -73,7 +62,58 @@ func processFile(filename string) (string, string, error) {
 		panic(err)
 	}
 	html := blackfriday.Run([]byte(markdown))
-	return string(html), title, nil
+
+	appData, _ := ioutil.ReadFile("app.js")
+	styleData, _ := ioutil.ReadFile("style.css")
+	preContent := `<html>
+<head>
+<title>` + title + `</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type='text/css'>` + singleLine(styleData) + `</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script>
+
+<script src="https://apis.google.com/js/api.js"></script>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+</head>
+<body>
+<div id='content'>
+`
+	postContent := "</div></body><script>\n" + string(appData) + "\n</script></html>"
+	output := preContent + string(html) + string(postContent)
+	return output, title, nil
+}
+
+func processText(filename string) string {
+	data, err := ioutil.ReadFile(filename)
+	if err != nil {
+		panic(err)
+	}
+	markdown, err := processSnippets(string(data))
+	if err != nil {
+		panic(err)
+	}
+	markdown, err = processInherits(markdown)
+	if err != nil {
+		panic(err)
+	}
+	markdown, err = linkSkills(markdown)
+	if err != nil {
+		panic(err)
+	}
+	markdown = reProcess(markdown)
+	html := blackfriday.Run([]byte(markdown))
+	return string(html)
+}
+
+func reProcess(markdown string) string {
+	regex := regexp.MustCompile(`<a(.*?)href="([^"]+)"><i class="fab fa-github"></i></a>([^<]+)`)
+	matches := regex.FindAllStringSubmatch(markdown, -1)
+	for _, match := range matches {
+		markdown = strings.ReplaceAll(markdown, match[0], "<a href=\""+match[2]+"\">"+match[3]+"</a>")
+	}
+	return markdown
 }
 
 func getTitle(content string) string {

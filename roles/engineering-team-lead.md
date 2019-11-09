@@ -4,8 +4,10 @@
 We believe in a servant leadership, with team leads helping to enable their teams build the best software they can in the fastest and safest way possible.
 Team leads are responsible for managing their team as well as leading them.  Leading the way in which software is built and helping the developers grow in their careers.
 
+<div style="display:none" class="show-for-hire">
 <technologies.snippet/>
 <basecamp.snippet/>
+</div>
 
 SearchSpring is split between five geographic areas in many different time zones so you will need to become adept and distributed working and familiar with the tools that facilitate this.
 You set aside an hour a week for each of your direct reports, and in this 1:1 you discuss career development, work issues, life issues impacting work.
