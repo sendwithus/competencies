@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: circleci/golang:1.13.1
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "47:6d:27:84:fe:b0:67:34:81:ce:2f:bf:90:ba:1a:0b"
       - checkout
       - restore_cache:
           keys:
@@ -21,6 +24,6 @@ jobs:
           command: |
             go run main.go
       - run:
-          name: commit with ski
+          name: commit with skip
           command: |
-            git commit -am "rebuilt docs [ci skip]"
+            git commit -am "rebuilt docs [ci skip]" 
