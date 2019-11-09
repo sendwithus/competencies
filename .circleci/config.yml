@@ -20,3 +20,7 @@ jobs:
           name: build docs
           command: |
             go run main.go
+      - run:
+          name: commit with ski
+          command: |
+            git commit -am "rebuilt docs [ci skip]"
