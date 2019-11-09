@@ -31,6 +31,7 @@ QA Automation
 Architecture
 Github:2 
 Coding:2 
+Testing:2
 Deployments
 Cypress.io
 Diagrams 

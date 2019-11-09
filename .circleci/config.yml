@@ -26,6 +26,7 @@ jobs:
       - run:
           name: commit with skip
           command: |
+            touch docs/* && \
             git config --global user.email "machine@searchspring.com" && \
             git config --global user.name "SearchSpring Machine" && \
             git commit -am "rebuilt docs [ci skip]" && git push
