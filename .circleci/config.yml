@@ -30,4 +30,5 @@ jobs:
             echo "last build: ${epoch}" > docs/lastbuild.txt  && \
             git config --global user.email "machine@searchspring.com" && \
             git config --global user.name "SearchSpring Machine" && \
-            git commit -am "rebuilt docs [ci skip]" && git push
+            git add . && \
+            git commit -m "rebuilt docs [ci skip]" && git push
