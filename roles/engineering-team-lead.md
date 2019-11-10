@@ -41,7 +41,6 @@ Getting Things Done
 Wardley Maps
 Trust
 User Audits
-Retrospectives
 Meetings:2
 Fire Handling
 Fire Triaging

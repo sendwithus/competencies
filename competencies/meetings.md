@@ -106,3 +106,4 @@ For post-mortems learn about being a blameless facilitator: [https://extfiles.et
 
 Read the Six thinking hats - to facilitate meeting speed and helping different characters contribute. - [https://www.amazon.com/Six-Thinking-Hats-Edward-Bono/dp/0316178314](https://www.amazon.com/Six-Thinking-Hats-Edward-Bono/dp/0316178314)
 
+Run a retrospective with the engineering team.
