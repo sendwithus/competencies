@@ -19,5 +19,7 @@ You never lose your temper (being angry is fine, but acting angrily is not)
 ## How do you improve it?
 
 Work with other departments.
+
 Learn how to communicate empathically.
+
 Be dependendable and do the things you say you will.
