@@ -1,5 +1,6 @@
 # Engineering - Team Lead
 <welcome.snippet/>
+
 ## What it's like to be a Team Lead
 We believe in a servant leadership, with team leads helping to enable their teams build the best software they can in the fastest and safest way possible.
 Team leads are responsible for managing their team as well as leading them.  Leading the way in which software is built and helping the developers grow in their careers.
@@ -35,12 +36,12 @@ Interviewing
 Leading
 Career Development
 Vision and Strategy
-Deployments:2
+Part of Successful Projects:3
 Time Management
 Getting Things Done
-Lead 5 Successful Projects
 Wardley Maps
 Trust
+Running Meetings
 User Audits
 Retrospectives
 Meetings
