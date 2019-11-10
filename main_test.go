@@ -13,10 +13,10 @@ func TestReProcess(t *testing.T) {
 }
 
 func TestProcessInherited(t *testing.T) {
-	result, err := processInherits("#original \n##Skills\n<inherit doc=\"../test1.md\"/>\n   a  ")
+	result, err := processInherits("#original \n##Skills\n<inherit doc=\"../test1.md\"/>\n   a  ", false)
 	if err != nil {
 		t.Fatal(err)
 	}
 	fmt.Println(result)
-	require.Equal(t, "#original \n##Skills\n#### <a href=\"../test1.html\">test 1</a>\n<skills>\nbreakdancing\n</skills>\n\n#### <a href=\"../test2.html\">test 2</a>\n<skills>\nfigure skating\n</skills>\n\n#### <a href=\"../test3.html\">test 3</a>\n<skills>\nkung fu\n</skills>\n   a", result)
+	require.Equal(t, "#original \n##Skills\n<hr><skills>\nbreakdancing\n</skills>\n<hr><skills>\nfigure skating\n</skills>\n<hr><skills>\nkung fu\n</skills>\n   a", result)
 }

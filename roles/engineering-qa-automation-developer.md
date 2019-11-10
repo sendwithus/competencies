@@ -1,8 +1,7 @@
 # Engineering - QA Automation Developer
 
 <welcome.snippet/>
-
-## What You'll Do
+## What it's like to be a QA Automation Engineer
 In this role you'll to help enable and encourage our developers to design and implement tests in an efficient way by providing them with the right tools, frameworks and infrastructure.  We use cypress.io as our e2e framework and you will help train our developers in the use of this tool and how to structure their work to allow for good e2e tests so they can become capable in this area.  You'll also be responsible for ensuring the build systems runs all our tests in a way that helps our software development process and ensures our product quality.
 A percentage of your time will also be building product.   You set asside time each week to learn about new technologies and help less senior programmers get better, though pair programming and knowledge sharing.
 
@@ -23,7 +22,7 @@ You enjoy working with others and helping mentor developers at all skill levels.
 
 <what-you-need.snippet/>
 
-### Expected to have at least 50% of these and learn the rest
+### Skills that are important to this role
 
 <skills>
 Testing:2
@@ -43,7 +42,6 @@ A part of 2 Successful Projects
 5 of Technical Breadth
 </skills>
 
-### You should have most of the following
 <inherit doc="engineering-developer.md"/>
 
 -----------------

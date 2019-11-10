@@ -60,12 +60,9 @@ func processHTML(filename string, options string) (string, string, error) {
 	if err != nil {
 		panic(err)
 	}
-	markdown, err := processSnippets(string(data))
-	if err != nil {
-		panic(err)
-	}
+	markdown := string(data)
 	title := getTitle(markdown)
-	markdown, err = processInherits(markdown)
+	markdown, err = processInherits(markdown, false)
 	if err != nil {
 		panic(err)
 	}
@@ -77,7 +74,7 @@ func processHTML(filename string, options string) (string, string, error) {
 
 	appData, _ := ioutil.ReadFile("app.js")
 	styleData, _ := ioutil.ReadFile("style.css")
-	preContent := `<html>
+	preContent := `<html> 
 <head>
 <title>` + title + `</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,11 +99,12 @@ func processText(filename string) string {
 	if err != nil {
 		panic(err)
 	}
+
 	markdown, err := processSnippets(string(data))
 	if err != nil {
 		panic(err)
 	}
-	markdown, err = processInherits(markdown)
+	markdown, err = processInherits(markdown, true)
 	if err != nil {
 		panic(err)
 	}
@@ -115,15 +113,42 @@ func processText(filename string) string {
 		panic(err)
 	}
 	markdown = reProcess(markdown)
-	html := blackfriday.Run([]byte(markdown))
+	html := string(blackfriday.Run([]byte(markdown)))
+	html = googleHireify(html)
+	appData, _ := ioutil.ReadFile("app-hire.js")
+	preContent := `<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+</head>
+<body>
+<div id='content'>
+`
+	postContent := "</div></body><script>" + string(appData) + "\n</script></html>"
+	html = preContent + html + string(postContent)
 	return string(html)
+}
+
+func googleHireify(html string) string {
+	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h1>", "<strong>"), "</h1>", "</strong><br><br>")
+	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h2>", "<strong>"), "</h2>", "</strong><br>")
+	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h3>", "<strong>"), "</h3>", "</strong><br>")
+	html = strings.ReplaceAll(strings.ReplaceAll(html, "<b>", "<strong>"), "</b>", "</strong>")
+	html = strings.ReplaceAll(html, "</p>", "</p><br>")
+	html = strings.ReplaceAll(html, ": level 2", "")
+	html = strings.ReplaceAll(html, ": level 3", "")
+	html = strings.ReplaceAll(html, ": level 4", "")
+	html = strings.ReplaceAll(html, "<hr>", "")
+	html = strings.ReplaceAll(html, "<hr />", "")
+	return html
 }
 
 func reProcess(markdown string) string {
 	regex := regexp.MustCompile(`<a(.*?)href="([^"]+)"><i class="fab fa-github"></i></a>([^<]+)`)
 	matches := regex.FindAllStringSubmatch(markdown, -1)
 	for _, match := range matches {
-		markdown = strings.ReplaceAll(markdown, match[0], "<a href=\""+match[2]+"\">"+match[3]+"</a>")
+		markdown = strings.ReplaceAll(markdown, match[0], " <a href=\""+match[2]+"\">"+strings.TrimSpace(match[3])+"</a>, ")
 	}
 	return markdown
 }
@@ -152,14 +177,16 @@ func processSnippets(text string) (string, error) {
 	return text, nil
 }
 
-func processInherits(text string) (string, error) {
+func processInherits(text string, skipBase bool) (string, error) {
 
 	regex := regexp.MustCompile(`<inherit doc="([^"]+)"/>`)
 	match := regex.FindStringSubmatch(text)
-
 	if len(match) > 0 {
+		if match[1] == "base.md" && skipBase {
+			return strings.ReplaceAll(text, match[0], ""), nil
+		}
 		skillsGroups := []string{}
-		err := processInheritsWithGroups(match[1], &skillsGroups)
+		err := processInheritsWithGroups(match[1], skipBase, &skillsGroups)
 		if err != nil {
 			return "", err
 		}
@@ -176,7 +203,7 @@ func flatten(skillsGroups []string) string {
 	return strings.TrimSpace(result)
 }
 
-func processInheritsWithGroups(filename string, skillsGroups *[]string) error {
+func processInheritsWithGroups(filename string, skipBase bool, skillsGroups *[]string) error {
 	contents, err := ioutil.ReadFile("roles/" + filename)
 	if err != nil {
 		return err
@@ -188,7 +215,10 @@ func processInheritsWithGroups(filename string, skillsGroups *[]string) error {
 	regex := regexp.MustCompile(`<inherit doc="([^"]+)"/>`)
 	match := regex.FindStringSubmatch(text)
 	if len(match) > 0 {
-		err = processInheritsWithGroups(match[1], skillsGroups)
+		if match[1] == "base.md" && skipBase {
+			return nil
+		}
+		err = processInheritsWithGroups(match[1], skipBase, skillsGroups)
 		if err != nil {
 			return err
 		}
