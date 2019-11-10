@@ -196,12 +196,12 @@ function createOption(sheetId, name, selected) {
 }
 
 function initClient() {
-    var SCOPE = 'https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive';
+    var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
     gapi.client.init({
         'clientId': CLIENT_ID,
         'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4', "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"],
+        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(function () {
         gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
         updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
