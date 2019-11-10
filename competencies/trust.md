@@ -2,25 +2,22 @@
 
 Trust is the foundation of any working relationship. Trust allows coworkers to work on projects and tasks together and know that the other is doing exactly what they need to. 
 
-When you take on a project or task you execute on it to the best of your abilities.
-
-When issues arise you bring them up to any stakeholders or affected team members
-
-You admit your failures and faults.
-
-You know when to say "no" to a request
+This competency is how you build trust in a team.
 
 ## How do you prove it?
 
-You have admitted failure and shown learning and growth from it
+Your peer reviews / manager reviews prove this out.
 
-You can show specific examples where you have surfaced issues or concerns with team members/managers
+You can show examples of cross department communication and building openess.
 
-You can point to examples where you have brought issues up to the proper stakeholders and/or leadership when necessary. 
+You have admitted failure and shown learning and growth from it.
+
+You have listened empathically and without blame when somebody else is admitting a failure.
+
+You never lose your temper (being angry is fine, but acting angrily is not)
 
 ## How do you improve it?
 
-You are able to work across all teams in the organization
-
-You are able to report any breaches in the Sendwithus CoC and keep any parties involved anonymous.
-
+Work with other departments.
+Learn how to communicate empathically.
+Be dependendable and do the things you say you will.
