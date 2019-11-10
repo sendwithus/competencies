@@ -297,7 +297,7 @@ span i {
 
 #buttonGroup {
   position: fixed;
-  background-image: linear-gradient(#FFaaaa, white);
+  background-image: linear-gradient(rgb(0, 83, 0, 44), #FFFFFF44);
   opacity: 0.8;
   top: 0;
   right: 0;
