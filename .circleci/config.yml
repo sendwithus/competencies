@@ -26,8 +26,8 @@ jobs:
       - run:
           name: commit with skip
           command: |
-            epoch=`date +%s`
-            echo "last build: ${epoch}" > docs/lastbuild.txt  && \
+            currentDate=`date`
+            echo "last build: ${currentDate}" > docs/lastbuild.txt  && \
             git config --global user.email "machine@searchspring.com" && \
             git config --global user.name "SearchSpring Machine" && \
             git add . && \
