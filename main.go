@@ -16,12 +16,13 @@ func main() {
 		log.Fatal(err)
 	}
 	os.MkdirAll("docs", os.ModePerm)
+	options, err := getOptions(files)
 	indexHTML := ""
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".md") {
 			log.Println(file.Name())
 			filename := "roles/" + file.Name()
-			html, title, err := processHTML(filename)
+			html, title, err := processHTML(filename, options)
 			if err != nil {
 				panic(err)
 			}
@@ -36,6 +37,17 @@ func main() {
 	ioutil.WriteFile("docs/index.html", []byte(createIndexPage(indexHTML)), 0644)
 }
 
+func getOptions(files []os.FileInfo) (string, error) {
+	options := ""
+	for _, file := range files {
+		if strings.HasSuffix(file.Name(), ".md") {
+			options += file.Name()[0:len(file.Name())-3] + ","
+		}
+	}
+	return options, nil
+
+}
+
 func createIndexPage(html string) string {
 	return "<html><head><title>Competency Base Role Definitions</title></head><body><h1>Competency Base Role Definitions</h1>" +
 		"<p>This application displays a list of role definitions and competencies that are needed in that role.  You can sign in to google drive to attach a spreadsheet to a role that will track progress of an employee through that role.</p>" +
@@ -43,7 +55,7 @@ func createIndexPage(html string) string {
 		html + "<footer><a style=\"position:absolute; bottom:10px;\" href=\"privacy.html\">Privacy Policy</a></footer></body></html>"
 }
 
-func processHTML(filename string) (string, string, error) {
+func processHTML(filename string, options string) (string, string, error) {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
 		panic(err)
@@ -80,7 +92,7 @@ func processHTML(filename string) (string, string, error) {
 <body>
 <div id='content'>
 `
-	postContent := "</div></body><script>\n" + string(appData) + "\n</script></html>"
+	postContent := "</div></body><script>\nlet options='" + options + "';\n" + string(appData) + "\n</script></html>"
 	output := preContent + string(html) + string(postContent)
 	return output, title, nil
 }

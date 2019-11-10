@@ -20,7 +20,8 @@ $(document).ready(function (event) {
         ' <a title="delete this person from the dropdown" class="trash-link" id="deleteButton" href="javascript:;">' +
         '<i class="icon fas fa-user-minus"></i>' +
         '</a> ' +
-        '</span> ' + 
+        ' <select id="titleChooser" class="person-chooser"></select> ' +
+        '</span> ' +
         ' <a style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a> '
     ))
     $('#addButton').on('click', () => {
@@ -42,15 +43,33 @@ $(document).ready(function (event) {
         let id = $(el).attr('id')
         addInProgress(id, name)
     })
-    $('#signOut').on('click', ()=>{
+    $('#signOut').on('click', () => {
         signOut();
     })
-    $('#signIn').on('click', ()=>{
+    $('#signIn').on('click', () => {
         signIn();
+    })
+    setupTitleDropdown()
+    $('#titleChooser').on('change', () => {
+        switchPage()
     })
     loadCookieValues()
     gapi.load('client:auth2', initClient);
 });
+function switchPage() {
+    window.location.href = $('#titleChooser').val()
+}
+function setupTitleDropdown() {
+    let titles = ''
+    let pathname = window.location.pathname.substring(1)
+    options.split(',').forEach((option) => {
+        if (option === '') {
+            return true
+        }
+        let link = option + ".html"
+        $('#titleChooser').append($('<option value="' + link + '" ' + (pathname === link ? 'SELECTED' : '') + '>' + option.replaceAll('-', ' ') + '</option>'))
+    });
+}
 function removeSelected() {
     delete people[currentSheetId]
     $.cookie('people', people)
@@ -119,7 +138,7 @@ function checkForSheet(sheetId) {
         spreadsheetId: sheetId,
         range: 'Sheet1!A1:B'
     };
-    
+
     gapi.client.sheets.spreadsheets.values.get(params).then(function (response) {
         $('.drive-link').show()
         currentSheetId = sheetId
@@ -216,11 +235,11 @@ function updateSignInStatus(isSignedIn) {
     }
 }
 
-function signIn(){
+function signIn() {
     gapi.auth2.getAuthInstance().signIn();
 }
 
-function signOut(){
+function signOut() {
     gapi.auth2.getAuthInstance().signOut();
 }
 
