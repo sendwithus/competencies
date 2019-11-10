@@ -31,7 +31,6 @@ You enjoy working with others and helping mentor developers at all skill levels.
 
 <skills>
 One on Ones
-Hiring
 Interviewing
 Leading
 Career Development
