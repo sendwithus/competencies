@@ -12,7 +12,7 @@ You respond in timely fashion - a good pattern is to review your inbox twice a d
 
 You spell check your emails before you send them.
 
-If you correspond outside of Sendwithus your emails have a signature.
+If you correspond outside of SearchSpring your emails have a signature.
 
 You anticipate questions and answer them in the original email reducing back and forth.
 
@@ -30,7 +30,7 @@ You set your out of office replies when you're on holiday, delegating responses 
 
 ## How do you improve it?
 
-Email Signature Instructions located here: [https://docs.google.com/open?id=1O7cLwhIYGS88RvnAfAImb578FqFrSXnmDW63r1JGUSA](https://docs.google.com/open?id=1O7cLwhIYGS88RvnAfAImb578FqFrSXnmDW63r1JGUSA) 
+Email Signature Instructions located here: tbd 
 
 Here's an email from Elon Musk: [https://www.inc.com/justin-bariso/this-email-from-elon-musk-to-tesla-employees-descr.html](https://www.inc.com/justin-bariso/this-email-from-elon-musk-to-tesla-employees-descr.html)
 
@@ -47,6 +47,12 @@ Gmail navigation pro-tips (from jem?):
 * when viewing an email, the `[` and `]` hotkeys will *archive the current message and navigate* to the next (or previous) message in your inbox. 
 
     * If you want to navigate without automatically archiving, `j` / `k`
+    
+    * `⌘/Ctrl` + `enter` will send a message 
 
     * `e` shortcut will archive the current message then send you back to the list view
+    
+    * Use `@` inside the email if you are calling out a specific person, if they are not on the email they will be added automatically
+    
+All shortcuts can be found here: [https://support.google.com/mail/answer/6594?hl=en]  (https://support.google.com/mail/answer/6594?hl=en)
 
