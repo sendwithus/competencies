@@ -182,7 +182,7 @@ func processInheritsWithGroups(filename string, skillsGroups *[]string) error {
 		return err
 	}
 	text := string(contents)
-	skills := processSkills(filename, text)
+	skills := processSkills(text)
 	*skillsGroups = append(*skillsGroups, skills)
 
 	regex := regexp.MustCompile(`<inherit doc="([^"]+)"/>`)
@@ -197,12 +197,10 @@ func processInheritsWithGroups(filename string, skillsGroups *[]string) error {
 	return nil
 }
 
-func processSkills(filename string, contents string) string {
-	filename = strings.ReplaceAll(filename, ".md", ".html")
-	firstLine := strings.SplitN(string(contents), "\n", 2)[0]
+func processSkills(contents string) string {
 	regex := regexp.MustCompile(`(?s)<skills>([^<]+)</skills>`)
 	match := regex.FindStringSubmatch(string(contents))
-	return "\n#### <a href=\"" + filename + "\">" + strings.TrimSpace(firstLine[1:]) + "</a>\n" + match[0]
+	return "<hr>" + match[0]
 }
 
 func linkSkills(contents string) (string, error) {
