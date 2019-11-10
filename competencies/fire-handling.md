@@ -10,12 +10,6 @@ This competency requires:
 
 * A strong understanding of the infrastructure and data paths within
 
-* Work outside of normal office hours (as such it comes with a increase in base pay)
-
-* A data/cell connection (as such we cover, within reason, phone plans) 
-
-* Ops Genie: Knowledge that it defaults all UI to your chosen timezone, no matter which timezone you are in.
-
 ## How do you prove it?
 
 * Demonstrate knowledge of what happens when an alert is acked
@@ -25,6 +19,8 @@ This competency requires:
 * Can describe the architecture of the entire system.
 
 * Have show that you can prioritize and marshal resources while there is a fire happening.
+
+* Understand how our paging system works and have it setup to override your phone default settings.
 
 ## How do you improve it?
 
