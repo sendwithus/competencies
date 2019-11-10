@@ -1,18 +1,7 @@
 # Competency - Meetings
 
-Two or more people come together to do one of the following
-
-* Share information
-
-* Make some strategic decision
-
-* Tackle a tough problem
-
-* Cross department alignment
-
-* Retrospectives 
-
-* Team planning
+Two or more people come together to do one of the following: 
+Share information, Make some strategic decision, Tackle a tough problem, Cross department alignment, Retrospectives, Team planning
 
 This document talks about how do you run a successful meeting, the advanced section talks about specific types of meeting / meeting skills.
 
@@ -34,27 +23,72 @@ You check people's calendars before you book the meeting and talk to people with
 
 Your meetings get good feedback about their usefulness.
 
+Your meetings have action items and notes.
+
 ## How do you improve it?
 
 Ask people if they found the meeting useful.  
 
-Post the poll in slack after a meeting
+Post the poll in slack after a meeting 
 
-/poll "How was that meeting?"
+```
+/poll "How was that meeting?" "I always want to be in this meeting I get enormous value from it" "I sometimes get value from this meeting... please add ideas for improvement below" "I think this meeting would be better if... please add ideas for improvement below" "I don't think I need to be in this meeting"
+```
 
-"I always want to be in this meeting I get enormous value from it"
+**Planning Meetings**
 
-"I sometimes get value from this meeting... please add ideas for improvement below"
+A successful meeting always has:
 
-"I think this meeting would be better if... please add ideas for improvement below"
+* An agenda outlining the purpose of having the meeting, and the goals of the meeting. The agenda is shared in advance. 
 
-"I don't think I need to be in this meeting"
+* The right attendees as invited and as optional. If in doubt, mark the attendee as optional.
 
-Learn how the microphones work: [https://docs.google.com/document/d/13M0ZkX4AjNd3424Pvp9T2NmPFKyfdyxV5jQIYM9IsEE/edit](https://docs.google.com/document/d/13M0ZkX4AjNd3424Pvp9T2NmPFKyfdyxV5jQIYM9IsEE/edit)
+* A chair and a notetaker- ideally not the same person doing both. This can be decided at the beginning of the meeting.
+
+* Meeting notes sent out after the meeting
+
+    * Meeting notes aren't a long transcription of the meeting, or what was said. Rather, meeting notes capture two things: outcomes/decisions, and action items. That is: what did we decide, and what are we doing next to act on those decisions? See below.
+
+* It is the responsibility of each attendee to review the agenda prior to the meeting and read the relevant material or topics. 
+
+**Running Meetings**
+
+Meetings are one of the most effective ways in which we work together. It's crucial that we ensure that we use the time well. 
+
+* If you scheduled the meeting, you are the chair unless you've delegated this role to someone else
+
+* It is up to the chair to ensure someone is taking notes
+
+* It is the chair's responsibility to ensure that the meeting agenda items are covered and to be timekeeper
+
+**Meeting Notes**
+
+Here are the expectations for meeting notes:
+
+* Must include:
+
+    * Meeting topic and the agenda
+
+    * Attendees
+
+    * Date
+
+    * **Action items/next steps**
+
+    * **Decisions made**
+
+    * Optional: more detailed notes. Keep in mind that meeting notes can be as simple as a photo of your notebook page with your handwritten action items! (Don't overthink it). 
+
+* Meeting notes are shared with the attendees, but also with any stakeholder on the [RACI](https://drive.google.com/open?id=1-rUFy-EBIfUtu76PEB6DZavOsu3VZYxj) chart for the project
+
+* Meeting notes are easy to find for anyone interested who is looking for them (ideally, without having to ask)
+
+* Shared same day as the meeting unless otherwise discussed with the group
+
+* Ask yourself: if you were on vacation for a week and returned, would you be able to know that this meeting occurred and find the notes easily? 
 
 
-
-Competency - Meetings - Advanced
+## Level 2
 
 Have achieved all the things for the basic competency and additionally can administer run specific types of meetings.
 

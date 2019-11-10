@@ -40,10 +40,9 @@ Time Management
 Getting Things Done
 Wardley Maps
 Trust
-Running Meetings
 User Audits
 Retrospectives
-Meetings
+Meetings:2
 Fire Handling
 Fire Triaging
 </skills>
