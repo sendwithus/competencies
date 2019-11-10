@@ -4,9 +4,9 @@ All of our systems need to be audited regularly to make sure that only the corre
 
 ## How do you prove it?
 
-Audit spot checks reveal no users that should not exist in your system.
+Audit spot checks reveal no users that should not exist in systems you manage.
 
-Audit spot checks reveal no users with incorrect permissions to that system.
+Audit spot checks reveal no users with incorrect permissions in those systems.
 
 Elevated permissions for a user have an electronic audit trail to validate when they were given access, why they needed this access, and when the access will be revoked / reduced.
 
@@ -14,3 +14,4 @@ Elevated permissions for a user have an electronic audit trail to validate when 
 
 Audit your systems on a regular basis.
 
+Keep track of who has what permissions and why.
