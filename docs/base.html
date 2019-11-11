@@ -104,6 +104,7 @@ function addInProgress(id, name) {
         $('.' + id).addClass('in-progress')
     });
 
+    name = name.replace(/: level [0-9]+/, '')
     var params = {
         spreadsheetId: currentSheetId,
         range: 'Sheet1!A2:B',
