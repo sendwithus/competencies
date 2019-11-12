@@ -28,5 +28,5 @@ Mentoring has a lot of overlap with leading, but can be done at a more microscop
 
 * Schedule time to do mentoring work.  A lot of mentoring is giving over time and the mentee will rarely ask for it.
 
-* Volunteer for mentor positions - Ladies learning code, VicJS, Concat Meetup, HackUVic, BattleSnake, etc?.
+* Volunteer for mentor positions - Ladies learning code, Concat Meetup, BattleSnake, etc...
 
