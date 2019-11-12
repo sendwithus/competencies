@@ -28,7 +28,6 @@ You enjoy working with others and helping mentor developers at all skill levels.
 <skills>
 Architecture:2
 Github:2 
-Coding:2 
 Deployments:2
 Diagrams 
 Documentation 
