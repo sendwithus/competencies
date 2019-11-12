@@ -4,7 +4,7 @@ Testing, in development terms, really is about confidence in your code, and the 
 
 A developer should write code with testing in mind and see testing as an integral part of developing code, not as a separate step or afterthought. 
 
-*If you have good tests, you will get good rests. ~ Will*
+*If you have good tests, you will get good rests. ~ anonymous*
 
 ## How do you prove it?
 
