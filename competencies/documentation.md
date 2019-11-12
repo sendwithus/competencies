@@ -10,7 +10,12 @@ This includes ensuring documentation is thorough, actionable, and up-to-date. (T
 
 3. **Competitive analysis** - Maintaining thorough and up-to-date knowledge of the competitive landscape, with notes on relevant developments or news that are available to other product managers and to the team (see [Competitive Analysis](https://docs.google.com/document/d/12NXequjWFGI6gks16f-gPL1gu8vgDaBk3LCDTg80qOg/edit#)).
 
-## What are the expectations?
+## How do you prove it?
+
+- You can show many different examples of clear, concise, usable documentation.
+- You can articulate where the best place for a given document is.
+
+## How do you improve it?
 
 Write yourself out of the job. You must be able to go on vacation, which means that the people with whom you work can find answers to questions without having to ask you. Document everything: process, decisions, as well as product requirements. Share early and often.
 
@@ -41,8 +46,6 @@ Ensuring that we have actionable and accessible documentation is an integral par
 * The what/why/how of every task is captured in the body (and not the comments, where they can get lost)
 
 * Each task is groomed. The purpose is grooming is to get consensus from the teams (typically, product, design, and engineering) that we all have the information we believe we need at this point to complete the work. (Sometimes things come up while we're doing the implementation, and that's fine, but let's try to catch as many dependencies, risks, and questions during grooming). 
-
-## How do you improve it?
 
 * Read up on why documentation matters so much:
 
