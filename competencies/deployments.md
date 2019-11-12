@@ -20,13 +20,15 @@ Logs:
 
 Read The Phoenix Project: [https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Business/dp/0988262592](https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Business/dp/0988262592)
 
-# Competency - Deployments (Advanced)
-
-You understand how to implement all of the various ways to deploy software.
+# Competency - Deployments - Level 2
 
 ## How do you prove it?
 
-Show different ways you have implemented software deployments.
+Show 3 different ways you have implemented software deployments.
+
+Talk about anti-patterns when it comes to deployments.
+
+Talk about security as it relates to deployments, build servers and access.
 
 ## How do you improve it?
 
