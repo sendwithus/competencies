@@ -1,6 +1,6 @@
 # Competency - Kubernetes
 
-All of our Dyspatch system is deployed in kubernetes.  
+Most of our systems are deployed in kubernetes.  
 
 Kubernetes (commonly referred to as K8s) is an open-source system for automating deployment, scaling and management of containerized applications that was originally designed by Google and donated to the Cloud Native Computing Foundation. It aims to provide a "platform for automating deployment, scaling, and operations of application containers across clusters of hosts".It supports a range of container tools, including Docker
 
@@ -21,14 +21,3 @@ You can explain what each of the parts of the yaml represent and common pitfalls
 Tinker locally with minikube, to gain an understanding of the API [https://github.com/kubernetes/minikube](https://github.com/kubernetes/minikube)
 
 nice little script for tailing multiple pods in k8s [https://github.com/johanhaleby/kubetail](https://github.com/johanhaleby/kubetail) 
-
-# Competency - Kubernetes - Advanced
-
-Have achieved all the things for the basic competency and additionally can administer K8s security, monitoring, scale and help with advanced deployment at scale issues.
-
-## How do you prove it?
-
-You understand how a build pipeline for a system running on k8s interacts with registries and k8s.
-
-## How do you improve it?
-

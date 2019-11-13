@@ -14,7 +14,6 @@ You can pull data out and aggregate it for specific business reasons.
 
 You can explain keys, foreign keys, joins, BCNF & Denormalization.
 
-You understand this joke, sql injection, and sanitizing data:
 
 ## How do you improve it?
 
