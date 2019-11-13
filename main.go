@@ -136,19 +136,23 @@ func googleHireify(html string) string {
 	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h3>", "<strong>"), "</h3>", "</strong><br>")
 	html = strings.ReplaceAll(strings.ReplaceAll(html, "<b>", "<strong>"), "</b>", "</strong>")
 	html = strings.ReplaceAll(html, "</p>", "</p><br>")
-	html = strings.ReplaceAll(html, ": level 2", "")
-	html = strings.ReplaceAll(html, ": level 3", "")
-	html = strings.ReplaceAll(html, ": level 4", "")
+	// html = strings.ReplaceAll(html, ": level 2", "")
+	// html = strings.ReplaceAll(html, ": level 3", "")
+	// html = strings.ReplaceAll(html, ": level 4", "")
+	// html = strings.ReplaceAll(html, ": level 5", "")
+	// html = strings.ReplaceAll(html, ": level 6", "")
 	html = strings.ReplaceAll(html, "<hr>", "")
 	html = strings.ReplaceAll(html, "<hr />", "")
+	html = strings.ReplaceAll(html, "<table", "<br><table")
+	html = strings.ReplaceAll(html, "</table>", "</table>\n\n<br>")
 	return html
 }
 
 func reProcess(markdown string) string {
-	regex := regexp.MustCompile(`<a(.*?)href="([^"]+)"><i class="fab fa-github"></i></a>([^<]+)`)
+	regex := regexp.MustCompile(`<a href="([^"]+)"[^>]*><i class="fab fa-github"></i></a>([^<]+)`)
 	matches := regex.FindAllStringSubmatch(markdown, -1)
 	for _, match := range matches {
-		markdown = strings.ReplaceAll(markdown, match[0], " <a href=\""+match[2]+"\">"+strings.TrimSpace(match[3])+"</a>, ")
+		markdown = strings.ReplaceAll(markdown, match[0], " <a href=\""+match[1]+"\">"+strings.TrimSpace(match[2])+"</a>, ")
 	}
 	return markdown
 }
@@ -266,7 +270,7 @@ func createSkillLink(name string, check bool) string {
 	name, level := getLevelFromName(name)
 	classes := ""
 	href := createHREF(name)
-	drive := " <a title=\"add this competency to the google sheet for tracking\" style=\"display:none\" class=\"drive-link\" href=\"javascript:;\"><i class=\"fab fa-google-drive\"></i></a>"
+	drive := " <a href=\"javascript:;\" title=\"add this competency to the google sheet for tracking\" style=\"display:none\" class=\"drive-link\"><i class=\"fab fa-google-drive\"></i></a>"
 	if check {
 		exists := checkCompetency(name)
 		if !exists {
@@ -274,7 +278,7 @@ func createSkillLink(name string, check bool) string {
 			href = "https://github.com/SearchSpring/competencies/new/master/competencies"
 		}
 	}
-	github := "<a title=\"go to competency github page\" class=\"github-link\" target=\"_blank\" href=\"" + href + "\"><i class=\"fab fa-github\"></i></a> "
+	github := "<a href=\"" + href + "\" title=\"go to competency github page\" class=\"github-link\" target=\"_blank\"><i class=\"fab fa-github\"></i></a> "
 	classes += " " + name2Id(name)
 	classes += " competency"
 
@@ -319,7 +323,7 @@ func createGroup(count string, group string) (string, error) {
 		if strings.HasPrefix(competency, strings.ToLower(strings.ReplaceAll(group, " ", "-"))+"-") {
 			competency = competency[0 : len(competency)-3]
 			link := createSkillLink(competency, false)
-			result += link //  "<a href=\"" + createHREF(competency) + "\">" + camel(group, competency) + makeLevel(level) + "</a>"
+			result += link
 		}
 	}
 	result += "</td></tr></table>"

@@ -4,11 +4,12 @@ You are able to build websites using html, css, and JavaScript and tie these thi
 
 ## How do you prove it?
 
-You can quickly build prototype front end applications.  
+You can quickly build and prototype a front end application.  
 
 ## How do you improve it?
 
-Learn CSS: [https://www.codecademy.com/learn/learn-css](https://www.codecademy.com/learn/learn-css) Learn how JavaScript works in web browsers: [https://www.codecademy.com/learn/learn-javascript](https://www.codecademy.com/learn/learn-javascript) 
+Learn CSS: [https://www.codecademy.com/learn/learn-css](https://www.codecademy.com/learn/learn-css) 
+Learn how JavaScript works in web browsers: [https://www.codecademy.com/learn/learn-javascript](https://www.codecademy.com/learn/learn-javascript) 
 
 Learn HTML: [https://www.codecademy.com/learn/learn-html](https://www.codecademy.com/learn/learn-html) 
 
