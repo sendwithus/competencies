@@ -39,7 +39,6 @@ QA Automation
 Fire Handling
 Docker
 Kubernetes
-Long term coding
 Customer Empathy
 Part of Successful Projects:1
 1 of Language
