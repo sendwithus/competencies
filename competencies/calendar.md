@@ -1,12 +1,10 @@
 # Competency - Calendar 
 
-A simple idea with many complex gotchas and swu specific knowledge
+A simple idea with many complex gotchas and company specific knowledge
 
 ## How do you prove it?
 
 You quickly and effectively resolve conflicts in your calendar. 
-
-You can describe what all the swu-based calendars are for and how to use them.
 
 You cancel meetings that you're not going to attend at least the day before.
 
@@ -14,35 +12,29 @@ You offer the "optional" status to attendees who may be interested in joining th
 
 You proactively reschedule meetings when you are on holiday if you're the owner of those meetings.
 
-Your meeting invites have always have an agenda and a zoom link.
+Your meeting invites have always have an agenda and a video conference link.
 
 You send meeting notes after every meeting (a few bullet points of action items and outcomes).
 
-You try not to have meetings where it is possible to resolve the meeting agenda through Slack.
+You try not to have meetings where it is possible to resolve the meeting agenda through Slack or asynchronously.
 
 You leave your calendar as public and only show sensitive meetings as "busy".
 
 You add upcoming absences, like holidays or appointments (dentist, for example) to your calendar well in advance. 
 
-You book meetings with only two people in a phone booth, as opposed to a meeting room.
-
-You book a meeting room or phone booth for meeting attendees who are in another office. 
+You book meeting room sizes appropriately.
 
 You review and audit your recurring meetings every quarter, to see which you should keep and which can be reduced in frequency (from every week to every two weeks) or canceled altogether. 
 
-You don't create merge conflicts without discussing them with those you created them for.
+You always contact people before creating overlapping meetings.
 
 Special notice for public facing meetings - You never accidentally expose invitees email address as you restrict attendance visibility.
 
 ## How do you improve it?
 
-Be very aware of the following check box in the create calendar screen
-
-Uncheck this if you are inviting external participants that shouldn't see each others email address.
-
 Calendar Recommendations - 
 
-* Let your guests modify events by default (see below)
+* Let your guests modify events by default 
 
 * Have your meetings set to public by default. This helps others who are booking meetings know how/when to book. 
 
