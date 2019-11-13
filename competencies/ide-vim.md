@@ -2,6 +2,8 @@
 
 ## How do you prove it?
 
+* Open a doc, get out to the command line, pipe the input back in to the editor.
+
 * Share your `.vimrc` (vim configuration)
 
 * You can name at least three of vims `modes`
