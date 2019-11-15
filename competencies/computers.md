@@ -17,9 +17,11 @@ Your laptop is patched and up to date.
 ## How do you improve it?
 
 Learn keyboard shortcuts for locking your computer.
+- Hold the power button down for less than three seconds will lock (Mac)
+- Windows key + L (Windows)
 
 If something doesn't work on your computer, reboot it.
 
 Learn how to update windows if you have a windows machine.
 
-Learn how to update your macos.
+Learn how to update your Macos.
