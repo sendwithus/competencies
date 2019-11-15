@@ -14,7 +14,7 @@ You can explain how hackers typically crack passwords and how a password manager
 
 You know what a vault is and how to move passwords between them and when it is appropriate to do.
 
-You have 2FA turned on for 1Password.
+You have a 12+ character password for login to 1Password.
 
 You have 2FA warnings for sites that allow 2FA
 
