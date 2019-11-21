@@ -26,7 +26,7 @@ You know how to add custom fields and how to ensure they don't get chaotic.
 
 Create task lists by copying all the people from the company directory
 
-Learn the keyboard shortcuts
+Learn the keyboard shortcuts: https://asana.com/guide/help/faq/shortcuts
 
 ## Asana - Level 2
 
