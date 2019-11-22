@@ -14,15 +14,13 @@ that communication is flowing in and out of your team adequately.
 
 * Scheduled and in your calendar weekly.
 
-* You can be trusted to disseminate information to your direct reports
-
-* Issues from folks you're responsible for are surfaced appropriately
-
-* Team members feel comfortable chatting through issues
+* You can talk through 2 issues in the past that have been surfaced in one on ones that you have resolved before they became a disaster.
 
 * You have a 6 month plan to help them in their careers which you reference in your one on ones
 
 * You get good scores in your manager review.
+
+* You have done 2 one on ones with every member of your team.
 
 ## How do you improve it?
 
@@ -36,3 +34,6 @@ Some sample questions: [https://blog.cultureamp.com/great-one-on-one-meeting-que
 
 Feedback: [https://blog.cultureamp.com/employee-feedback-examples](https://blog.cultureamp.com/employee-feedback-examples)
 
+Ensure your team members feel comfortable chatting through issues.
+
+Disseminate information to your direct reports.
