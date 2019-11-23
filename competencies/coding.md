@@ -18,9 +18,9 @@ You can read other (decent) code and understand its functionality.
 
 ## How do you improve it?
 
-Read coding style books
+Read coding style books - The Practice of Programming (Brian W. Kernighan, Rob Pike)
 
-Learn about patterns
+Learn about patterns - Head First Design Patterns: A Brain-Friendly Guide (Eric Freeman), or Design Patterns: Elements of Reusable Object-Oriented Software (Erich Gamma, Richard Helm, Ralph Johnson , John Vlissides).   An easy to understand book, and the more complex computer classic!
 
 Learn about anti-patterns
 
