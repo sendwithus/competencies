@@ -1,6 +1,6 @@
 # Competency - Coding
 
-Coding is separate from a language you code in.  Coding competency are the surrounding parts of building code.  How ergonomic are you with your computer, your IDE or editor.  
+Coding is separate from a language you code in.  The coding competency is the surrounding parts of building code.  How ergonomic are you with your computer, your IDE, your system.  
 
 It's about your ability to write maintainable code and how you follow, and understand standards. It's that little bit of desire for order that won't let you write badly formatted, or tightly coupled code. A coder understands when to conform to the existing standards in a code base, and when to deviate or refactor.
 
@@ -24,7 +24,7 @@ Learn about patterns - Head First Design Patterns: A Brain-Friendly Guide (Eric 
 
 Learn about anti-patterns
 
-Try several different IDEs
+Try several different IDEs and deeply learn the keyboard shortcuts of 1 IDE
 
 Learn to type
 
