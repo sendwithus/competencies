@@ -16,7 +16,7 @@ You know what a vault is and how to move passwords between them and when it is a
 
 You have a 12+ character password for login to 1Password.
 
-You have 2FA warnings for sites that allow 2FA
+You have no 2FA warnings for sites that allow 2FA
 
 ## How do you improve it?
 
