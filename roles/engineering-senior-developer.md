@@ -37,6 +37,7 @@ Meetings
 Part of Successful Projects:2
 2 of Language:2
 5 of Technical Breadth
+1 of UI Framework
 </skills>
 
 <inherit doc="engineering-developer.md"/>
