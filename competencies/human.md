@@ -16,3 +16,5 @@ Try and give positive feedback once a day to someone.
 
 Don't touch people (especially british people): [https://www.psychologytoday.com/ca/blog/threat-management/201709/touching-co-workers](https://www.psychologytoday.com/ca/blog/threat-management/201709/touching-co-workers)
 
+Take the test:
+https://www.youtube.com/watch?v=ccIt-qRQBoI
