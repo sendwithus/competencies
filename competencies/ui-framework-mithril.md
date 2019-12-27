@@ -11,6 +11,8 @@ Prove it! By building a website (or component of a website) in Mithril. This may
 - Managing component state (ie. two-way data binding, XHR)
 - Passing data between components
 - Routing
+- Show how you would test the components
+- Show how you would do UI testing (with something like Cypress.io)
 
 ## How do you improve it?
 
