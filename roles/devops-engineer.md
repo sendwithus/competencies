@@ -27,8 +27,8 @@ You have a strong drive to collaborate with others. You possess the ability to e
 
 <skills>
 Architecture
-Blamesless Postmortems
-Capcity Planning
+Blameless Postmortems
+Capacity Planning
 CICD
 Cloud Providers
 Clustering

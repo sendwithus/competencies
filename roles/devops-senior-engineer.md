@@ -27,8 +27,8 @@ You facilitate collaboration with co-workers. You have the ability to express yo
 
 <skills>
 Architecture:2
-Blamesless Postmortems:2
-Capcity Planning:2
+Blameless Postmortems:2
+Capacity Planning:2
 CICD:2
 Cloud Providers:2
 Clustering:2
