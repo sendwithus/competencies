@@ -7,6 +7,7 @@ Mithril is a small (~8kb) UI framework. Its main benefit is its simplicity by be
 Prove it! By building a website (or component of a website) in Mithril. This may include the following concepts:
 
 - Virtual DOM
+- you can talk about the up/downsides and comparisons to other frameworks.
 - The component lifecycle
 - Managing component state (ie. two-way data binding, XHR)
 - Passing data between components
