@@ -27,22 +27,35 @@ You have a strong drive to collaborate with others. You possess the ability to e
 
 <skills>
 Architecture
+Blamesless Postmortems
+Capcity Planning
+CICD
+Cloud Providers
+Clustering
+Config Management
 Customer Empathy
 Deployments
 Diagrams
+Disaster Recovery
 Docker
+Elasticsearch
 Fire Handling
 Fire Response
 Fire Triaging
 Github
+Kanban
 Kubernetes
 2 of Language:1
-Linux
+Linux:2
+Metrics
+Networking:2
 Research
+Rundeck
+Secrets Management
 Security
-3 of Technical Breadth
-Breadth of Standards
+Sumologic
 Trust
+3 of Technical Breadth
 </skills>
 
 <inherit doc="base.md"/>

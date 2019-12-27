@@ -27,17 +27,27 @@ You facilitate collaboration with co-workers. You have the ability to express yo
 
 <skills>
 Architecture:2
+Blamesless Postmortems:2
+Capcity Planning:2
+CICD:2
+Cloud Providers:2
+Clustering:2
 Deployments:2
 Diagrams:2
+Disaster Recovery:2
 Docker:2
+Elasticsearch:2
 Github:2
 Kubernetes:2
-Linux:2
+Linux:3
+Metrics:2
+Networking:3
 Research:2
+Rundeck:2
 Security:2
+Sumologic:2
 6 of Technical Breadth:2
 5 of Language:2
-Breadth of Standards:2
 </skills>
 
 <inherit doc="devops-engineer.md"/>
