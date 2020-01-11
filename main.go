@@ -55,6 +55,14 @@ func createIndexPage(html string) string {
 		html + "<footer><a style=\"position:absolute; bottom:10px;\" href=\"privacy.html\">Privacy Policy</a></footer></body></html>"
 }
 
+func tailwind(html []byte) []byte {
+	htmlString := string(html)
+	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="top-0 left-0 fixed w-full block opacity-75 bg-white p-2 border-b-2 text-lg mb-4">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h2>", `<h2 class="px-2 text-2xl mt-4">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h3>", `<h3 class="px-2 text-xl mt-2">`)
+	htmlString = strings.ReplaceAll(htmlString, "<p>", `<p class="w-2/5 px-2">`)
+	return []byte(htmlString)
+}
 func processHTML(filename string, options string) (string, string, error) {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -71,7 +79,7 @@ func processHTML(filename string, options string) (string, string, error) {
 		panic(err)
 	}
 	html := blackfriday.Run([]byte(markdown))
-
+	html = tailwind(html)
 	appData, _ := ioutil.ReadFile("app.js")
 	styleData, _ := ioutil.ReadFile("style.css")
 	preContent := `<html> 
@@ -84,6 +92,7 @@ func processHTML(filename string, options string) (string, string, error) {
 
 <script src="https://apis.google.com/js/api.js"></script>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </head>
 <body>
@@ -234,7 +243,7 @@ func processInheritsWithGroups(filename string, skipBase bool, skillsGroups *[]s
 func processSkills(contents string) string {
 	regex := regexp.MustCompile(`(?s)<skills>([^<]+)</skills>`)
 	match := regex.FindStringSubmatch(string(contents))
-	return "<hr>" + match[0]
+	return match[0]
 }
 
 func linkSkills(contents string) (string, error) {

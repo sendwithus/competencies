@@ -8,21 +8,21 @@ let currentSheetId = ''
 
 $(document).ready(function (event) {
     $('h1').append($(
-        '<span style="display:none" id="buttonGroup">' +
-        ' <a style="display:none" title="sign out" class="sign-out-link" id="signOut" href="javascript:;"><i class="icon fas fa-sign-out-alt"></i></a> ' +
-        ' <a title="view associated google sheet" class="sheet-link" target="_blank" id="sheetLink" href="">' +
-        '<i class="icon fab fa-google-drive"></i>' +
+        '<span style="display:none" id="buttonGroup" class="float-right text-xs my-1 mr-4">' +
+        ' <a title="view associated google sheet" class="sheet-link hover:underline  hover:opacity-75" target="_blank" id="sheetLink" href="">' +
+        '<i class="icon fab fa-google-drive"></i> drive' +
         '</a> ' +
-        ' <a title="add a person to the dropdown" class="sheet-link" id="addButton" href="javascript:;">' +
+        ' <select class="person-chooser text-blue-600 p-1 shadow mx-2" id="personChooser"></select> ' +
+        ' <a title="add a person to the dropdown" class="sheet-link  hover:opacity-75" id="addButton" href="javascript:;">' +
         '<i class="icon fas fa-user-plus"></i>' +
         '</a> ' +
-        ' <select class="person-chooser" id="personChooser"></select> ' +
-        ' <a title="delete this person from the dropdown" class="trash-link" id="deleteButton" href="javascript:;">' +
+        ' <a title="delete this person from the dropdown" class="trash-link hover:opacity-75" id="deleteButton" href="javascript:;">' +
         '<i class="icon fas fa-user-minus"></i>' +
         '</a> ' +
-        ' <select id="titleChooser" class="person-chooser"></select> ' +
+        ' <select id="titleChooser" class="person-chooser text-blue-600 mx-2"></select> ' +
+        ' <a style="display:none" title="sign out" class="hover:underline sign-out-link" id="signOut" href="javascript:;">sign out</a> ' +
         '</span> ' +
-        ' <a style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a> '
+        ' <a class="mr-4 text-white bg-blue-800 px-4 p-2 hover:bg-blue-600 shadow rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a> '
     ))
     $('#addButton').on('click', () => {
         let response = prompt('enter spreadsheet ID')

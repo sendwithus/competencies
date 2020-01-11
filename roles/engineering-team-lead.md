@@ -21,8 +21,6 @@ You have strong technical and analytical skills, with an advanced knowledge of c
 ### Why we might like you
 You enjoy working with others and helping mentor developers at all skill levels.  You are a strong communicator who takes the time to interact with people across different disciplines. You have a keen sense of community and are always looking for new ways to expand the work of others.
 
---------------
-
 ## What you need
 
 <what-you-need.snippet/>
@@ -47,8 +45,6 @@ Fire Triaging
 </skills>
  
 <inherit doc="engineering-senior-developer.md"/>
-
------------------
 
 <searchspring-overview.snippet/>
 

@@ -18,8 +18,6 @@ You love learning new technologies and solving problems in novel ways.  You enjo
 ### Why we might like you
 You enjoy working with others and helping mentor developers at all skill levels.  You are a strong communicator who takes the time to interact with people across different disciplines. You have a keen sense of community and are always looking for new ways to expand the work of others.
 
---------------
-
 ## What you need
 
 <what-you-need.snippet/>
@@ -46,9 +44,6 @@ Part of Successful Projects:1
 </skills>
 
 <inherit doc="base.md"/>
-
-
------------------
 
 <searchspring-overview.snippet/>
 

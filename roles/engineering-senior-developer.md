@@ -17,8 +17,6 @@ better than something you would come up with purely on your own.
 ### Why we might like you
 You enjoy working with others and helping mentor developers at all skill levels.  You are a strong communicator who takes the time to interact with people across different disciplines. You have a keen sense of community and are always looking for new ways to expand the work of others.
 
---------------
-
 ## What you need
 
 <what-you-need.snippet/>
@@ -41,8 +39,6 @@ Part of Successful Projects:2
 </skills>
 
 <inherit doc="engineering-developer.md"/>
-
------------------
 
 <searchspring-overview.snippet/>
 

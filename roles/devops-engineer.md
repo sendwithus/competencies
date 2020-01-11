@@ -17,8 +17,6 @@ If you love puzzle solving, you'll find lots of it in this role. In this career 
 ### Why we might like you
 You have a strong drive to collaborate with others. You possess the ability to express your ideas and defend them. You demonstrate humility, empathy and professionalism; the ability to admit when you’re wrong, understanding when others make mistakes, and the comportment to deal with others in a respectful way in both situations.
 
---------------
-
 ## What you need
 
 <what-you-need.snippet/>
@@ -59,9 +57,6 @@ Trust
 </skills>
 
 <inherit doc="base.md"/>
-
-
------------------
 
 <searchspring-overview.snippet/>
 

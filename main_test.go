@@ -13,5 +13,5 @@ func TestProcessInherited(t *testing.T) {
 		t.Fatal(err)
 	}
 	fmt.Println(result)
-	require.Equal(t, "#original \n##Skills\n<hr><skills>\nbreakdancing\n</skills>\n<hr><skills>\nfigure skating\n</skills>\n<hr><skills>\nkung fu\n</skills>\n   a", result)
+	require.Equal(t, "#original \n##Skills\n<skills>\nbreakdancing\n</skills>\n<skills>\nfigure skating\n</skills>\n<skills>\nkung fu\n</skills>\n   a", result)
 }

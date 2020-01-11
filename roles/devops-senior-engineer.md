@@ -17,8 +17,6 @@ At this point you know what you love about DevOps, but what you will love about 
 ### Why we might like you
 You facilitate collaboration with co-workers. You have the ability to express your ideas and defend them. You demonstrate humility, empathy and professionalism; the ability to admit when you’re wrong, understanding when others make mistakes, and the comportment to deal with others in a respectful way in both situations. You enjoy mentoring and present yourself as an approachable resource to others.
 
---------------
-
 ## What you need
 
 <what-you-need.snippet/>
@@ -51,8 +49,6 @@ Sumologic:2
 </skills>
 
 <inherit doc="devops-engineer.md"/>
-
------------------
 
 <searchspring-overview.snippet/>
 
