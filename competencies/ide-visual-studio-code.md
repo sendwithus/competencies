@@ -17,3 +17,6 @@ You know how to use the source control features.
 
 Watch the tech drop: [https://youtu.be/YOyWw80iaYk](https://youtu.be/YOyWw80iaYk)  
 Read the docs: https://code.visualstudio.com/docs  
+Plugins: 
+* REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.
+https://marketplace.visualstudio.com/items?itemName=humao.rest-client
