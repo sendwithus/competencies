@@ -127,7 +127,7 @@ function switchPage() {
 }
 function setupTitleDropdown() {
     let titles = ''
-    let pathname = window.location.pathname.substring(1)
+    let pathname = window.location.pathname.substring(window.location.pathname.lastIndexOf('/')+1)
     options.split(',').forEach((option) => {
         if (option === '') {
             return true
