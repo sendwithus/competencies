@@ -9,19 +9,15 @@ A percentage of your time will also be building product.   You set aside time ea
 <basecamp.snippet/>
 <distributed.snippet/>
 
-### Why you might like it
+## Why you might like it
 You want to build beautiful code that solves complex ecommerce problems.  You want to help a team of smart developers get better at testing and you love being surrounded by motivated people who enjoy sharing and helping each other.
 
-### Why we might like you
+## Why we might like you
 You enjoy working with others and helping mentor developers at all skill levels.  You are a strong communicator who takes the time to interact with people across different disciplines. You have a keen sense of community and are always looking for new ways to expand the work of others.
-
---------------
-
-## What you need
 
 <what-you-need.snippet/>
 
-### Skills that are important to this role
+## Skills that are important to this role
 
 <skills>
 Testing:2
@@ -40,8 +36,6 @@ Part of Successful Projects:2
 </skills>
 
 <inherit doc="engineering-developer.md"/>
-
------------------
 
 <searchspring-overview.snippet/>
 

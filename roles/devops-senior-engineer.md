@@ -11,19 +11,15 @@ You solved work/life balance issues, and have found a path that will not cause b
 <basecamp.snippet/>
 <distributed.snippet/>
 
-### Why you might like it
+## Why you might like it
 At this point you know what you love about DevOps, but what you will love about working here is the impact you will have and the level of trust you will be afforded.  We hire professionals, and treat them as such. You will have the opportunity to work with brilliant peers who are highly collaborative.   
 
-### Why we might like you
+## Why we might like you
 You facilitate collaboration with co-workers. You have the ability to express your ideas and defend them. You demonstrate humility, empathy and professionalism; the ability to admit when you’re wrong, understanding when others make mistakes, and the comportment to deal with others in a respectful way in both situations. You enjoy mentoring and present yourself as an approachable resource to others.
-
---------------
-
-## What you need
 
 <what-you-need.snippet/>
 
-### Skills that are important to this role
+## Skills that are important to this role
 
 <skills>
 Architecture:2
@@ -51,8 +47,6 @@ Sumologic:2
 </skills>
 
 <inherit doc="devops-engineer.md"/>
-
------------------
 
 <searchspring-overview.snippet/>
 

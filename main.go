@@ -55,6 +55,14 @@ func createIndexPage(html string) string {
 		html + "<footer><a style=\"position:absolute; bottom:10px;\" href=\"privacy.html\">Privacy Policy</a></footer></body></html>"
 }
 
+func tailwind(html []byte) []byte {
+	htmlString := string(html)
+	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 px-8 border-b-2 text-lg mb-4">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h2>", `<h2 class="px-2 text-2xl mt-4">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h3>", `<h3 class="px-2 text-xl mt-2">`)
+	htmlString = strings.ReplaceAll(htmlString, "<p>", `<p style="width:50rem" class="px-2">`)
+	return []byte(htmlString)
+}
 func processHTML(filename string, options string) (string, string, error) {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -71,7 +79,7 @@ func processHTML(filename string, options string) (string, string, error) {
 		panic(err)
 	}
 	html := blackfriday.Run([]byte(markdown))
-
+	html = tailwind(html)
 	appData, _ := ioutil.ReadFile("app.js")
 	styleData, _ := ioutil.ReadFile("style.css")
 	preContent := `<html> 
@@ -84,6 +92,7 @@ func processHTML(filename string, options string) (string, string, error) {
 
 <script src="https://apis.google.com/js/api.js"></script>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </head>
 <body>
@@ -149,7 +158,7 @@ func googleHireify(html string) string {
 }
 
 func reProcess(markdown string) string {
-	regex := regexp.MustCompile(`<a href="([^"]+)"[^>]*><i class="fab fa-github"></i></a>([^<]+)`)
+	regex := regexp.MustCompile(`<a href="([^"]+)"[^>]*><i class="fab hover:opacity-75 fa-github"></i></a>([^<]+)`)
 	matches := regex.FindAllStringSubmatch(markdown, -1)
 	for _, match := range matches {
 		markdown = strings.ReplaceAll(markdown, match[0], " <a href=\""+match[1]+"\">"+strings.TrimSpace(match[2])+"</a>, ")
@@ -234,7 +243,7 @@ func processInheritsWithGroups(filename string, skipBase bool, skillsGroups *[]s
 func processSkills(contents string) string {
 	regex := regexp.MustCompile(`(?s)<skills>([^<]+)</skills>`)
 	match := regex.FindStringSubmatch(string(contents))
-	return "<hr>" + match[0]
+	return match[0]
 }
 
 func linkSkills(contents string) (string, error) {
@@ -243,7 +252,7 @@ func linkSkills(contents string) (string, error) {
 	matches := regex.FindAllStringSubmatch(string(contents), -1)
 	for _, match := range matches {
 		splits := strings.Split(match[1], "\n")
-		result := "<div class=\"skill-group\">"
+		result := `<div class="skill-group p-4 bg-white shadow-xl mb-4 rounded-lg">`
 		for _, split := range splits {
 			if strings.TrimSpace(split) == "" {
 				continue
@@ -270,7 +279,7 @@ func createSkillLink(name string, check bool) string {
 	name, level := getLevelFromName(name)
 	classes := ""
 	href := createHREF(name)
-	drive := " <a href=\"javascript:;\" title=\"add this competency to the google sheet for tracking\" style=\"display:none\" class=\"drive-link\"><i class=\"fab fa-google-drive\"></i></a>"
+	drive := " <a href=\"javascript:;\" title=\"add this competency to the google sheet for tracking\" style=\"display:none\" class=\"drive-link hover:opacity-75\"><i class=\"fas hover:opacity-75 ml-1 fa-plus\"></i></a>"
 	if check {
 		exists := checkCompetency(name)
 		if !exists {
@@ -278,9 +287,9 @@ func createSkillLink(name string, check bool) string {
 			href = "https://github.com/SearchSpring/competencies/new/master/competencies"
 		}
 	}
-	github := "<a href=\"" + href + "\" title=\"go to competency github page\" class=\"github-link\" target=\"_blank\"><i class=\"fab fa-github\"></i></a> "
+	github := "<a href=\"" + href + "\" title=\"go to competency github page\" class=\"github-link\" target=\"_blank\"><i class=\"fab hover:opacity-75 fa-github\"></i></a> "
 	classes += " " + name2Id(name)
-	classes += " competency"
+	classes += " competency inline-block rounded-full bg-gray-300 p-1 px-2 mr-2 mb-2 text-xs whitespace-no-wrap"
 
 	return "<span id=\"" + name2Id(name) + "\" level=\"" + level + "\" class=\"" + classes + "\">" + github +
 		strings.ToLower(strings.TrimSpace(name)) + makeLevel(level) +
@@ -309,7 +318,7 @@ var competencies []string
 func createGroup(count string, group string) (string, error) {
 	group, _ = getLevelFromName(group)
 
-	result := "<table class=\"group\"><tr><td><span class=\"group-heading\">" + group + " (" + count + " of)" + "</span></td><td class=\"group\" valign=\"top\"> "
+	result := "<table class=\"group mt-4\"><tr><td valign=\"top\"><span class=\"group-heading text-sm pr-2 whitespace-no-wrap\">" + group + " (" + count + " of)" + "</span></td><td class=\"group\" valign=\"top\"> "
 	if len(competencies) == 0 {
 		fileInfos, err := ioutil.ReadDir("competencies")
 		if err != nil {
