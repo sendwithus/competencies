@@ -89,7 +89,10 @@ $(document).ready(function (event) {
         }
     })
     $('#deleteButton').on('click', () => {
-        removeSelected()
+        let doit = confirm('Delete this person from the drop down list?')
+        if (doit) {
+            removeSelected()
+        }
     })
     $('#personChooser').on('change', () => {
         let selected = getSelected()
