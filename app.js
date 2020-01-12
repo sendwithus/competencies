@@ -13,11 +13,12 @@ $(document).ready(function (event) {
     }
     title = $('h1').text()
     $('h1').html($(`
+		<img class="w-6 inline-block mr-3" src="seedling.png">
         <a class="mr-4 text-white bg-blue-800 px-2 p-1 hover:bg-blue-600 shadow-2xl rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a>
         <div style="display:none" id="buttonGroup">
         <select class="person-chooser mr-4 bg-white" id="personChooser"></select> 
         <select id="titleChooser" class="person-chooser text-gray-600 bg-white"></select> 
-        <a title="view associated google sheet" class="sheet-link text-sm pt-1 ml-4 hover:opacity-75" target="_blank" id="sheetLink" href=""><i class="icon fab fa-google-drive"></i> drive</a> 
+        <a style="display:none" title="view associated google sheet" class="sheet-link text-sm pt-1 ml-4 hover:opacity-75" target="_blank" id="sheetLink" href=""><i class="icon fab fa-google-drive"></i> drive</a> 
         
         <span class="float-right whitespace-no-wrap">
         <div id="error" style="display:none" class="mr-10 inline-block p-1 px-4 text-sm rounded-full bg-red-700 text-white"></div>
@@ -144,6 +145,7 @@ function checkForSheet(sheetId) {
     cleanValues()
     if (!sheetId || sheetId === '') {
         alert('must select a sheet ID or add one using the add button.')
+        $('#sheetLink').hide()
         return
     }
     var params = {
@@ -155,6 +157,7 @@ function checkForSheet(sheetId) {
         $('.drive-link').show()
         currentSheetId = sheetId
         $('#sheetLink').attr('href', 'https://docs.google.com/spreadsheets/d/' + sheetId);
+        $('#sheetLink').show()
         let values = response.result.values
         let name = values[0][0]
         if (!name || name.trim() === '') {
@@ -173,8 +176,7 @@ function checkForSheet(sheetId) {
         setSelected(sheetId)
         errorHide()
     }).catch((err) => {
-        $('#sheetLink').html('')
-        $('#sheetLink').attr('href', '')
+        $('#sheetLink').hide()
         error(err.result.error.message)
         console.error('error', err)
     });
@@ -242,7 +244,7 @@ function updateSignInStatus(isSignedIn) {
         $('#signOut').show()
         $('#signIn').hide()
         email = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail();
-        $('#buttonGroup').fadeIn()
+        document.getElementById('buttonGroup').style.display = 'inline'
         if (getSelected() || getSelected() !== '') {
             checkForSheet(getSelected())
         }

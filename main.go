@@ -28,7 +28,7 @@ func main() {
 			}
 			text := processText(filename)
 			htmlFilename := file.Name()[:len(file.Name())-3] + ".html"
-			indexHTML += "<a href=\"" + htmlFilename + "\">" + title + "</a><br>"
+			indexHTML += "<a class=\"text-blue-500 hover:underline\" href=\"" + htmlFilename + "\">" + title + "</a><br>"
 			ioutil.WriteFile("docs/"+htmlFilename, []byte(html), 0644)
 			ioutil.WriteFile("docs/hire-"+htmlFilename, []byte(text), 0644)
 		}
@@ -49,15 +49,28 @@ func getOptions(files []os.FileInfo) (string, error) {
 }
 
 func createIndexPage(html string) string {
-	return "<html><head><title>Competency Base Role Definitions</title></head><body><h1>Competency Base Role Definitions</h1>" +
-		"<p>This application displays a list of role definitions and competencies that are needed in that role.  You can sign in to google drive to attach a spreadsheet to a role that will track progress of an employee through that role.</p>" +
-		"<p>Click on a role below to get started</p>" +
-		html + "<footer><a style=\"position:absolute; bottom:10px;\" href=\"privacy.html\">Privacy Policy</a></footer></body></html>"
+	styleData, _ := ioutil.ReadFile("docs/style.css")
+	return `<html><head>
+				<title>Competency Base Role Definitions</title>
+				<style type="text/css">` + singleLine(styleData) + `</style>
+				<link rel="icon" href="seedling.png" type="image/png">
+				<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+			</head>
+		<body>
+		<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 px-8 border-b-2 text-lg mb-4">
+		<img class="w-6 inline-block mr-3" src="seedling.png">
+		Competency Base Role Definitions
+		<a class="float-right text-blue-500 hover:underline" href="privacy.html">privacy policy</a>
+		</h1>
+		<p>This application displays a list of role definitions and competencies that are needed in that role.  You can sign in to google drive to attach a spreadsheet to a role that will track progress of an employee through that role.</p>
+		<p class="mb-4">Click on a role below to get started</p>
+		` + html + `
+		</body></html>`
 }
 
 func tailwind(html []byte) []byte {
 	htmlString := string(html)
-	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 px-8 border-b-2 text-lg mb-4">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 px-8 border-b-2 text-lg mb-4"><img class="w-6 inline-block mr-3" src="seedling.png">`)
 	htmlString = strings.ReplaceAll(htmlString, "<h2>", `<h2 class="px-2 text-2xl mt-4">`)
 	htmlString = strings.ReplaceAll(htmlString, "<h3>", `<h3 class="px-2 text-xl mt-2">`)
 	htmlString = strings.ReplaceAll(htmlString, "<p>", `<p style="width:50rem" class="px-2">`)
@@ -81,12 +94,13 @@ func processHTML(filename string, options string) (string, string, error) {
 	html := blackfriday.Run([]byte(markdown))
 	html = tailwind(html)
 	appData, _ := ioutil.ReadFile("app.js")
-	styleData, _ := ioutil.ReadFile("style.css")
+	styleData, _ := ioutil.ReadFile("docs/style.css")
 	preContent := `<html> 
 <head>
 <title>` + title + `</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type='text/css'>` + singleLine(styleData) + `</style>
+<link rel="icon" href="seedling.png" type="image/png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script>
 
@@ -128,6 +142,7 @@ func processText(filename string) string {
 	preContent := `<html> 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="seedling.png" type="image/png">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 </head>
