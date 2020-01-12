@@ -57,7 +57,7 @@ func createIndexPage(html string) string {
 
 func tailwind(html []byte) []byte {
 	htmlString := string(html)
-	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 border-b-2 text-lg mb-4">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 px-8 border-b-2 text-lg mb-4">`)
 	htmlString = strings.ReplaceAll(htmlString, "<h2>", `<h2 class="px-2 text-2xl mt-4">`)
 	htmlString = strings.ReplaceAll(htmlString, "<h3>", `<h3 class="px-2 text-xl mt-2">`)
 	htmlString = strings.ReplaceAll(htmlString, "<p>", `<p style="width:50rem" class="px-2">`)
@@ -252,7 +252,7 @@ func linkSkills(contents string) (string, error) {
 	matches := regex.FindAllStringSubmatch(string(contents), -1)
 	for _, match := range matches {
 		splits := strings.Split(match[1], "\n")
-		result := `<div class="skill-group px-2 pt-4">`
+		result := `<div class="skill-group p-4 bg-white shadow-xl mb-4 rounded-lg">`
 		for _, split := range splits {
 			if strings.TrimSpace(split) == "" {
 				continue

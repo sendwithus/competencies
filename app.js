@@ -5,15 +5,16 @@ $.cookie.json = true;
 let personValues = {}
 let people = {}
 let currentSheetId = ''
-
+let title = ''
 $(document).ready(function (event) {
 
     if (window.location.hash) {
         $.cookie('selectedPerson', window.location.hash.substring(1))
     }
+    title = $('h1').text()
     $('h1').html($(`
         <a class="mr-4 text-white bg-blue-800 px-2 p-1 hover:bg-blue-600 shadow-2xl rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a>
-        <div style="display:none" id="buttonGroup" class="">
+        <div style="display:none" id="buttonGroup">
         <select class="person-chooser mr-4 bg-white" id="personChooser"></select> 
         <select id="titleChooser" class="person-chooser text-gray-600 bg-white"></select> 
         <a title="view associated google sheet" class="sheet-link text-sm pt-1 ml-4 hover:opacity-75" target="_blank" id="sheetLink" href=""><i class="icon fab fa-google-drive"></i> drive</a> 
@@ -258,6 +259,7 @@ function signIn() {
 }
 
 function signOut() {
+    $('h1').html(title)
     gapi.auth2.getAuthInstance().signOut();
 }
 
