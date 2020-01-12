@@ -1,4 +1,21 @@
+opacity-90 {
+  opacity: 0.9;
+}
+.complete {
+  background-color: #407e40 !important;
+  color: white !important;
+}
+.in-progress {
+  background-color: rgb(197, 140, 35) !important;
+  color: white !important;
+}
+.missing {
+  background-color: white !important;
+  border: 1px solid gray !important; 
+  color: gray !important;
+}
 body {
+  padding-bottom:16rem;
   padding-top: 3.5rem;
   color: #444444;
   background-color: #ffffff;

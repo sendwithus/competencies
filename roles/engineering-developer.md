@@ -12,17 +12,15 @@ You find an issue you don’t know how to fix and you research intensely amassin
 <basecamp.snippet/>
 <distributed.snippet/>
 
-### Why you might like it
+## Why you might like it
 You love learning new technologies and solving problems in novel ways.  You enjoy creating software with a team of peers.
 
-### Why we might like you
+## Why we might like you
 You enjoy working with others and helping mentor developers at all skill levels.  You are a strong communicator who takes the time to interact with people across different disciplines. You have a keen sense of community and are always looking for new ways to expand the work of others.
-
-## What you need
 
 <what-you-need.snippet/>
 
-### Skills that are important to this role
+## Skills that are important to this role
 
 <skills>
 Coding

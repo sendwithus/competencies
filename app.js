@@ -7,22 +7,25 @@ let people = {}
 let currentSheetId = ''
 
 $(document).ready(function (event) {
-    $('h1').append($(
-        '<span style="display:none" id="buttonGroup" class="float-right text-xs my-1 mr-4">' +
-        ' <a title="view associated google sheet" class="sheet-link hover:underline  hover:opacity-75" target="_blank" id="sheetLink" href="">' +
-        '<i class="icon fab fa-google-drive"></i> drive' +
-        '</a> ' +
-        ' <select class="person-chooser text-blue-600 p-1 shadow mx-2" id="personChooser"></select> ' +
-        ' <a title="add a person to the dropdown" class="sheet-link  hover:opacity-75" id="addButton" href="javascript:;">' +
-        '<i class="icon fas fa-user-plus"></i>' +
-        '</a> ' +
-        ' <a title="delete this person from the dropdown" class="trash-link hover:opacity-75" id="deleteButton" href="javascript:;">' +
-        '<i class="icon fas fa-user-minus"></i>' +
-        '</a> ' +
-        ' <select id="titleChooser" class="person-chooser text-blue-600 mx-2"></select> ' +
-        ' <a style="display:none" title="sign out" class="hover:underline sign-out-link" id="signOut" href="javascript:;">sign out</a> ' +
-        '</span> ' +
-        ' <a class="mr-4 text-white bg-blue-800 px-4 p-2 hover:bg-blue-600 shadow rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a> '
+
+    if (window.location.hash) {
+        $.cookie('selectedPerson', window.location.hash.substring(1))
+    }
+    $('h1').html($(`
+        <a class="mr-4 text-white bg-blue-800 px-2 p-1 hover:bg-blue-600 shadow-2xl rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a>
+        <div style="display:none" id="buttonGroup" class="">
+        <select class="person-chooser mr-4 bg-white" id="personChooser"></select> 
+        <select id="titleChooser" class="person-chooser text-gray-600 bg-white"></select> 
+        <a title="view associated google sheet" class="sheet-link text-sm pt-1 ml-4 hover:opacity-75" target="_blank" id="sheetLink" href=""><i class="icon fab fa-google-drive"></i> drive</a> 
+        
+        <span class="float-right whitespace-no-wrap">
+        <div id="error" style="display:none" class="mr-10 inline-block p-1 px-4 text-sm rounded-full bg-red-700 text-white"></div>
+        <a title="add a person to the dropdown" class="text-sm sheet-link pt-1 mr-4  hover:opacity-75" id="addButton" href="javascript:;"><i class="icon fas fa-user-plus"></i> add person</a> 
+        <a title="delete this person from the dropdown" class="text-sm trash-link pt-1 mr-4  hover:opacity-75" id="deleteButton" href="javascript:;"><i class="icon fas fa-user-minus"></i> remove person</a> 
+        <a style="display:none" title="sign out" class="mr-4 text-white bg-blue-800 p-1 px-2 hover:bg-blue-600 shadow-2xl rounded-full text-xs" id="signOut" href="javascript:;">sign out</a> 
+        </span>
+        </div> 
+         `
     ))
     $('#addButton').on('click', () => {
         let response = prompt('enter spreadsheet ID')
@@ -34,8 +37,10 @@ $(document).ready(function (event) {
         removeSelected()
     })
     $('#personChooser').on('change', () => {
-        $.cookie('selectedPerson', getSelected())
-        checkForSheet(getSelected())
+        let selected = getSelected()
+        $.cookie('selectedPerson', selected)
+        window.location.hash = selected
+        checkForSheet(selected)
     })
     $('.drive-link').on('click', (e) => {
         let el = $(e.target).parent().parent();
@@ -57,7 +62,7 @@ $(document).ready(function (event) {
     gapi.load('client:auth2', initClient);
 });
 function switchPage() {
-    window.location.href = $('#titleChooser').val()
+    window.location.href = $('#titleChooser').val() + (window.location.hash ? window.location.hash : '')
 }
 function setupTitleDropdown() {
     let titles = ''
@@ -101,7 +106,8 @@ function addInProgress(id, name) {
     gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody).then(function (response) {
         // expected path.
     }, function (reason) {
-        console.error('error: ' + reason.result.error.message);
+        error(reason.result.error.message)
+        console.error('error: ' + reason);
     });
 }
 
@@ -120,6 +126,10 @@ function loadCookieValues() {
     for (person in people) {
         createOption(person, people[person], selectedPerson == person)
     }
+}
+
+function createOption(sheetId, name, selected) {
+    $('#personChooser').append($('<option value="' + sheetId + '"' + (selected ? ' selected' : '') + '>' + name + '</option>'))
 }
 
 function cleanValues() {
@@ -160,16 +170,27 @@ function checkForSheet(sheetId) {
         }
         checkOffCompetencies()
         setSelected(sheetId)
+        errorHide()
     }).catch((err) => {
         $('#sheetLink').html('')
         $('#sheetLink').attr('href', '')
+        error(err.result.error.message)
         console.error('error', err)
     });
+}
+function errorHide() {
+    $('#error').hide()
+}
+function error(msg) {
+    $('#error').html(msg)
+    $('#error').show()
+    setTimeout(errorHide, 3000)
 }
 
 function setSelected(sheetId) {
     $('#personChooser').val(sheetId);
     $.cookie('selectedPerson', sheetId)
+    window.location.hash = sheetId
 }
 function checkOffCompetencies() {
 
@@ -183,7 +204,7 @@ function checkOffCompetencies() {
             }
             if (parseInt($(el).attr('level')) <= level) {
                 $(el).addClass('complete')
-                $(el).prepend('<i style="color:white" class="fas fa-check"></i> ')
+                $(el).prepend('<i class="fas fa-check"></i> ')
             }
         })
     }
@@ -192,10 +213,6 @@ function checkOffCompetencies() {
 function name2Id(name) {
     return "c-" + name.toLowerCase().replaceAll(' ', '')
 }
-function createOption(sheetId, name, selected) {
-    $('#personChooser').append($('<option value="' + sheetId + '"' + (selected ? ' selected' : '') + '>' + name + '</option>'))
-}
-
 function initClient() {
     var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 

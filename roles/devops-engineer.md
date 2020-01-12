@@ -11,17 +11,15 @@ The job also requires a lot of on call availability. You are the first line of d
 <basecamp.snippet/>
 <distributed.snippet/>
 
-### Why you might like it
+## Why you might like it
 If you love puzzle solving, you'll find lots of it in this role. In this career path you’ll be a perpetual student at every level. There are always new skills to acquire, and real cases to employ them. This job gives you the opportunity to work with bleeding edge technologies in a real world environment. You will have a clear and tangible impact participating in the design and building of elegant solutions to create a beautiful system.
 
-### Why we might like you
+## Why we might like you
 You have a strong drive to collaborate with others. You possess the ability to express your ideas and defend them. You demonstrate humility, empathy and professionalism; the ability to admit when you’re wrong, understanding when others make mistakes, and the comportment to deal with others in a respectful way in both situations.
-
-## What you need
 
 <what-you-need.snippet/>
 
-### Skills that are important to this role
+## Skills that are important to this role
 
 <skills>
 Architecture
