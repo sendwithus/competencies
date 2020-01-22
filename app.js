@@ -204,11 +204,12 @@ function checkOffCompetencies() {
         let id = name2Id(skill)
         let level = parseInt(personValues[skill])
         $('.' + id).each((i, el) => {
+            let targetLevel = parseInt($(el).attr('level'))
             $('.drive-link', $(el)).hide();
-            if (level === 0) {
+            if (level === 0 || level < targetLevel) {
                 $(el).addClass('in-progress')
             }
-            if (parseInt($(el).attr('level')) <= level) {
+            if (targetLevel <= level) {
                 $(el).addClass('complete')
                 $(el).prepend('<i class="fas fa-check"></i> ')
             }
