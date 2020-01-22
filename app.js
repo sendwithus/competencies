@@ -204,7 +204,7 @@ function checkOffCompetencies() {
         let id = name2Id(skill)
         let level = parseInt(personValues[skill])
         $('.' + id).each((i, el) => {
-	    let targetLevel = parseInt($(el).attr('level'))
+            let targetLevel = parseInt($(el).attr('level'))
             $('.drive-link', $(el)).hide();
             if (level === 0 || level < targetLevel) {
                 $(el).addClass('in-progress')
