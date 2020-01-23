@@ -8,9 +8,7 @@ You are able to integrate Tailwind into your application
 
 Define the customization of your website in the Tailwind configuration file (ie. theme, breakpoints, colors, spacing)
 
-You are familiar with using Tailwind's layouts (ie. containers, display, float, position)
-
-You are familiar with display:flex and it's child properties as Tailwind is built with flexbox
+Build a site and theme it with tailwindcss
 
 ## How do you improve it?
 

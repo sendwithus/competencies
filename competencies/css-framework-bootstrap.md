@@ -8,9 +8,9 @@ You are able to integrate bootstrap into your application
 
 You are familiar with Bootstrap's grid system when using containers
 
-You are familiar with various Bootstrap components (ie. buttons, forms, modal)
+Build a simple form in Bootstrap
 
-You are familiar with various Bootstrap utilities (ie. borders, colors, shadows)
+Build a layout in bootstrap
 
 ## How do you improve it?
 

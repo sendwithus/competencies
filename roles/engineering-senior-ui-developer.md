@@ -45,7 +45,7 @@ Part of Successful Projects:2
 2 of UI Framework
 1 of Design Tool
 1 of CSS Framework
-1 of CSS Preprocessor
+SASS CSS Preprocessor
 Responsive design
 Modern CSS flexbox/grid
 Human-computer interaction
