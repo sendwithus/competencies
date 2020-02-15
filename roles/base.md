@@ -1,6 +1,6 @@
 # Base
 
-General skills needed to excel at SearchSpring
+General skills needed to excel at Searchspring
 
 <skills>
 Human

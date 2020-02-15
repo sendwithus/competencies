@@ -299,7 +299,7 @@ func createSkillLink(name string, check bool) string {
 		exists := checkCompetency(name)
 		if !exists {
 			classes += "missing"
-			href = "https://github.com/SearchSpring/competencies/new/master/competencies"
+			href = "https://github.com/searchspring/competencies/new/master/competencies"
 		}
 	}
 	github := "<a href=\"" + href + "\" title=\"go to competency github page\" class=\"github-link\" target=\"_blank\"><i class=\"fab hover:opacity-75 fa-github\"></i></a> "
@@ -385,5 +385,5 @@ func cleanFile(file string) string {
 }
 
 func createHREF(name string) string {
-	return "https://github.com/SearchSpring/competencies/blob/master/competencies/" + cleanFile(name)
+	return "https://github.com/searchspring/competencies/blob/master/competencies/" + cleanFile(name)
 }
