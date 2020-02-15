@@ -16,15 +16,16 @@ As someone who knows the product inside and out you can now write public product
 
 Build launch materials / assets around new features.
 
-nd attending meetings with customers to both hear feedback and discuss upcoming features in detail.
 
 ## How do you improve it?
 
-Learn all the APIs and how to use them: [https://docs.dyspatch.io/api/](https://docs.dyspatch.io/api/) & [https://suppport.sendwithus.com/api](https://suppport.sendwithus.com/api)
+Attend meetings with customers to both hear feedback and discuss upcoming features in detail.
 
-Use the front end product: [https://dyspatch.io](https://dyspatch.io) & [https://app.sendwithus.com](https://app.sendwithus.com)
+Learn all the APIs and how to use them.
 
-Learn curl or similar gui for making requests: [https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+Use the front end product.
+
+Learn curl or similar gui for making requests: 
 
 [https://curl.haxx.se/docs/httpscripting.html](https://curl.haxx.se/docs/httpscripting.html)
 
@@ -34,13 +35,7 @@ Learn curl or similar gui for making requests: [https://chrome.google.com/websto
 
 Setup personas that use the system end to end.  
 
-Use the product to send emails that you regularly need to send pulling from a datasource of some kind (asana, text file, database, google doc etc?).
-
-Learn our personas and stakeholders: [Deck](https://docs.google.com/presentation/d/1PLRdyPAZlxOxLhJKqRFSWaJJxjp3N74OZu5vRhSZJKE/edit#slide=id.g2514256c0b_3_70)
-
-Use the product: [https://dyspatch.io](https://dyspatch.io) & [https://www.sendwithus.com](https://www.sendwithus.com)
-
-Use the API: [https://api.dyspatch.io](https://api.dyspatch.io)  & [https://support.sendwithus.com/api](https://support.sendwithus.com/api)
+Learn our personas and stakeholders.
 
 Learn what every feature in our product does and how it helps those personas.
 

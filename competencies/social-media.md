@@ -4,7 +4,7 @@ We use social media (Twitter, Facebook, Instagram, LinkedIn) for employer brandi
 
 ## How do you prove it?
 
-You draft tweets, Facebook, Instagram, and LinkedIn posts to promote Sendwithus and Dyspatch.
+You draft tweets, Facebook, Instagram, and LinkedIn posts to promote the company.
 
 Posts focus on employer brand, community outreach, marketing, and internal culture. 
 

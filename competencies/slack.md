@@ -42,7 +42,7 @@ Create your own channel and try things out and see what happens.
 
 Learn keyboard shortcuts: [https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts](https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts)
 
-Add an emoji to the slack interface - [https://sendwithus.slack.com/customize/emoji](https://sendwithus.slack.com/customize/emoji)
+Add an emoji to the slack interface
 
 # Slack Level 2
 

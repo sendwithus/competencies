@@ -16,5 +16,5 @@ You know when to say "no" to a request
 
 You are able to work across all teams in the organization
 
-You are able to report any breaches in the Sendwithus CoC and keep any parties involved anonymous.
+You are able to report any breaches in the code of conduct and keep any parties involved anonymous.
 

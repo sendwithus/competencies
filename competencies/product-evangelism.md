@@ -8,15 +8,15 @@ As someone who knows the product inside and out you can now write public product
 
 Build launch materials / assets around new features.
 
-nd attending meetings with customers to both hear feedback and discuss upcoming features in detail.
-
 ## How do you improve it?
 
-Learn our personas and stakeholders: link
+Learn our personas and stakeholders
 
-Use the product: [https://dyspatch.io](https://dyspatch.io) & [https://www.sendwithus.com](https://www.sendwithus.com)
+Attend meetings with customers to both hear feedback and discuss upcoming features in detail.
 
-Use the API: [https://api.dyspatch.io](https://api.dyspatch.io)  & [https://support.sendwithus.com/api](https://support.sendwithus.com/api)
+Use the product.
+
+Use the API
 
 Learn what every feature in our product does and how it helps those personas.
 
