@@ -1,6 +1,6 @@
 # Competency - Recruiter
 
-One place to find awesome people is through awesome people.  If you work at Sendwithus, chances are, you're awesome.  And so we would probably be interested in the awesome people you know.
+One place to find awesome people is through awesome people.  If you work here, chances are, you're awesome.  And so we would probably be interested in the awesome people you know.
 
 ## How do you prove it?
 

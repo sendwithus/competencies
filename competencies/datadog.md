@@ -2,7 +2,7 @@
 
 Datadog is a monitoring platform used both for tracing of work done inside an application as well as metrics pushed by infrastructure, CI systems and more.
 
-Datadog is essential to being a competent debugger at Sendwithus. We also use this for logging and APM (application performance monitoring).
+Datadog is essential to being a competent debugger. We also use this for logging and APM (application performance monitoring).
 
 ## How do you prove it?
 

@@ -4,7 +4,7 @@ We run events, a lot of events. THe two most important events are Startup Slam a
 
 ## How do you prove it?
 
-You can schedule and run Sendwithus hosted events and meetups. 
+You can schedule and run hosted events and meetups. 
 
 You make sure that the space is set up and ready for any groups who need it and that all contracts have been signed.
 

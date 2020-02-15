@@ -1,6 +1,6 @@
 # Competency - Email
 
-Email at Sendwithus is typically for external communication as we pretty much use slack for everything.
+Email is typically for external communication as we pretty much use slack for everything.
 
 You should consider email as a formal way of communicating, especially with external customers and vendors.
 
