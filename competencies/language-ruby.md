@@ -19,16 +19,12 @@ You have a good understanding of the resources and where to go if you're stuck.
 
 You understand how third party libraries are used, access, their lifecycle and security implications.
 
-## Key points of research
+## How do you improve it?
 
-* self
+Do the tutorial: https://www.tutorialspoint.com/ruby/index.htm
 
-* Inheritance and Mixin
+Memorize the cheatsheet: https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md
 
-* Dynamic typing
+Learn Ruby on Rails framework: https://www.railstutorial.org/book
 
-* Blocks and Lambdas
-
-* Strings vs symbols
-
-* Bundler
+Learn SOLID Principles: https://ieftimov.com/post/solid-principles-ruby/
