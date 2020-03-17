@@ -3,7 +3,7 @@
 ## How do you prove it?
 
 * You have appropriate plug-ins installed.
-* You have keyboard shortcuts down.
+* You know a number of keyboard shortcuts that help you program.
 * You can use multi-cursor editing.
 * You can find classes and files quickly using fuzzy search.
 * You know how to use "find in path" to search within your entire project.
