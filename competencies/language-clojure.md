@@ -21,3 +21,5 @@ You understand how third party libraries are used, accessed, their lifecycle and
 ## Improve it
 
 Great Book on clojure, free to read online https://www.braveclojure.com/
+
+Interactive tutorial with flappy bird: https://github.com/SearchSpring/competencies/pull/28/files
