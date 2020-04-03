@@ -14,7 +14,7 @@ Useful information:
 
 - You know how to implement algorithms for Decision tree, Gradient boosting trees, K-nearest neighbors, K-means clustering, Naive Bayes classifier, Random forests, Support Vector Machines, and Deep Neural Networks in OpenCV.
 
-- You know OpenCV Image Processing tools such as converting color spaces, geometric transformations, image thresholding, smoothing, morphological transformations, image gradients, edge detection functions, contours in images, image segmentation, image denoising, and histogram analysis.
+- You know OpenCV Image Processing tools such as converting color spaces, geometric transformations, image thresholding, smoothing, morphological transformations, image gradients, edge detection functions, contours in images, image segmentation, image denoising (noise reduction), and histogram analysis.
 
 - You know how to code a Deep Neural network from scratch using OpenCV.
 
