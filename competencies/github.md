@@ -69,3 +69,5 @@ $ git commit -m "Update README.
 skip-checks: true
 
 ```
+
+Install and learn `tig` https://github.com/jonas/tig

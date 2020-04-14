@@ -30,3 +30,5 @@ Learn to type
 
 Try not to use a mouse for a full day so you can fully appreciate how much faster you can work with keyboard shortcuts.
 
+Learn about simplicity in your code
+https://www.youtube.com/watch?v=kGlVcSMgtV4

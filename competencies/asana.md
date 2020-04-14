@@ -10,8 +10,6 @@ You can move tasks between projects.
 
 You can organize tasks as projects or subtasks and move between those paradigms.
 
-Manage both lists and boards.
-
 You can delete a task without a mouse.
 
 ## How do you improve it?

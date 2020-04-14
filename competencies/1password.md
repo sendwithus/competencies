@@ -20,8 +20,6 @@ You have no 2FA warnings for sites that allow 2FA
 
 ## How do you improve it?
 
-Read the 1Password Getting Started Guide: [https://docs.google.com/document/d/1wRBXT42M7GWzY6N8XMezzRAKbcaWtnO1-xfbsCBebV8/edit](https://docs.google.com/document/d/1wRBXT42M7GWzY6N8XMezzRAKbcaWtnO1-xfbsCBebV8/edit)
-
 Do the 1Password tour: [https://1password.com/tour/](https://1password.com/tour/) 
 
 Learn the keyboard shortcuts: [https://support.1password.com/keyboard-shortcuts/](https://support.1password.com/keyboard-shortcuts/)
