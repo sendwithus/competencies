@@ -1,4 +1,4 @@
-# DevOps - Junior DevOps Engineer 
+# Engineering - Junior DevOps
 <welcome.snippet/>
 
 ## What it's like to be a DevOps Engineer

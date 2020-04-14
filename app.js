@@ -13,7 +13,7 @@ $(document).ready(function (event) {
     }
     title = $('h1').text()
     $('h1').html($(`
-		<a href="/"><img class="w-6 inline-block mr-3" src="seedling.png"></a>
+		<a href="../index.html"><img class="w-6 inline-block mr-3" src="seedling.png"></a>
         <a class="mr-4 text-white bg-blue-800 px-2 p-1 hover:bg-blue-600 shadow-2xl rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a>
         <div style="display:none" id="buttonGroup">
         <select class="person-chooser mr-4 bg-white" id="personChooser"></select> 

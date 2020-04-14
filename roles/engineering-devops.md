@@ -1,4 +1,4 @@
-# DevOps - DevOps Engineer
+# Engineering - DevOps
 <welcome.snippet/>
 
 ## What it's like to be a DevOps Engineer
@@ -54,7 +54,7 @@ Trust
 3 of Technical Breadth
 </skills>
 
-<inherit doc="base.md"/>
+<inherit doc="engineering-junior-devops.md"/>
 
 <searchspring-overview.snippet/>
 

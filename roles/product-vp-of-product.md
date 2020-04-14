@@ -2,10 +2,11 @@
 
 <welcome.snippet/>
 
+## What it’s like to be the VP of Product
+
+
 In this role, you will build and lead the product to to build software. Specifically, you, along with a small sized team, will help dictate what we build based on what our customer needs and wants.  There are an abundance of challenges, from keeping up competitors, to meeting customers needs, to working with the engineering team to get the job done.
 
-
-## What it’s like to be the VP of Product
 As the leader of product you will lead the team to build great products. You will interact with sales, marketing, and customers to help lead you to what to build. You will be part of the senior leadership team and contribute to the overall strategy of the company. You will be or become an expert in ecommerce and know search backwards and forwards. You will help evaluate new products to either build or buy.
 
 <basecamp.snippet/>
@@ -16,8 +17,6 @@ You love building great products and have a passion for ecommerce. You enjoy wor
 
 ## Why we might like you
 You enjoy working with others and helping mentor product owners and product managers at all skill levels. You are a strong communicator who takes the time to interact with people across different disciplines. You have a keen sense of community and are always looking for new ways to expand the work of others.
-
-## What you need
 
 <what-you-need.snippet/>
 

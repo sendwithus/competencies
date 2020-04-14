@@ -1,4 +1,4 @@
-# DevOps - Senior Engineer
+# Engineering - Senior DevOps
 <welcome.snippet/>
 
 ## What it's like to be a Senior DevOps Engineer
@@ -46,7 +46,7 @@ Sumologic:2
 5 of Language:2
 </skills>
 
-<inherit doc="devops-engineer.md"/>
+<inherit doc="engineering-devops.md"/>
 
 <searchspring-overview.snippet/>
 
