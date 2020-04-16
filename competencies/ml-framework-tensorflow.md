@@ -4,13 +4,13 @@ TensorFlow is an end-to-end open source platform for machine learning. It has a 
 
 Useful links:
 - Wikipedia: https://en.wikipedia.org/wiki/TensorFlow
-- Youtube: https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ
+- YouTube: https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ
 
 ## How do you prove it?
 
 - You know the reason of using TensorFlow (TF) in Machine Learning, and specially in production.
 
-- You know how to install a desired version of TF on a machine (CPU or GPU).
+- You know how to install a proper version of TF on a machine (CPU or GPU).
 
 - You know pros and cons of using TF over the other frameworks.
 
@@ -48,7 +48,7 @@ Useful links:
 
 - TF GitHub Repo: https://github.com/tensorflow/tensorflow
 
-- Deep LEarning with TensorFlow 2.0 online course by Udemy: https://www.udemy.com/course/machine-learning-with-tensorflow-for-business-intelligence
+- Deep Learning with TensorFlow 2.0 online course by Udemy: https://www.udemy.com/course/machine-learning-with-tensorflow-for-business-intelligence
 
 - TensorFlow: Data and Deployment Specialization online course by Coursera: https://www.coursera.org/specializations/tensorflow-data-and-deployment
 
