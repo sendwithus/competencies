@@ -22,8 +22,6 @@ Your electronic communications are respectful and effective.  You topload questi
 
 ## How do you improve it?
 
-Make sure you do these basic things: [https://www.right.com/wps/wcm/connect/right-us-en/home/thoughtwire/categories/career-work/10-Ways-to-Improve-Your-Communication-Skills](https://www.right.com/wps/wcm/connect/right-us-en/home/thoughtwire/categories/career-work/10-Ways-to-Improve-Your-Communication-Skills) 
-
 Learn about Rands on meetings: [http://randsinrepose.com/archives/how-to-run-a-meeting/](http://randsinrepose.com/archives/how-to-run-a-meeting/)
 
 Learn about speaking: [http://go.ted.com/JAos8A](http://go.ted.com/JAos8A)
