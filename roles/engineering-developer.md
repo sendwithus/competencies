@@ -34,6 +34,7 @@ Linux
 QA Automation
 Fire Handling
 Docker
+Machine Learning
 Kubernetes
 Customer Empathy
 Part of Successful Projects:1
