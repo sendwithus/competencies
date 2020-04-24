@@ -20,4 +20,4 @@ You question unescorted people who you don't recognise.
 
 ## How do you improve it?
 
-Do the security training.
+Do the PaperDuty security training: https://sudo.pagerduty.com/for_everyone/
