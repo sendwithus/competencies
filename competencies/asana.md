@@ -12,6 +12,8 @@ You can organize tasks as projects or subtasks and move between those paradigms.
 
 You can delete a task without a mouse.
 
+You can create a report.
+
 ## How do you improve it?
 
 Read the blog post about it's awesomeness: https://www.dyspatch.io/blog/dyspatch-sendwithus-and-asana/
