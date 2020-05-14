@@ -24,7 +24,7 @@ Useful links:
 
 - You know how to evaluate a cell without mouse.
 
-- You know what are Jupyter Kernels, what they do, and how to switch between them.
+- You know what Jupyter Kernels are, what they do, and how to switch between them.
 
 - You know how to restart, stop, and shut down a kernel.
 
