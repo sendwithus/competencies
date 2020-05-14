@@ -20,7 +20,7 @@ Useful links:
 
 - You know Jupyter shortcuts.
 
-- You know what is Command mode and Edit mode, and how to use each one.
+- You know what Command mode and Edit mode are, and how to use each one.
 
 - You know how to evaluate a cell without mouse.
 
