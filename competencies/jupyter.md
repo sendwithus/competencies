@@ -8,7 +8,7 @@ Useful links:
 
 ## How do you prove it?
 
-- You know what is JupyterLab, JupyterHub, Jupyter Console, and a Jupyter Notebook, and what the main differences they have.
+- You know what a JupyterLab, JupyterHub, Jupyter Console, Jupyter Notebook is and the main differences between them.
 
 - You know what is Google Colab, and what differences it has with Jupyter environment.
 
