@@ -12,7 +12,7 @@ Useful links:
 
 - You know what is Google Colab, and what differences it has with Jupyter environment.
 
-- You know what are the differences of a Jupyter notebook with a programming script.
+- You know what the differences between a Jupyter notebook and a programming script are.
 
 - You know how to install Jupyter products using Anaconda or PIP package manager.
 
