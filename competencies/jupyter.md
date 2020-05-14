@@ -22,7 +22,7 @@ Useful links:
 
 - You know what Command mode and Edit mode are, and how to use each one.
 
-- You know how to evaluate a cell without mouse.
+- You know how to evaluate a cell without a mouse.
 
 - You know what Jupyter Kernels are, what they do, and how to switch between them.
 
