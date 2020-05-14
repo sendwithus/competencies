@@ -2,6 +2,20 @@
 
 Project Jupyter is a nonprofit organization created to "develop open-source software, open-standards, and services for interactive computing across dozens of programming languages". Spun-off from IPython in 2014 by Fernando Pérez, Project Jupyter supports execution environments in several dozen languages. Project Jupyter's name is a reference to the three core programming languages supported by Jupyter, which are Julia, Python and R, and also a homage to Galileo's notebooks recording the discovery of the moons of Jupiter. Project Jupyter has developed and supported the interactive computing products Jupyter Notebook, JupyterHub, and JupyterLab, the next-generation version of Jupyter Notebook.
 
+As an ML developer you would need Jupyter in order to set up your project in a collaborative environment where you can share your research, and visualize it in an easy manner. Some of the most important features of Jupyter for ML developers and Data Scientists are as follows:
+
+- Inline Printing of the Output in the Exploratory Data Analysis Processes:
+Notebooks allow the data scientist to view the results of their code in-line, sometimes without any dependency of other parts of their code. Contrary to working with a standard IDE like VSCode or PyCharm, on Jupyter, every cell, an executable unit of code, can potentially be called at any time to draw an output right below the code.
+
+- Built-in Cell-Level Caching:
+Caching is hard, especially if your software engineering skills aren’t that top notch. If you are a mathematician trying to get some data to model stuff, the last thing you want is to implement your own caching schemes.
+Jupyter solves this magically by caching the results of every cell that is being run. For instance, if you have a huge notebook, containing hundreds of cells of code, and somewhere at the beginning of the notebook, some code that is doing some heavy operation — like training an ML model or downloading gigabytes of data from a remote server, with Jupyter, you have zero concerns about caching the results of those operations.
+
+- Local Execution:
+Jupyter notebook’s user-friendly CLI encourages local execution. It’s pretty much certain that 99% of data scientists run Jupyter locally, although there are some premature attempts by some of the cloud providers to migrate the notebooks to the cloud (Google Cloud DataLab and AWS SageMaker). But those solutions are premature and suffer from plenty of their own problems.
+
+Although Jupyter is a great environment for research-based projects, but it's not the best solution for production. A production-grade ML pipeline needs to be composed out of debuggable, reproducible, easy-to-deploy, high-performance code components that could be orchestrated and scheduled. In its default version, it’s everything research code on Jupyter isn’t.
+
 Useful links:
 
 - Wikipedia: https://en.wikipedia.org/wiki/Project_Jupyter
