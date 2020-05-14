@@ -10,7 +10,7 @@ Useful links:
 
 - You know what a JupyterLab, JupyterHub, Jupyter Console, Jupyter Notebook is and the main differences between them.
 
-- You know what is Google Colab, and what differences it has with Jupyter environment.
+- You know what Google Colab is and the differences between a Jupyter environment.
 
 - You know what the differences between a Jupyter notebook and a programming script are.
 
@@ -18,7 +18,7 @@ Useful links:
 
 - You know how to run Jupyter from the terminal with all different modes using different flags.
 
-- You know Jupyter shortcuts.
+- You know at least 5 Jupyter shortcuts.
 
 - You know what Command mode and Edit mode are, and how to use each one.
 
