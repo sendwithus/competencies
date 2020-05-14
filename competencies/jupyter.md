@@ -16,7 +16,7 @@ Useful links:
 
 - You know how to install Jupyter products using Anaconda or PIP package manager.
 
-- You know how to run Jupyter from terminal with all different modes using different flags.
+- You know how to run Jupyter from the terminal with all different modes using different flags.
 
 - You know Jupyter shortcuts.
 
