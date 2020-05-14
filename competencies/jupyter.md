@@ -38,7 +38,7 @@ Useful links:
 
 - You know how to use document mode and presentation mode for presenting your code in Jupyter.
 
-- You know how to switch between your launcher panel to your notebooks without using mouse.
+- You know how to switch between your launcher panel to your notebooks without using a mouse.
 
 - You know how to run Jupyter in root-mode, and know its risks.
 
