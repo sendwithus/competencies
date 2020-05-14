@@ -32,7 +32,7 @@ Useful links:
 
 - You know how to set up extensions and use them in your Jupyter environment.
 
-- You know how to activate X11 on Jupyter environment.
+- You know how to activate X11 on your Jupyter environment.
 
 - You know how to share your code in Jupyter with other colleagues.
 
