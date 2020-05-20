@@ -1,7 +1,7 @@
 # Competency - ML Framework - MXNet
 
-Apache MXNet is an open-source machine learning software framework, used to train, and deploy deep neural networks. It is scalable, allowing for fast model training, and supports a flexible programming model and multiple programming languages (including C++, Python, Java, Julia, Matlab, JavaScript, Go, R, Scala, Perl, and Wolfram Language).
-The MXNet library is portable and can scale to multiple GPUs and multiple machines. MXNet is supported by public cloud providers including Amazon Web Services (AWS) and Microsoft Azure. Amazon has chosen MXNet as its deep learning framework of choice at AWS. Currently, MXNet is supported by Intel, Baidu, Microsoft, Wolfram Research, and research institutions such as Carnegie Mellon, MIT, the University of Washington, and the Hong Kong University of Science and Technology.
+Apache MXNet is an open-source machine learning software framework used to train and deploy deep neural networks. It is scalable, allowing for fast model training, and supports a flexible programming model and multiple programming languages (including C++, Python, Java, Julia, Matlab, JavaScript, Go, R, Scala, Perl, and Wolfram Language).
+The MXNet library is portable and can scale to multiple GPUs and multiple machines. MXNet is supported by public cloud providers including Amazon Web Services (AWS) and Microsoft Azure. Amazon has chosen MXNet as its deep learning framework of choice at AWS. As of May 2020, MXNet is supported by Intel, Baidu, Microsoft, Wolfram Research, and research institutions such as Carnegie Mellon, MIT, the University of Washington, and the Hong Kong University of Science and Technology.
 You may wonder over the need of MXNet when other deep learning frameworks like TensorFlow, Torch, Keras, etc. already existed? The problem with existing deep learning frameworks is that the users need to learn another system for a different programming flavor. MXNet solves this issue, as it is a successful deep learning framework which excels in Programmability, Portability, and Scalability.
 As a high level and high performance API in MXNet, "Gluon" provides a clear, concise API for defining machine learning models using a collection of pre-built, optimized neural network components. Developers who are new to machine learning will find this interface more familiar to traditional code, since machine learning models can be defined and manipulated just like any other data structure. More seasoned data scientists and researchers will value the ability to build prototypes quickly and utilize dynamic neural network graphs for entirely new model architectures, all without sacrificing training speed.
 
@@ -9,7 +9,7 @@ As a high level and high performance API in MXNet, "Gluon" provides a clear, con
 
 ## How do you prove it?
 
-- You have an understanding of choosing MXNet over other frameworks.
+- You understand when to use MXNet over other frameworks.
 
 - You know the general differences of hardware consumption using MXNet over other frameworks.
 
