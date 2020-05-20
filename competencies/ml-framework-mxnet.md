@@ -5,17 +5,13 @@ The MXNet library is portable and can scale to multiple GPUs and multiple machin
 You may wonder over the need of MXNet when other deep learning frameworks like TensorFlow, Torch, Keras, etc. already existed? The problem with existing deep learning frameworks is that the users need to learn another system for a different programming flavor. MXNet solves this issue, as it is a successful deep learning framework which excels in Programmability, Portability, and Scalability.
 As a high level and high performance API in MXNet, "Gluon" provides a clear, concise API for defining machine learning models using a collection of pre-built, optimized neural network components. Developers who are new to machine learning will find this interface more familiar to traditional code, since machine learning models can be defined and manipulated just like any other data structure. More seasoned data scientists and researchers will value the ability to build prototypes quickly and utilize dynamic neural network graphs for entirely new model architectures, all without sacrificing training speed.
 
-Resources:
-
-- https://en.wikipedia.org/wiki/Apache_MXNet
-- https://becominghuman.ai/mxnet-what-is-it-and-how-to-get-started-52efd9cb52cf
-- https://www.welcome.ai/tech/deep-learning/gluon
+- Wikipedia: https://en.wikipedia.org/wiki/Apache_MXNet
 
 ## How do you prove it?
 
-- You have understanding of choosing MXNet over other frameworks.
+- You have an understanding of choosing MXNet over other frameworks.
 
-- You know general differences of hardware consumption using MXNet over other frameworks.
+- You know the general differences of hardware consumption using MXNet over other frameworks.
 
 - You know how to install MXNet on your local or cloud machine using PIP, Docker, and source code.
 
@@ -56,3 +52,7 @@ Resources:
 - Using Gluon in AWS: https://aws.amazon.com/blogs/machine-learning/introducing-gluon-an-easy-to-use-programming-interface-for-flexible-deep-learning/
 
 - Applied DL with MXNet by O'Reilly: https://www.oreilly.com/live-training/courses/applied-deep-learning-for-coders-with-apache-mxnet/0636920252047/
+
+- What is MXNet: https://becominghuman.ai/mxnet-what-is-it-and-how-to-get-started-52efd9cb52cf
+
+- An overview on Gluon: https://www.welcome.ai/tech/deep-learning/gluon
