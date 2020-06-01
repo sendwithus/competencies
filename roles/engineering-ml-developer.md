@@ -41,6 +41,7 @@ Big Data
 Computer Vision
 Natural Language Processing
 Deep Learning
+Jupyter
 Part of Successful Projects:1
 2 of ML Framework
 1 of Language
