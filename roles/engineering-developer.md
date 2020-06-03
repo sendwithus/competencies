@@ -35,6 +35,7 @@ QA Automation
 Fire Handling
 Docker
 Machine Learning
+Big Data
 Kubernetes
 Customer Empathy
 Part of Successful Projects:1
