@@ -18,11 +18,11 @@ Big data is a field that treats ways to analyze, systematically extract informat
 
 - You have an acceptable knowledge of probabilities science as the quantitative measurement in big data.
 
-- You know what Cloud Computing is, what characteristics it has, and what its relation with big data is.
+- You know what Cloud Computing is, what characteristics it has, and how it is related to big data.
 
 - You have an understanding of Hadoop ecosystem and its modules such as HDFS, Yarn, and MapReduce.
 
-- You have familiarity with Natural Language Processing, its basic concepts such as tokenization, lemmatization, bigram collocation detection.
+- You have familiarity with Natural Language Processing, its basic concepts such as tokenization, lemmatization, bigram collocation detection, etc.
 
 - You have understanding of graph analytics and its basic concepts such as path Analysis, connectedness, modularity, eigenvalue centrality, large scale graph processing, and graph computation.
 
