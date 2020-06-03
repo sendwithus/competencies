@@ -8,27 +8,29 @@ Big data is a field that treats ways to analyze, systematically extract informat
 
 - You know Big data's main characteristics; 6 Vs; what they are, what they mean, and how they are connected to each other.
 
-- You have a good understanding of big data related and main programming languages such as Python, R, and Java.
+- You have experience in big data's main programming languages such as Python, R, and Java.
 
 - You are familiar with data warehousing technologies in big data, relational and non-relational database systems such as (but not limited to) MySQL, Oracle, DB2, and NoSQL, Hbase, HDFS, MongoDB, CouchDB, Cassandra, Teradata, etc.
 
-- You have an acceptable understanding and experience in working with computational frameworks in big data such as Apache Spark, Apache Storm, Apache Samza, Apache Flink and the classic MapReduce and Hadoop.
+- You have experience in working with computational frameworks in big data such as Apache Spark, Apache Storm, Apache Samza, Apache Flink and the classic MapReduce and Hadoop.
 
-- You have a good understanding of Statistics and Linear Algebra.
+- You have strong background in Statistics and Linear Algebra.
 
 - You have an acceptable knowledge of probabilities science as the quantitative measurement in big data.
 
 - You know what Cloud Computing is, what characteristics it has, and how it is related to big data.
 
-- You have an understanding of Hadoop ecosystem and its modules such as HDFS, Yarn, and MapReduce.
+- You are familiar with Hadoop ecosystem and its modules such as HDFS, Yarn, and MapReduce.
 
-- You have familiarity with Natural Language Processing, its basic concepts such as tokenization, lemmatization, bigram collocation detection, etc.
+- You have experience in graph analytics and its basic concepts such as path Analysis, connectedness, modularity, eigenvalue centrality, large scale graph processing, and graph computation.
 
-- You have understanding of graph analytics and its basic concepts such as path Analysis, connectedness, modularity, eigenvalue centrality, large scale graph processing, and graph computation.
-
-- You have an understanding of streaming data and static data, what the differences are, and what we use in our eCommerce platform.
+- You know what streaming and static data are, what the differences are, and what we use in our eCommerce platform.
 
 - You have extensive experience in data visualization and the technologies to do that.
+
+- You can build a big data processing system and present it to your manager.
+
+- You can build something using the cloud vendor ETL products.
 
 ## How do you improve it?
 
