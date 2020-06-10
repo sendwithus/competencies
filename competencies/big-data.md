@@ -6,9 +6,9 @@ Big data is a field that treats ways to analyze, systematically extract informat
 
 ## How do you prove it?
 
-- You know Big data's main characteristics; 6 Vs; what they are, what they mean, and how they are connected to each other.
+- You can identify Big Data's main characteristics - the 6 V's - including what they are, what they mean, and how they relate to each other.
 
-- You have experience in big data's main programming languages such as Python, R, and Java.
+- You have experience in at least one of big data's main programming languages; Python, R, and Java.
 
 - You are familiar with data warehousing technologies in big data, relational and non-relational database systems such as (but not limited to) MySQL, Oracle, DB2, and NoSQL, Hbase, HDFS, MongoDB, CouchDB, Cassandra, Teradata, etc.
 
@@ -16,7 +16,7 @@ Big data is a field that treats ways to analyze, systematically extract informat
 
 - You have strong background in Statistics and Linear Algebra.
 
-- You have an acceptable knowledge of probabilities science as the quantitative measurement in big data.
+- You have knowledge of probabilities science as the quantitative measurement in big data.
 
 - You know what Cloud Computing is, what characteristics it has, and how it is related to big data.
 
