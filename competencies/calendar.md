@@ -46,3 +46,5 @@ Go to calendar > settings > event settings
 
 Then update default guest permissions to: "Modify event"
 
+Turn on speedy meetings so all your meetings are 50 minutes not an hour.
+
