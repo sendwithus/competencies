@@ -39,6 +39,8 @@ Big Data
 Kubernetes
 Customer Empathy
 Part of Successful Projects:1
+Prometheus
+Grafana
 1 of Language
 1 of IDE
 </skills>
