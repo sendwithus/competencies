@@ -43,6 +43,8 @@ Kanban
 Kubernetes
 2 of Language:1
 Linux:2
+Prometheus
+Grafana
 Metrics
 Networking:2
 Research
