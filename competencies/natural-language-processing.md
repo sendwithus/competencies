@@ -17,8 +17,6 @@ A few examples of NLP that still are hot topics in research are:
 In any case, the computer is able to identify the appropriate word, phrase, or response by using context clues, the same way that any human would. Conceptually, it’s a fairly straightforward technology.
 Where NLP outperforms humans is in the amount of language and data it’s able to process. Therefore, its potential uses go beyond the examples above and make possible tasks that would’ve otherwise taken employees months or years to accomplish.
 
-In eCommerce research areas, the most significant applications of NLP are `Form Spell Check`, `Search Auto Complete`, `Search Autocorrect`, and `Smart Search` in product catalogs.
-
 ## How do you prove it?
 
 * You can define NLP terminology.
