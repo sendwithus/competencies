@@ -26,6 +26,7 @@ Block off sections of your calendar to ensure you manage your weekly workload.
 
 Some examples of remote worker schedules.
 
+Example 1:
 On Sunday I review the week ahead, and check for meeting double bookings, and reschedule things that need to be.  
 I pull in the work for the week that I hope to get done and schedule some large blocks of time in my calendar that I can do that work in.
 Each day, I get up at 5:30am PST to be on time for the 9am start in EST, and as much overlap with Poland as possible.
@@ -36,3 +37,11 @@ I check my task list for the weeks work and remind myself of the critical projec
 In the first  gap in my calendar is where I take my shower, and I also use that time to think strategically about the rest of the day - 
 "what is the best thing I could work on next".  As opposed to the morning where I have mostly been reactive and trying to unblock as many things as possible.
 I finish my day at roughly 2pm but am available on slack till around 5pm for the rest of the team.
+
+Example 2:
+I wake up at my regular time of 6am CT
+Instead of showering as I would when going ot the office I just go to my home office and catch up on any reminders I set and do some reading, I often read a chapter or two in a book, a relevant business book.
+My day flows from there as more people get online and discussions and meetings start.
+I used a free hour around lunch to go for a 30 minute run, 10 minute cooldown and shower and eat lunch (I typically eat leftovers and lunch is about fuel for me so it's minutess of time)
+Then the afternoon is all about meetings or projects, if an important project I will have blocked time.
+I finish my day at roughly 4pm CT depending on meetings.
