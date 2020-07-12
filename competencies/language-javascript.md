@@ -38,11 +38,11 @@ What this video from Soundcloud on how to use functional programming to reduce c
 
 # Competency - Language JavaScript  (advanced)
 
-How do you prove it
+## How do you prove it?
 
 Can talk about the differences between JavaScript variants.
 
-How to improve it
+## How do you improve it?
 
 Learn TypeScript, CoffeeScript, Node.js, Elm, ReasonML
 
