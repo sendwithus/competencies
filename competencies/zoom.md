@@ -5,9 +5,13 @@ We use zoom as our video communication platform.
 ## How do you prove it?
 
 You can start a meeting quickly.
+
 You can find the meeting link in a meeting you have started.
+
 You can mute people on the line.
+
 You can share your screen.
+
 You can make someone else on the call the presenter.
 
 ## How do you improve it?
