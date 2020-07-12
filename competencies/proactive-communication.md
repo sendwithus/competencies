@@ -4,6 +4,9 @@ Communication is foundational to what product management is, and being an effect
 
 ## How do you prove it?
 
+You've gotten good feedback from meetings you run.
+
+You can show examples where you have communicated clearly.
 
 ## How do you improve it?
 
