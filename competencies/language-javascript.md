@@ -3,7 +3,6 @@
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
 
 * Wikipedia: [https://en.wikipedia.org/wiki/JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-* MDN Web Docs: [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## How do you prove it?
 
@@ -18,13 +17,10 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 ## How do you improve it?
 
 * Read You Don't Know JS: [https://github.com/getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
-* Read the docs: [https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)
-* Memorize the cheat sheet: [https://raw.githubusercontent.com/LeCoupa/awesome-cheatsheets/master/backend/node.js](https://raw.githubusercontent.com/LeCoupa/awesome-cheatsheets/master/backend/node.js)
-* Understand package management: [https://www.npmjs.com/](https://www.npmjs.com/) [https://npmcompare.com/](https://npmcompare.com/)
+* Read the docs: [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * Build some software.
-* What this video from Soundcloud on how to use functional programming to reduce code boilerplate. [https://www.youtube.com/watch?v=kA4-b7hvWhg](https://www.youtube.com/watch?v=kA4-b7hvWhg)
 
-# Competency - Language JavaScript  (advanced)
+# Competency - Language JavaScript (advanced)
 
 ## How do you prove it?
 
