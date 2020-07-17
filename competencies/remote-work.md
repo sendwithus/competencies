@@ -1,6 +1,6 @@
 # Competency - Remote Work
 
-As distinct from working from home, remote work is when your primry workspace is away from the main office,
+As distinct from working from home, remote work is when your primry workspace is away from the main office.
 Like during a pandemic.
 
 - Remote work is hard!  It requires a lot of discipline, time management, internal motivation.
@@ -22,7 +22,7 @@ should be the same as meeting someone across the table.
 - You are responsive to your colleagues.  Again, responsive means different things to different roles,
 check with your manager.
 - You can explain why you should switch to a video chat, as opposed to slack, as opposed to Asana.
-- When to use these mediums and when not to.
+When to use these mediums and when not to.
 - You know how to unblock your tasks and can describe who you go to in various situations.
 
 ## How do you improve it?
@@ -33,8 +33,8 @@ and not be distracted by the scores of personal projects at home.
 - Use calendar plugin to automatically set meeting status in Slack
 - Proactively setting status in Slack for short breaks like, out to lunch, be-right-back, etc
 - Tell your team about extended break like, walk the dog be back in an hour, dental appointment be back at 2, etc
-- When you have a chance to visit the office, make it count, and make it known to everyone that you are in the office.
-Pack your schedule to meeting people in person. Make a point to greet and meet, even if it is just a walk by.
+- When you have a chance to visit the office, make it count, make it known to everyone that you are in the office.
+Pack your schedule for meeting people in person. Make a point to greet and meet, even if it is just a walk by.
 
 ## Examples of remote worker schedules.
 
