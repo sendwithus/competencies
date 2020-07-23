@@ -15,6 +15,7 @@ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open so
 * You understand how third party libraries are used, access, their lifecycle and security implications.
 * You can explain key differences between several PHP versions (5.0 -> 5.6, 5 -> 7)
 * You can name a couple of popular frameworks and differences between them
+* You understand how to configure and use debugger
 
 ## How do you improve it?
 
