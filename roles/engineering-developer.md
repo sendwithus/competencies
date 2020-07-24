@@ -6,7 +6,7 @@ As a developer, you spend the first few minutes of the day, reviewing your inbox
 
 You build code. When you are stuck, or needing to bounce ideas off another, you drag over a colleague to show off what you built and get feedback and input.  You are eager to accept feedback and improve your design of the code.  You demo to the product owner and deploy into production.  You do some documentation and write some more tests.  You have a discussion about tech choices.  You get stuck on something and ask for help.    You design something new and pull people up to the whiteboard to get to the bottom of it.
 
-You find an issue you don’t know how to fix and you research intensely amassing information from tens of sources collating information and learning about the problem domain to ultimately make a decision about direction.  You show your decision to a trusted team member. 
+You find an issue you don’t know how to fix and you research intensely amassing information from tens of sources collating information and learning about the problem domain to ultimately make a decision about direction.  You show your decision to a trusted team member.
 
 <technologies.snippet/>
 <basecamp.snippet/>
@@ -41,6 +41,7 @@ Customer Empathy
 Part of Successful Projects:1
 Prometheus
 Grafana
+Make
 1 of Language
 1 of IDE
 </skills>
