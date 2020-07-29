@@ -1,5 +1,7 @@
 # Competency - Technical Breadth Cloud Providers
 
+Main cloud providers are AWS, GCP and Azure. 
+
 ## How do you prove it?
 
 Talk about the differences between two cloud providers

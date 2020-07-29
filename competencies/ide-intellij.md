@@ -1,5 +1,7 @@
 # Competency - IDE - IntelliJ IDEA
 
+Intellij is an IDE by JetBrains and has very good indexing and understanding of your code which allows for near magical refactoring.
+
 ## How do you prove it?
 
 * You have appropriate plug-ins installed.

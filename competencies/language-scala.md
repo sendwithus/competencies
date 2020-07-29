@@ -20,3 +20,7 @@ You understand how third party libraries are used, access, their lifecycle and s
 
 ## How do you improve it?
 
+
+Read the docs - https://docs.scala-lang.org/tutorials/scala-for-java-programmers.html
+
+Do a tutorial - https://www.tutorialspoint.com/scala/index.htm

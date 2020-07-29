@@ -1,5 +1,7 @@
 # Competency - IDE - Vim
 
+Vim is a command line text editor with a wealth of plugins to do just about anything.
+
 ## How do you prove it?
 
 * Open a document in read only mode

@@ -6,7 +6,7 @@ Wikipedia: https://en.wikipedia.org/wiki/Clojure
 
 Home: https://clojure.org/ (and [Getting Started](https://clojure.org/guides/getting_started))
 
-## Prove It
+## How do you prove It?
 
 For code you have submitted, your code reviews get little syntactic corrections.
 
@@ -22,7 +22,7 @@ You have a good understanding of the resources and where to go if you're stuck.
 
 You understand how third party libraries are used, accessed, their lifecycle and security implications.
 
-## Improve it
+## How do you improve it?
 
 Install and Learn how to use build tool Leiningen: https://leiningen.org/
 
