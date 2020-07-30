@@ -2,7 +2,7 @@
 
 Control over access and permissions are in place for everyone's well-being, from the employee all the way back to the end-user. Having access to Production environments will make investigations, deployments, maintenance, and systems management faster, but also comes with a great deal of responsibility. It is important to understand the potential harm a single command can do while working in a production environment. A team member who is ready for Production access will know and consider the symptoms an action may have and take measures to isolate such actions wherever possible.
 
-To borrow an adage from Spiderman lore, "with great power comes great responsibility". For some reason, I'm also reminded of my favourite Yeats poem, "Never Give All the Heart", with the final couplet being: "He that made this knows all the cost, / For he gave all his heart and lost." Those who have made careless or ignorant mistakes in Production endure enough anxiety and cause enough damage that one would do better to follow a strict code than learn Production-safe conduct at the expense of themself and others.
+"with great power comes great responsibility" - The Spiderman
 
 ## How do you prove it?
 
@@ -23,4 +23,3 @@ You do not perform expensive operations like file scans from the root directory.
 You are calm and conscientious in a Production setting such that actions taken are mindful, calculated, and deliberate. You never panic and know to rely on your team in the face of concern or doubt.
 
 ## How do you improve it?
-
