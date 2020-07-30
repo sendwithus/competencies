@@ -6,7 +6,7 @@ Control over access and permissions are in place for everyone's well-being, from
 
 ## How do you prove it?
 
-You pair while working on Production systems. Always.
+You have shadowed three production systems accesses.
 
 You confirm and discuss actions with your pair partner such that both understand what you are attempting to do, why, and what the risks and alternatives are.
 
