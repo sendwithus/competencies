@@ -1,4 +1,6 @@
-# Competency - Technical Breadth AWS Services
+# Competency - Technical Breadth Azure Services
+
+Microsofts cloud offering.
 
 ## How do you prove it?
 
