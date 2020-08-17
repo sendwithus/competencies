@@ -30,6 +30,7 @@ GitHub
 Github Actions
 Deployments
 SQL
+Regex
 Testing
 Linux
 QA Automation
