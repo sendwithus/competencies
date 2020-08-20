@@ -10,7 +10,7 @@ You can move tasks between projects.
 
 You can organize tasks as projects or subtasks and move between those paradigms.
 
-You can delete a task without a mouse.
+You can delete a task with the keyboard shortcut.
 
 You can create a report.
 
