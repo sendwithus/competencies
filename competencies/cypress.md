@@ -4,11 +4,14 @@ Cypress is a front end testing tool built for the modern web applications. Cypre
 
 ## How do you prove it?
 
-* You have written a few cypress tests
-* You test your features in isolation
+* You can explain how to install cypress and use it in a new project
+* You have written 10 cypress tests
+* You can show cypress tests running in Chrome and Firefox
+* You have written cypress tests that programmatically bypass irrelevant UIs (e.g., logging in programmatically)
+* You have written a cypress test using cypress-wait-until
+* You use the cypress.json configuration file to seed your tests with relevant information (e.g., baseUrl)
 * You follow cypress best practices
 * You avoid cypress anti-patterns
-* You know how to use cypress-wait-until
 
 ## How do you improve it?
 
