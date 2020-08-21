@@ -30,6 +30,7 @@ Front End
 GitHub
 Coding
 QA Automation
+Cypress
 Feature Flags
 2 of UI Framework
 1 of IDE

@@ -32,6 +32,7 @@ GitHub
 Front End
 Documentation
 Testing
+Cypress
 Presentations
 Mentoring
 Meetings
