@@ -23,14 +23,14 @@ You enjoy working with others and helping mentor developers at all skill levels.
 Testing:2
 QA Automation
 Architecture
-Github:2 
-Coding:2 
+Github:2
+Coding:2
 Deployments
-Cypress.io
-Diagrams 
-Documentation 
-Presentations 
-Mentoring 
+Cypress
+Diagrams
+Documentation
+Presentations
+Mentoring
 Part of Successful Projects:2
 5 of Technical Breadth
 </skills>
