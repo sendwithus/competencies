@@ -26,6 +26,9 @@ This document talks about how do you run a successful meeting, the advanced sect
 /poll "How was that meeting?" "I always want to be in this meeting I get enormous value from it" "I sometimes get value from this meeting... please add ideas for improvement below" "I think this meeting would be better if... please add ideas for improvement below" "I don't think I need to be in this meeting"
 ```
 
+* Get familiar with the keyboard shortcuts: Toggling mute (CMD+d for mac users)
+* Use extensions like [Meet Mute](https://chrome.google.com/webstore/detail/meet-mute/dkgoclojlihiolngeagmhkjiglmoeeic?hl=en) and setup the keyboard shortcuts for toggling mute.
+
 **Planning Meetings**
 
 A successful meeting always has:
@@ -85,11 +88,9 @@ Have achieved all the things for the basic competency and additionally can admin
 
 ## How do you prove it?
 
-You can run a retrospective to gather feedback about process improvement.
-
-You can run a post-mortem effectively to gather feedback about an event.
-
-You can run brainstorming meetings with several people.
+* You can run a retrospective to gather feedback about process improvement.
+* You can run a post-mortem effectively to gather feedback about an event.
+* You can run brainstorming meetings with several people.
 
 ## How do you improve it?
 
