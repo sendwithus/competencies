@@ -7,29 +7,20 @@ This document talks about how do you run a successful meeting, the advanced sect
 
 ## How do you prove it?
 
-Your meeting invites have an agenda.
-
-Your meetings have a role for who is running the meeting.  
-
-Your meetings have a role for who is making sure remote participants have a voice.
-
-When you start a meeting you clearly articulate what the meeting is for at a high level.
-
-Your meetings have an appropriate amount of time.
-
-You book a meeting room when appropriate.
-
-You check people's calendars before you book the meeting and talk to people with conflicts before scheduling.
-
-Your meetings get good feedback about their usefulness.
-
-Your meetings have action items and notes.
+* Your meeting invites have an agenda.
+* Your meetings have a role for who is running the meeting.  
+* Your meetings have a role for who is making sure remote participants have a voice.
+* When you start a meeting you clearly articulate what the meeting is for at a high level.
+* Your meetings have an appropriate amount of time.
+* You book a meeting room when appropriate.
+* You check people's calendars before you book the meeting and talk to people with conflicts before scheduling.
+* Your meetings get good feedback about their usefulness.
+* Your meetings have action items and notes.
 
 ## How do you improve it?
 
-Ask people if they found the meeting useful.  
-
-Post the poll in slack after a meeting 
+* Ask people if they found the meeting useful.  
+* Post the poll in slack after a meeting 
 
 ```
 /poll "How was that meeting?" "I always want to be in this meeting I get enormous value from it" "I sometimes get value from this meeting... please add ideas for improvement below" "I think this meeting would be better if... please add ideas for improvement below" "I don't think I need to be in this meeting"
