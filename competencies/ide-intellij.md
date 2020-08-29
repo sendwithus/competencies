@@ -20,4 +20,5 @@ Intellij is an IDE by JetBrains and has very good indexing and understanding of 
 ## How do you improve it?
 
 * Official video turtorials and how-to's: [https://www.jetbrains.com/idea/documentation/](https://www.jetbrains.com/idea/documentation/)
-* Learn how to use some more advanced features: [https://www.jetbrains.com/help/idea/pro-tips.html](https://www.jetbrains.com/help/idea/pro-tips.html)
+* Learn how to use some more advanced features: [https://medium.com/@andrey_cheptsov/intellij-idea-pro-tips-6da48acafdb7](https://medium.com/@andrey_cheptsov/intellij-idea-pro-tips-6da48acafdb7)
+* Mouseless driven development: [https://www.youtube.com/watch?v=UH6YVv9js3s](https://www.youtube.com/watch?v=UH6YVv9js3s)
