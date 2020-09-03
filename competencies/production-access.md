@@ -1,25 +1,23 @@
 # Competency - Production Access Readiness
 
-Control over access and permissions are in place for everyone's well-being, from the employee all the way back to the end-user. Having access to Production environments will make investigations, deployments, maintenance, and systems management faster, but also comes with a great deal of responsibility. It is important to understand the potential harm a single command can do while working in a production environment. A team member who is ready for Production access will know and consider the symptoms an action may have and take measures to isolate such actions wherever possible.
+Generally only robots and devops should have access to production.  Production is a dangerous place where things can easily go drastically wrong.
+However, with legacy systems that don't have good automated processes behind them, sometimes it is necessary to go on to these machines and make modifications, for example during outages or failures to investigate / rectify.  This competency describes what skills you need to navigate those systems safely.
 
-"with great power comes great responsibility" - The Spiderman
 
 ## How do you prove it?
 
 You have shadowed three production systems accesses.
 
-You confirm and discuss actions with your pair partner such that both understand what you are attempting to do, why, and what the risks and alternatives are.
+You always pair when making production changes and communicate what you are attempting to do, why, and what the risks and alternatives are.
 
-You treat the super- and root user role with the utmost respect, only using them when absolutely necessary and avoiding them wherever possible.   
+You can explain when you should and should not use root / super role.
 
-You interact with databases using extreme levels of caution, understanding that corrupted and lost data can and will be absolutely breaking to our system. You are naturally averse to performing manual mutative actions to table data or DB state. You log in using a role with the fewest grants required to do your work. You do not execute complex queries on live databases, and exhaustively limit SELECT statements and other consumptive actions. You understand what a table scan is, why it is dangerous, and what actions will cause one to occur. You know which actions are locking at any level of the data (row, table, etc.) and understand the implications of performing those actions on a live database.
+You can demonstrate interacting with a database in a safe way.
 
-You treat Redis and any other datastore with the same degree of respect and caution as stated above.
-
-You download large log files and inspect them locally instead of on the host machine.
-
-You do not perform expensive operations like file scans from the root directory.
-
-You are calm and conscientious in a Production setting such that actions taken are mindful, calculated, and deliberate. You never panic and know to rely on your team in the face of concern or doubt.
+You can explain what a table scan is, why it is dangerous, and what actions will cause one to occur.
 
 ## How do you improve it?
+
+Interact with databases using extreme levels of caution, understanding that corrupted and lost data can and will be absolutely breaking to our system. 
+Log in to the database using a role with the fewest grants required to do your work. 
+You know which actions are locking at any level of the data (row, table, etc.) and understand the implications of performing those actions on a live database.
