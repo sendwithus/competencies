@@ -18,6 +18,7 @@ Email
 Calendar
 Google Drive
 Expense Tracking
+Remote Work
 </skills>
 
 
