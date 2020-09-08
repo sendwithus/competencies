@@ -1,4 +1,4 @@
-# Engineering - Magento Developer
+# Engineering - Magento 2 Developer
 <welcome.snippet/>
 
 ## What it's like to be a Developer
