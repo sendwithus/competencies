@@ -17,7 +17,7 @@ Read the TypeScript documentation directly [here](https://www.typescriptlang.org
 * Decorators
 * Extends and Implements
 
-# Competency - Language TypeScript - Level 2
+# Competency - Language TypeScript Level 2
 
 ## How do you prove it?
 * For code you have submitted, your code reviews receive few syntactic corrections.
