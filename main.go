@@ -331,7 +331,7 @@ func getLevelFromName(name string) (string, string) {
 var competencies []string
 
 func createGroup(count string, group string) (string, error) {
-	group, _ = getLevelFromName(group)
+	group, level := getLevelFromName(group)
 
 	result := "<table class=\"group mt-4\"><tr><td valign=\"top\"><span class=\"group-heading text-sm pr-2 whitespace-no-wrap\">" + group + " (" + count + " of)" + "</span></td><td class=\"group\" valign=\"top\"> "
 	if len(competencies) == 0 {
@@ -346,6 +346,9 @@ func createGroup(count string, group string) (string, error) {
 	for _, competency := range competencies {
 		if strings.HasPrefix(competency, strings.ToLower(strings.ReplaceAll(group, " ", "-"))+"-") {
 			competency = competency[0 : len(competency)-3]
+			if level != "1" {
+				competency += ":" + level
+			}
 			link := createSkillLink(competency, false)
 			result += link
 		}
