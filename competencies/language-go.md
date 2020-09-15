@@ -25,5 +25,5 @@
 ## How do you improve it?
 * Open many PRs
 * Memorize the [cheat sheet](https://github.com/a8m/go-lang-cheat-sheet/blob/master/golang_refcard.pdf)
-* Understand [package management](https://github.com/golang/dep)
+* Understand [package management](https://blog.golang.org/using-go-modules)
 * Attend [Gophercon](https://www.gophercon.com/)
