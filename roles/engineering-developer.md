@@ -29,6 +29,7 @@ Feature Flags
 GitHub
 Github Actions
 Deployments
+OAuth
 SQL
 Regex
 Testing
@@ -44,6 +45,7 @@ Part of Successful Projects:1
 Prometheus
 Grafana
 Make
+TDD
 Web API Service Worker
 Web API Web Worker
 1 of Language
