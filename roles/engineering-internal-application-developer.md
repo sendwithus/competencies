@@ -41,6 +41,7 @@ Testing
 TDD
 Linux
 Golang
+Metabase
 </skills>
 
 <inherit doc="base.md"/>
