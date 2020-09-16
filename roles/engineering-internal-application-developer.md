@@ -3,6 +3,7 @@
 
 ## What it's like to be a Internal Application Developer
 This role reports to the CTO in an operations capacity and supports a large array of stake holders within the company. 
+
 Projects include:  
 
 - automating HR functions like onboarding.  Designing spreadsheets that answer business problems and then building software that 
