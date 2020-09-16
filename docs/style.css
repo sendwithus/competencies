@@ -9,6 +9,12 @@ opacity-90 {
   background-color: rgb(197, 140, 35) !important;
   color: white !important;
 }
+#content ul li {
+  list-style: disc;
+  margin-left: 3rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
 .missing {
   background-color: white !important;
   border: 1px solid gray !important; 
