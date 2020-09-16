@@ -6,7 +6,7 @@ This role reports to the CTO in an operations capacity and supports a large arra
 Projects include:
 - automating HR functions like onboarding.  Designing spreadsheets that answer business problems and then building software that 
 aggregates the needed data from systems across the organization.
-- Aggregating data from systems such as Salesrforce, internal MySQL databases, ChurnZero, Drift, Google Analytics and many others.  
+- Aggregating data from systems such as Salesforce, internal MySQL databases, Drift, Google Analytics, Intercom, Zendesk, Chargify, Airtable and others.  
 - Wrting bots that help people find information from within slack.  
 
 This is a role where you have to wear a lot of hats to make meaningful progresss.
@@ -34,14 +34,11 @@ SQL
 SOAP
 Rest
 ETL
-Salesforce API
-ChurnZero API
 OAuth
 Testing
 TDD
 Linux
 Golang
-Metabase
 </skills>
 
 <inherit doc="base.md"/>
