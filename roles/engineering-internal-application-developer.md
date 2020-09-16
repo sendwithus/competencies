@@ -3,10 +3,13 @@
 
 ## What it's like to be a Internal Application Developer
 This role reports to the CTO in an operations capacity and supports a large array of stake holders within the company. 
-Projects include:
+Projects include:  
+
 - automating HR functions like onboarding.  Designing spreadsheets that answer business problems and then building software that 
 aggregates the needed data from systems across the organization.
+
 - Aggregating data from systems such as Salesforce, internal MySQL databases, Drift, Google Analytics, Intercom, Zendesk, Chargify, Airtable and others.  
+
 - Wrting bots that help people find information from within slack.  
 
 This is a role where you have to wear a lot of hats to make meaningful progresss.
