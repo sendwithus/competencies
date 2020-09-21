@@ -15,7 +15,7 @@ aggregates the needed data from systems across the organization.
 
 - Building reports with the goal of developing business insights.
 
-This is a role where you have to wear a lot of hats to make meaningful progresss.
+This is a role where you have to wear a lot of hats to make meaningful progress.
 
 
 <technologies.snippet/>
