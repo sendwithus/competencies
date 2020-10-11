@@ -34,7 +34,7 @@ Deployments
 Diagrams
 Disaster Recovery
 Docker
-Elasticsearch
+Elasticsearch Level 1
 Fire Handling
 Fire Response
 Fire Triaging

@@ -39,6 +39,7 @@ Fire Handling
 Docker
 Machine Learning
 Big Data
+Elasticsearch Level 1
 Kubernetes
 Customer Empathy
 Part of Successful Projects:1
