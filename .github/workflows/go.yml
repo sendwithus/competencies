@@ -8,6 +8,7 @@ jobs:
   build:
     name: Deploy to Nerdherder
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
       - uses: mvasigh/dispatch-action@main
         with:
