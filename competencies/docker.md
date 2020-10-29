@@ -8,6 +8,8 @@ Wikipedia: [https://en.wikipedia.org/wiki/Docker_(software)](https://en.wikipedi
 
 Home: [https://www.docker.com/](https://www.docker.com/) 
 
+Docker Cheatsheet: [https://github.com/wsargent/docker-cheat-sheet](https://github.com/wsargent/docker-cheat-sheet)
+
 ## How do you prove it?
 
 You can explain what docker is architecturally good for and how it operates.
@@ -27,4 +29,3 @@ Do a tutorial: [https://docker-curriculum.com/](https://docker-curriculum.com/)
 Memorize a docker cheat sheet: [https://github.com/wsargent/docker-cheat-sheet](https://github.com/wsargent/docker-cheat-sheet)
 
 Learn the AWS container registry: [https://aws.amazon.com/ecr/](https://aws.amazon.com/ecr/)
-
