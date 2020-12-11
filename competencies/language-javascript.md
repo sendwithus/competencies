@@ -13,6 +13,7 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 * You understand packaging paradigms for the language.
 * You have a good understanding of the resources and where to go if you're stuck.
 * You understand how third party libraries are used, access, their lifecycle and security implications.
+* Understand why `false == "0"` is different than `false === "0"`
 
 ## How do you improve it?
 
@@ -31,4 +32,4 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 * Learn TypeScript, CoffeeScript, Node.js, Elm, ReasonML
 * Describe different techniques within JavaScript - Closures, Promises, Observables, Classes.
 * Describe different styles within JavaScript, Functional, Object Oriented.
-
+* Does JavaScript `pass by reference`, or `pass by value` ?
