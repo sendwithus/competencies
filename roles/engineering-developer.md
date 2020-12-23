@@ -37,6 +37,7 @@ Linux
 QA Automation
 Fire Handling
 Docker
+Launch Darkly
 Machine Learning
 Big Data
 Elasticsearch Level 1
