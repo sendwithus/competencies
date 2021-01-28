@@ -16,6 +16,8 @@ You can build all the yaml files for a new service and deploy it into production
 
 You can explain what each of the parts of the yaml represent and common pitfalls of using them and how they relate to scale and reliability.
 
+You can build an app with health check and graceful shutdown handling connected to liveness and readiness probes.
+
 ## How do you improve it?
 
 Tinker locally with minikube, to gain an understanding of the API [https://github.com/kubernetes/minikube](https://github.com/kubernetes/minikube)
