@@ -80,6 +80,11 @@ $(document).ready(function (event) {
         $.cookie('selectedPerson', window.location.hash.substring(1))
     }
     title = $('h1').text()
+    let people = $.cookie('people')
+    let person = $.cookie('selectedPerson')
+    if (people && person) {
+        document.title = people[person] + ' Competencies'
+    }
     $('h1').html($(`
 		<a href="../index.html"><img class="w-6 inline-block mr-3" src="seedling.png"></a>
         <a class="mr-4 text-white bg-blue-800 px-2 p-1 hover:bg-blue-600 shadow-2xl rounded-full float-right text-xs" style="display:none" title="sign in and get access to the tracking system" class="sign-in-link" id="signIn" href="javascript:;">sign in</a>
