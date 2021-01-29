@@ -40,6 +40,7 @@ Docker
 Launch Darkly
 Machine Learning
 Big Data
+Athena
 Elasticsearch Level 1
 Kubernetes
 Customer Empathy
