@@ -27,3 +27,4 @@
 * Memorize the [cheat sheet](https://github.com/a8m/go-lang-cheat-sheet/blob/master/golang_refcard.pdf)
 * Understand [package management](https://blog.golang.org/using-go-modules)
 * Attend [Gophercon](https://www.gophercon.com/)
+* Online [json to struct converter](https://mholt.github.io/json-to-go/)
