@@ -1,10 +1,6 @@
 # Competency - GitHub
 
-Can safely and securely use git and github.
-
-Knows the difference between squashing and merging
-
-Great at Pull Requests
+Version control 
 
 ## How do you prove it?
 
@@ -13,6 +9,12 @@ You can clone a project, create a branch, handle merge conflicts, squash, create
 Do a code review on a Pull Request.
 
 Can verbally explain git and github to someone else and help them learn the git processes.
+
+Can safely and securely use git and github.
+
+Knows the difference between squashing and merging
+
+Great at Pull Requests
 
 ## How do you improve it?
 
