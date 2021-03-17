@@ -22,7 +22,7 @@ Read the github manual ([https://git-scm.com/book/en/v2](https://git-scm.com/boo
 
 Memorize the basic set of commands ([https://www.git-tower.com/blog/git-cheat-sheet/](https://www.git-tower.com/blog/git-cheat-sheet/)) 
 
-Learn hub ([https://github.com/github/hub](https://github.com/github/hub)) 
+Learn `gh` (https://cli.github.com/](https://cli.github.com/)) 
 
 Git Extras for common use-cases -[ https://github.com/tj/git-extras](https://github.com/tj/git-extras)
 
