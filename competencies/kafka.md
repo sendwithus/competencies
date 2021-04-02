@@ -44,3 +44,5 @@ _Source: https://kafka.apache.org/_
 Read the official documentation: https://kafka.apache.org/documentation/
 
 Do a tutorial: https://data-flair.training/blogs/apache-kafka-tutorial/
+
+Know what to avoid: https://blog.softwaremill.com/7-mistakes-when-using-apache-kafka-44358cd9cd6
