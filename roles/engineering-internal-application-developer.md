@@ -45,7 +45,7 @@ OAuth
 Testing
 TDD
 Linux
-Golang
+Language Go
 </skills>
 
 <inherit doc="base.md"/>
