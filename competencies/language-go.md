@@ -12,6 +12,7 @@
 * Read the [docs](https://golang.org/doc/)
 * Build some software
 * Learn [best practices](https://blog.chewxy.com/2018/03/18/golang-interfaces/)
+* Learn about building [memory performant golang](https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/)
 
 # Competency - Language Go Level 2
 
