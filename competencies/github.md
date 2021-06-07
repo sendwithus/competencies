@@ -12,9 +12,11 @@ Can verbally explain git and github to someone else and help them learn the git 
 
 Can safely and securely use git and github.
 
-Knows the difference between squashing and merging
+Knows the difference between squashing and merging.
 
-Great at Pull Requests
+Write well formatted and descriptive commit messages.
+
+Great at Pull Requests.
 
 ## How do you improve it?
 
@@ -25,6 +27,8 @@ Memorize the basic set of commands ([https://www.git-tower.com/blog/git-cheat-sh
 Learn `gh` ([https://cli.github.com/](https://cli.github.com/)) 
 
 Git Extras for common use-cases -[ https://github.com/tj/git-extras](https://github.com/tj/git-extras)
+
+Read [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
 # Competency - GitHub - Level 2
 
