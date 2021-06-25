@@ -46,3 +46,5 @@ Read the official documentation: https://kafka.apache.org/documentation/
 Do a tutorial: https://data-flair.training/blogs/apache-kafka-tutorial/
 
 Know what to avoid: https://blog.softwaremill.com/7-mistakes-when-using-apache-kafka-44358cd9cd6
+
+Know how to optimize your deployment: https://www.infoq.com/articles/apache-kafka-best-practices-to-optimize-your-deployment
