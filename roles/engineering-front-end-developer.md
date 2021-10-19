@@ -27,6 +27,7 @@ You enjoy working with others and helping mentor developers at all skill levels.
 <skills>
 Language Javascript Node
 Front End
+Git
 GitHub
 Coding
 QA Automation

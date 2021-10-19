@@ -44,6 +44,7 @@ Selenium
 Fire Handling
 Fire Response
 Fire Triaging
+Git
 Github
 Kanban
 Kubernetes

@@ -26,6 +26,7 @@ You enjoy working with others and helping mentor developers at all skill levels.
 Coding
 Research
 Feature Flags
+Git
 GitHub
 Github Actions
 Deployments

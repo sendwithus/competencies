@@ -33,6 +33,7 @@ Diagrams:2
 Disaster Recovery:2
 Docker:2
 Elasticsearch:2
+Git:2
 Github:2
 Kubernetes:2
 Linux:3

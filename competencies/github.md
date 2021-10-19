@@ -1,79 +1,64 @@
 # Competency - GitHub
 
-Version control 
+Web-based Git Repository Hosting Service
 
 ## How do you prove it?
 
-You can clone a project, create a branch, handle merge conflicts, squash, create a pull request.
+You can clone a project, create a branch, handle merge conflicts, squash and create a pull request.
 
-Do a code review on a Pull Request.
+You can review a Pull Request and you give good feedback on them.
 
-Can verbally explain git and github to someone else and help them learn the git processes.
+You can explain what Forking is and when you may want to do it.
 
-Can safely and securely use git and github.
+You know how to walk through commit history.
 
-Knows the difference between squashing and merging.
+You request a reviewer on all your Pull Requests.
 
-Write well formatted and descriptive commit messages.
+Can verbally explain Github to someone else and can help them learn how to use it.
 
-Great at Pull Requests.
+You understand the difference between Git and Github.
+
+Can safely and securely use Github.
+
+You know what a PAT is and how and why it is used.
+
+You know how to setup SSH keys for authentication.
+
+You use markdown in your documentation and comments.
+
+You've configured notifications and are receiving them.
+
+You are great at Pull Requests.
 
 ## How do you improve it?
 
-Read the github manual ([https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)) 
+Read the Github Guides - [https://guides.github.com/](https://guides.github.com/)
 
-Memorize the basic set of commands ([https://www.git-tower.com/blog/git-cheat-sheet/](https://www.git-tower.com/blog/git-cheat-sheet/)) 
+Read the Github docs - [https://docs.github.com/en](https://docs.github.com/en)
 
-Learn `gh` ([https://cli.github.com/](https://cli.github.com/)) 
-
-Git Extras for common use-cases -[ https://github.com/tj/git-extras](https://github.com/tj/git-extras)
-
-Read [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
-
+Learn gh - (https://cli.github.com/)
 # Competency - GitHub - Level 2
 
-Have achieved all the things for the basic competency and additionally can administer GitHub {teams, orgs, security} and help with advanced git issues.
+Have achieved all the things for the basic competency and additionally can administer GitHub {teams, orgs, security} and have utilized its advanced features.
 
 ## How do you prove it?
 
-People come to you and say things like, "I did this merge and now I'm in a tangle of branches and somebody did a force push and now I'm stuck", and you can calmly untangle the knot. This can involve solving merge-conflicts, cherry-picking commits from other branches, and rebasing.
+You can integrate and manage webhooks and build process tie ins.
 
-You can integrate and manage webhooks and build process tie ins.  
+You are able to setup Github pages to host static content.
 
-You can explain how git hashing works and explain the pros and cons in relation to other version control systems such as svn and mercurial.
+You can publish packages on the Github registry.
 
-You can explain and use pre and post hooks.
+You've used the Github REST and/or GraphQL APIs.
 
-You understand and can modify configuration in .git/config.
+You are familiar with Github actions and workflows.
 
 ## How do you improve it?
 
-Read ALL the github manual ([https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)) and build prototypes.
+Try experimenting in Github.
 
-Learn how to set up machine users: https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users
+Help secure your codebase by utilizing dependabot.
 
-Read blogs about people doing weird things to git (like using it as a database [https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/](https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/)) 
+GraphQL Explorer - [https://docs.github.com/en/graphql/overview/explorer](https://docs.github.com/en/graphql/overview/explorer)
 
-Try experiments in git and github.  
-
-Build your own git aliases.
-
-Clean a repository's history of all files larger than 200kb.
-
-Build a GitHub PR plugin.
-
-~/.gitconfig add `autocorrect = -1` turns on autocorrect on your git commands.  So `git statsu` --> `git status` automatically.  :
-
-If using GitHub apps Status Checks, you can [skip Status Checks](https://help.github.com/articles/about-status-checks/#skipping-and-requesting-checks-for-individual-commits) on a per-commit basis (instead of closing quote, add two new lines, followed by `skip-checks: true`)
-```
-$ git commit -m "Update README.
-
->
-
->
-
-skip-checks: true
-
-```
-
-Install and learn `tig` https://github.com/jonas/tig
+Utilize API SDKs - [https://docs.github.com/en/rest/overview/libraries](https://docs.github.com/en/rest/overview/libraries)

@@ -27,6 +27,7 @@ You enjoy working with others and contribute to the company products. You always
 Coding
 Research
 Feature Flags
+Git
 GitHub
 Deployments
 SQL

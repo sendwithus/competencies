@@ -23,6 +23,7 @@ You enjoy working with others and helping mentor developers at all skill levels.
 Testing:2
 QA Automation
 Architecture
+Git:2
 Github:2
 Coding:2
 Deployments
