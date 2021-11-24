@@ -6,9 +6,13 @@ import (
 	"os"
 	"regexp"
 	"strings"
-
 	"github.com/russross/blackfriday"
 )
+
+type skillSet struct {
+	name string
+	skills string
+}
 
 func main() {
 	files, err := ioutil.ReadDir("./roles")
@@ -73,6 +77,7 @@ func tailwind(html []byte) []byte {
 	htmlString = strings.ReplaceAll(htmlString, "<h1>", `<h1 class="whitespace-no-wrap top-0 left-0 fixed w-full block opacity-90 bg-white p-2 px-8 border-b-2 text-lg mb-4"><img class="w-6 inline-block mr-3" src="seedling.png">`)
 	htmlString = strings.ReplaceAll(htmlString, "<h2>", `<h2 class="px-2 text-2xl mt-4">`)
 	htmlString = strings.ReplaceAll(htmlString, "<h3>", `<h3 class="px-2 text-xl mt-2">`)
+	htmlString = strings.ReplaceAll(htmlString, "<h4>", `<h4 class="px-2 text-l mt-2">`)
 	htmlString = strings.ReplaceAll(htmlString, "<p>", `<p style="width:50rem" class="px-2">`)
 	return []byte(htmlString)
 }
@@ -158,6 +163,7 @@ func googleHireify(html string) string {
 	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h1>", "<strong>"), "</h1>", "</strong><br><br>")
 	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h2>", "<strong>"), "</h2>", "</strong><br>")
 	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h3>", "<strong>"), "</h3>", "</strong><br>")
+	html = strings.ReplaceAll(strings.ReplaceAll(html, "<h4>", "<br><strong>"), "</h4>", "</strong><br>")
 	html = strings.ReplaceAll(strings.ReplaceAll(html, "<b>", "<strong>"), "</b>", "</strong>")
 	html = strings.ReplaceAll(html, "</p>", "</p><br>")
 	// html = strings.ReplaceAll(html, ": level 2", "")
@@ -206,39 +212,40 @@ func processSnippets(text string) (string, error) {
 }
 
 func processInherits(text string, skipBase bool) (string, error) {
-
 	regex := regexp.MustCompile(`<inherit doc="([^"]+)"/>`)
 	match := regex.FindStringSubmatch(text)
 	if len(match) > 0 {
 		if match[1] == "base.md" && skipBase {
 			return strings.ReplaceAll(text, match[0], ""), nil
 		}
-		skillsGroups := []string{}
-		err := processInheritsWithGroups(match[1], skipBase, &skillsGroups)
+		skillSets := []skillSet{}
+		err := processInheritsWithGroups(match[1], skipBase, &skillSets)
 		if err != nil {
 			return "", err
 		}
-		text = strings.ReplaceAll(text, match[0], flatten(skillsGroups))
+		text = strings.ReplaceAll(text, match[0], flatten(skillSets))
 	}
 	return strings.TrimSpace(text), nil
 }
 
-func flatten(skillsGroups []string) string {
+func flatten(skillSets []skillSet) string {
 	result := ""
-	for _, skillGroup := range skillsGroups {
-		result += skillGroup + "\n"
+	for _, skillSet := range skillSets {
+		result += `<h4>` + skillSet.name + ` skills</h4>` + "\n\n"
+		result += skillSet.skills + "\n\n"
 	}
 	return strings.TrimSpace(result)
 }
 
-func processInheritsWithGroups(filename string, skipBase bool, skillsGroups *[]string) error {
+func processInheritsWithGroups(filename string, skipBase bool, skillSets *[]skillSet) error {
 	contents, err := ioutil.ReadFile("roles/" + filename)
 	if err != nil {
 		return err
 	}
 	text := string(contents)
+	title := getTitle(text)
 	skills := processSkills(text)
-	*skillsGroups = append(*skillsGroups, skills)
+	*skillSets = append(*skillSets, skillSet{title, skills})
 
 	regex := regexp.MustCompile(`<inherit doc="([^"]+)"/>`)
 	match := regex.FindStringSubmatch(text)
@@ -246,7 +253,7 @@ func processInheritsWithGroups(filename string, skipBase bool, skillsGroups *[]s
 		if match[1] == "base.md" && skipBase {
 			return nil
 		}
-		err = processInheritsWithGroups(match[1], skipBase, skillsGroups)
+		err = processInheritsWithGroups(match[1], skipBase, skillSets)
 		if err != nil {
 			return err
 		}
