@@ -44,13 +44,9 @@ Selenium
 Fire Handling
 Fire Response
 Fire Triaging
-Git
-Github
-Kanban
 Kubernetes
 Metrics
 Networking:2
-Research
 Secrets Management
 Security
 3 of Technical Breadth

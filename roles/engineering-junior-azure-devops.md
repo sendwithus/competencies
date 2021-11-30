@@ -25,12 +25,11 @@ You have a strong drive to collaborate with others. You possess the ability to e
 Azure
 Networking
 Programming 
-Research
 Security
 Trust
 </skills>
 
-<inherit doc="base.md"/>
+<inherit doc="engineering-base.md"/>
 
 <searchspring-overview.snippet/>
 

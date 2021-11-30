@@ -48,7 +48,7 @@ Linux
 Language Go
 </skills>
 
-<inherit doc="base.md"/>
+<inherit doc="engineering-base.md"/>
 
 <searchspring-overview.snippet/>
 

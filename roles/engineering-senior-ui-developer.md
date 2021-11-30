@@ -27,9 +27,6 @@ You enjoy working with others and helping mentor developers at all skill levels.
 
 <skills>
 Coding
-Research
-Git
-GitHub
 Front End
 Documentation
 Testing
@@ -49,12 +46,12 @@ Responsive design
 Modern CSS flexbox/grid
 Human-computer interaction
 UI patterns
-Browser DevTools
+Browser Dev Tools
 </skills>
 
 <br>
 
-<inherit doc="base.md"/>
+<inherit doc="engineering-base.md"/>
 
 <searchspring-overview.snippet/>
 

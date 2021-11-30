@@ -28,14 +28,10 @@ You enjoy working with others and helping mentor developers at all skill levels.
 Magento
 Language PHP
 Coding
-Research
 Feature Flags
-Git
-GitHub
 Github Actions
 Deployments
 SQL
-Regex
 Testing
 Linux
 QA Automation
@@ -54,7 +50,7 @@ Web API Web Worker
 1 of IDE
 </skills>
 
-<inherit doc="base.md"/>
+<inherit doc="engineering-base.md"/>
 
 <searchspring-overview.snippet/>
 
