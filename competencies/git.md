@@ -65,3 +65,7 @@ Clean a repository's history of all files larger than 200kb.
 ~/.gitconfig add `autocorrect = -1` turns on autocorrect on your Git commands. So `git statsu` --> `git status` automatically.  :
 
 Install and learn `tig` https://github.com/jonas/tig
+
+Want to obliterate files? use BFG https://rtyley.github.io/bfg-repo-cleaner/
+
+Learn about GLFS - https://git-lfs.github.com/
