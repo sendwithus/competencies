@@ -29,3 +29,4 @@
 * Understand [package management](https://blog.golang.org/using-go-modules)
 * Attend [Gophercon](https://www.gophercon.com/)
 * Online [json to struct converter](https://mholt.github.io/json-to-go/)
+* Learn about and do some [fuzzing](https://dgryski.medium.com/go-fuzz-github-com-arolek-ase-3c74d5a3150c)
