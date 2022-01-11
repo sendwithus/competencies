@@ -10,6 +10,7 @@
 ## How do you improve it?
 * Do the [tour](https://tour.golang.org/welcome/1)
 * Read the [docs](https://golang.org/doc/)
+* Read [Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 * Build some software
 * Learn [best practices](https://blog.chewxy.com/2018/03/18/golang-interfaces/)
 * Learn about building [memory performant golang](https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/)
@@ -22,6 +23,7 @@
 * You can describe the kinds of problems the language solves very well and the kinds of problems it's not a great fit for.
 * You understand packaging paradigms for the language for both publishing and dependency management.
 * You understand how to review third party libraries lifecycles and security implications.
+* You can create [reproducible build](https://reproducible-builds.org/) by trimming paths and setting static build id in built binary.
 
 ## How do you improve it?
 * Open many PRs
