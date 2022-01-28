@@ -8,6 +8,7 @@ Github
 Kanban
 Regex
 Research
+Encoding
 </skills>
 
 <inherit doc="base.md"/>
