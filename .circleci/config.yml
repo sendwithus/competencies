@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - master
+    docker:
+      - image: circleci/golang:1.13.1
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "47:6d:27:84:fe:b0:67:34:81:ce:2f:bf:90:ba:1a:0b"
+      - checkout
+      - restore_cache:
+          keys:
+            - go-mod-v1-{{ checksum "go.sum" }}
+      - run:
+          name: download-libraries
+          command: |
+            go get -u
+      - save_cache:
+          key: go-mod-v1-{{ checksum "go.sum" }}
+          paths:
+            - "/go/pkg/mod"
+      - run:
+          name: build docs
+          command: |
+            go run main.go
+      - run:
+          name: commit with skip
+          command: |
+            currentDate=`date`
+            echo "last build: ${currentDate}" > docs/lastbuild.txt  && \
+            git config --global user.email "machine@searchspring.com" && \
+            git config --global user.name "Searchspring Machine" && \
+            git add . && \
+            git commit -m "rebuilt docs [ci skip]" && git push

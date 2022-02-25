@@ -1,26 +1,70 @@
 # Competencies
 
-Sendwithus has built out a list of internal competency documents that describe many of the skills you need to succeed here.
-We wanted to open source these documents so that other organizations can use them as a starting point for career development and compensation conversations.
+A project to help you manage your employees careers.
 
-Sendwithus bundles these competencies into role definition documents that have a list of all the competencies you need to excel in that role.  These role documents were not published here as they contain a lot of Sendwithus specific information that would make re-use difficult.
+Why - your employees care deeply about their career.  They want to learn, they want to contribute to the company and they want to see a direct path to progression and increase in pay.
+This tool allows you to accomplish all of that.
 
-## Publishing Process
-Sendwithus stores our competencies in Google drive internally and we decided against giving access directly to those documents as it increases our security attack surface in a way that we're unable to manage effectively at this time.  Instead, we have a synchronization process that takes our internal competency documents and pushes them into a public github repository (this one) as a pull request at a frequency of about once a week or whenever there are changes, whichever is less frequent.
+### Goals
+- Zero cost.  To run, to use.
+- Open-source so all companies can contribute back to the tool in terms of roles, competencies and the tool itself.
+- Private and secure. All data should belong to the company using the tool.  By all, we mean all.  No logs, no tracking, no usage data and definitely no PII outside of your company infrastructure.
 
-## Pull Request process
-Currently, we don't accept PRs from the community on this repository.  We wanted to try and accomplish bringing changes back from the community, but the merging process back to Google drive was considered unweildy.  So, at this time, we have a publish only process that you can sync from the upstream fork whenever there are changes.  
-If you have a proposal for a whole new competency please add it in the form of a GitHub issue with a link to a public Gist that we can collaborate on without having to merge.
+### Competency Rules
+Competencies should be agnostic to the company.  Try and create competencies that are useful no matter what your company.
 
-## Competency Document Structure
+## Usage
 
-Each competency document is broken into three sections.
+Go to: https://searchspring.github.io/competencies/index.html and sign in with your Google account.
 
-### Title and Description
-A brief overview of what the skill is.  For example `Git and Github` is the title of the competency and technology we use for version control.
+## Glossary
 
-### How do you prove it?
+**Role**: A role is a document describing a role and containing a list of competencies that are helpful in excelling in that role.
+
+**Competency**: Each competency document is broken into three sections.
+- Title and Description
+A brief overview of what the skill is.  For example `Github` is the title of the competency and technology we use for version control.
+- How do you prove it?
 A section detailing how you would prove to your direct manager that you have this competency.  What is that manager going to look for to verify this skill.  This section is by far the most challenging as sometimes the task will be a technical skill that the manager doesn't have.  Or it might a soft skill like `One on Ones` that requires feedback from the employees team members.
-
-### How do you improve it?
+- How do you improve it?
 This is the section that lists of resources to improve this skill set.  This section tends to grow over time as tribal knowledge can be captured and stored here.
+
+**Snippets**: Snippets are sections of text that can be included in a role rather than copy/pasting the text in multilpe places.
+
+## Fork your own copy
+
+If you're going to use this project for your company you will probably want to create your own role docs and that will require you to fork this project into your organization's github account.  Here are the steps.
+
+### Prerequisites
+
+1. Install Go (https://golang.org/doc/install)
+1. Install NodeJS (https://nodejs.org/en/download/)
+
+### Setup
+
+1. Fork the project.
+1. Create a new GCP Oauth consent screen.  Internal only if it's just for employees on a single domain, or you'll have to jump through the hoops of making it a public app and the Goog will ask you to verify your domain etc...  Create a new one here: https://console.cloud.google.com/apis/credentials/consent add a scope of `auth/spreadsheets` so that we can edit spreadsheets with this app.
+1. Create new OAuth credentials here: https://console.cloud.google.com/apis/credentials.  You want an OAuth 2.0 Client ID for a web application.   Your authorized domains should be `http://localhost:8080` for testing and whatever domain you're going to be running this service on.
+1. In your forked github project edit `app.js`, and change the `CLIENT_ID` to the one you generated in the step above.
+
+Run locally by
+
+Compiling the roles and competencies into html files
+
+```bash
+go run main.go
+```
+
+If you want to run this compilation in a loop use  `watch`
+
+```bash
+watch -n 2 go run main.go
+``` 
+
+Then run the http server
+
+```bash
+npx http-server docs
+```
+
+Now go to http://localhost:8080 

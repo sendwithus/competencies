@@ -1,0 +1,18 @@
+name: Deploy to Nerdherder
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Deploy to Nerdherder
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    steps:
+      - uses: mvasigh/dispatch-action@main
+        with:
+          token: ${{ secrets.NERDHERDER_TOKEN }}
+          repo: nerdherder
+          owner: codeallthethingz
+          event_type: competencies_change
