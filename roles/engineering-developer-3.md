@@ -1,8 +1,8 @@
-# Engineering - Senior Developer
+# Engineering - Developer 3
 <welcome.snippet/>
 
-## What it's like to be a Senior Developer
-A senior developers primary job is to create code and architect solutions.  
+## What it's like to be Developer 3
+A senior developer's primary job is to create code and architect solutions.  
 You set aside time each week to learn about new technologies and help less senior programmers get better, through pair programming and knowledge sharing.
 You present technology choices and research tasks to the development team to build consensus around a specific technology.
 
