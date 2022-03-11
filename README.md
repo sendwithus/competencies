@@ -67,4 +67,4 @@ Then run the http server
 npx http-server docs
 ```
 
-Now go to http://localhost:8080 
+Now go to http://localhost:8080
