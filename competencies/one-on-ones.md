@@ -37,3 +37,5 @@ Feedback: [https://blog.cultureamp.com/employee-feedback-examples](https://blog.
 Ensure your team members feel comfortable chatting through issues.
 
 Disseminate information to your direct reports.
+
+Good blog post: https://getlighthouse.com/blog/one-on-ones-employee-know/
