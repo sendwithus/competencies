@@ -50,6 +50,8 @@ You can explain and use pre and post hooks.
 
 You understand and can modify configuration in .git/config.
 
+You can explain what is sparse checkout, how and when to use it.
+
 ## How do you improve it?
 
 Read ALL the Git manual - ([https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)) and build prototypes.
