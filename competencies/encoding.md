@@ -11,4 +11,5 @@ You can describe the kinds of problems that arise from mismatched encoding.
 
 ## How do you improve it?
 
-Read the Spolsky Rant: https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+Read the Spolsky Rant: https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/  
+Watch [Plain Text - Dylan Beattie - NDC Oslo 2021](https://www.youtube.com/watch?v=_mZBa3sqTrI)
