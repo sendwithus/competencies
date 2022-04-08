@@ -53,6 +53,8 @@ You've used the Github REST and/or GraphQL APIs.
 
 You are familiar with Github actions and workflows.
 
+You know how to create diagrams in your documentation.
+
 ## How do you improve it?
 
 Try experimenting in Github.
@@ -62,3 +64,5 @@ Help secure your codebase by utilizing dependabot.
 GraphQL Explorer - [https://docs.github.com/en/graphql/overview/explorer](https://docs.github.com/en/graphql/overview/explorer)
 
 Utilize API SDKs - [https://docs.github.com/en/rest/overview/libraries](https://docs.github.com/en/rest/overview/libraries)
+
+[Include diagrams in your Markdown files with Mermaid](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
