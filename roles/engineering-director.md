@@ -5,10 +5,10 @@
 We believe in a servant leadership, with directors helping to enable their leads to build the best teams they can to produce effective, well tested software.
 Directors are responsible for ensuring psychological safety of the engineering teams to make bold choices and to fail fearlessly and quickly.  
 They are responsible for growing their team leads in the skills they need to be effective managers and technical architects for the system.
-While not responsible for each individual architectural decision, you are responsible for ensuring that the product has an architecture that promotes low maintenance, reliability and resilliance.
+While not responsible for each individual architectural decision, you are responsible for ensuring that the product has an architecture that promotes low maintenance, reliability and resilience.
 You set aside time each week for your direct reports, and in this 1:1 you discuss career development, work issues, life issues impacting work.
 A portion of your monthly workload will be interviewing, screening and reference checks on candidates for Searchspring.
-Along with your product and team responsibilities, you are also responslible for defining and maintaining SLO's for all parts of the product.
+Along with your product and team responsibilities, you are also responsible for defining and maintaining SLO's for all parts of the product.
 You will be responsible, along with the CTO, for executing against security and compliance initiatives.
 You are responsible for organizing the sharing of knowledge and technologies between teams and driving technology adoption.
 You are responsible for ensuring the engineering teams are continuing to grow their skillsets.
