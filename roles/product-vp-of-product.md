@@ -2,7 +2,7 @@
 
 <welcome.snippet/>
 
-## What it’s like to be the VP of Product
+## What it's like to be the VP of Product
 
 
 In this role, you will build and lead the product to to build software. Specifically, you, along with a small sized team, will help dictate what we build based on what our customer needs and wants.  There are an abundance of challenges, from keeping up competitors, to meeting customers needs, to working with the engineering team to get the job done.

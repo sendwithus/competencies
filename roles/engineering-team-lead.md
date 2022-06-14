@@ -43,7 +43,7 @@ Fire Handling
 Fire Triaging
 </skills>
  
-<inherit doc="engineering-senior-developer.md"/>
+<inherit doc="engineering-developer-3.md"/>
 
 <searchspring-overview.snippet/>
 

@@ -1,7 +1,7 @@
-# Engineering - DevOps
+# Engineering - Azure DevOps 2
 <welcome.snippet/>
 
-## What it's like to be a DevOps Engineer
+## What it's like to be DevOps Engineer 2
 DevOps is the marriage of development and systems operations. Modern systems administration has been largely codified in software these days and requires in equal parts an understanding of systems architecture and software development. You must be able to understand how to administer systems and write software to do so. You must be able to program in several languages and have the ability to pick up new languages quickly. You must also be able to rapidly learn new technologies as you are constantly being required to implement and administer new systems.
 
 The job also requires a lot of on call availability. You are the first line of defense, keeping systems available and dealing with unforeseen issues. This job will impact your social life, and requires effort to maintain a work/life balance. This challenge is fulfilling but not enjoyed by everyone.  If you are the type of person who needs to go incommunicado while not at work, this role is not for you.
@@ -34,26 +34,26 @@ Deployments
 Diagrams
 Disaster Recovery
 Docker
-Elasticsearch Level 1
+SQL Server
+Azure Application Insights
+PowerShell
+Nginx
+Github Actions
+Appveyor
+Selenium
 Fire Handling
 Fire Response
 Fire Triaging
 Kubernetes
-2 of Language:1
-Linux:2
-Prometheus
-Grafana
 Metrics
 Networking:2
-Rundeck
 Secrets Management
 Security
-Sumologic
-Trust
 3 of Technical Breadth
+2 of Language:1
 </skills>
 
-<inherit doc="engineering-junior-devops.md"/>
+<inherit doc="engineering-azure-devops-1.md"/>
 
 <searchspring-overview.snippet/>
 

@@ -6,7 +6,7 @@ People want to get better at their chosen career and its your job as their manag
 
 You can show the growth of the skillset of your direct reports.
 
-You can show the growth of your direct reports into more senior roles and / or you can show the change of your direct reports to other roles within the company.
+You can show the growth of your direct reports and / or you can show the change of your direct reports to other roles within the company.
 
 You have strategies of how to align employee career growth with the goals of the company.
 

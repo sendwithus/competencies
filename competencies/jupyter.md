@@ -8,13 +8,13 @@ As an ML developer you would need Jupyter in order to set up your project in a c
 Notebooks allow the data scientist to view the results of their code in-line, sometimes without any dependency of other parts of their code. Contrary to working with a standard IDE like VSCode or PyCharm, on Jupyter, every cell, an executable unit of code, can potentially be called at any time to draw an output right below the code.
 
 - Built-in Cell-Level Caching:
-Caching is hard, especially if your software engineering skills aren’t that top notch. If you are a mathematician trying to get some data to model stuff, the last thing you want is to implement your own caching schemes.
+Caching is hard, especially if your software engineering skills aren't that top notch. If you are a mathematician trying to get some data to model stuff, the last thing you want is to implement your own caching schemes.
 Jupyter solves this magically by caching the results of every cell that is being run. For instance, if you have a huge notebook, containing hundreds of cells of code, and somewhere at the beginning of the notebook, some code that is doing some heavy operation — like training an ML model or downloading gigabytes of data from a remote server, with Jupyter, you have zero concerns about caching the results of those operations.
 
 - Local Execution:
-Jupyter notebook’s user-friendly CLI encourages local execution. It’s pretty much certain that 99% of data scientists run Jupyter locally, although there are some premature attempts by some of the cloud providers to migrate the notebooks to the cloud (Google Cloud DataLab and AWS SageMaker). But those solutions are premature and suffer from plenty of their own problems.
+Jupyter notebook's user-friendly CLI encourages local execution. It's pretty much certain that 99% of data scientists run Jupyter locally, although there are some premature attempts by some of the cloud providers to migrate the notebooks to the cloud (Google Cloud DataLab and AWS SageMaker). But those solutions are premature and suffer from plenty of their own problems.
 
-Although Jupyter is a great environment for research-based projects, but it's not the best solution for production. A production-grade ML pipeline needs to be composed out of debuggable, reproducible, easy-to-deploy, high-performance code components that could be orchestrated and scheduled. In its default version, it’s everything research code on Jupyter isn’t.
+Although Jupyter is a great environment for research-based projects, but it's not the best solution for production. A production-grade ML pipeline needs to be composed out of debuggable, reproducible, easy-to-deploy, high-performance code components that could be orchestrated and scheduled. In its default version, it's everything research code on Jupyter isn't.
 
 Useful links:
 

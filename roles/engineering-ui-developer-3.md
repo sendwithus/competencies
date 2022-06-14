@@ -1,13 +1,13 @@
-# Engineering - Senior UI Developer
+# Engineering - UI Developer 3
 <welcome.snippet/>
 
-## What it's like to be a Senior UI Developer
+## What it's like to be UI Developer 3
 
 In this role, you will build and design software that leads to seamless interaction between humans and computers by utilizing technologies such as HTML, CSS, Javascript, front-end frameworks and design software, to concepts such as UI, UX design and patterns. You will be working with a small-sized team on our customer portal system, our client-side interfaces, and client-side libraries that act as a front end for our search API. There are an abundance of challenges, from high level sketches to architecture feasibility, to diving into the code of various front end frameworks.
 
-As a UI developer, you spend the first few minutes of the day, reviewing your inbox, asana tasks, outstanding code reviews to make sure you’re not blocking anyone on your team.
+As a UI developer, you spend the first few minutes of the day, reviewing your inbox, asana tasks, outstanding code reviews to make sure you're not blocking anyone on your team.
 
-You set aside time each week to learn about new technologies and help less senior programmers get better, though pair programming and knowledge sharing.
+You set aside time each week to learn about new technologies and help other programmers get better, though pair programming and knowledge sharing.
 
 You build code. When you are stuck or need to bounce ideas off another, you drag over a colleague to show off what you built and get feedback and input.  You are eager to accept feedback and improve your design of the code.  You demo to the product owner and deploy into production.  You do some documentation and write some more tests.  You have a discussion about tech choices.  You get stuck on something and ask for help.    You design something new and pull people up to the whiteboard to get to the bottom of it.
 

@@ -1,8 +1,8 @@
-# Engineering - Senior DevOps
+# Engineering - DevOps 3
 <welcome.snippet/>
 
-## What it's like to be a Senior DevOps Engineer
-As a Sr. DevOps engineer, you are able to craft solid and maintainable custom solutions to fill business needs. You understand the financial impact of decisions in which you are part; you are able to make business cases for the solutions you bring to the table. You proactively seek out new solutions to improve the performance, cost efficiency and reliability of our systems. You actively seek to fill gaps in the team. You pursue building relationships with members of other departments to facilitate better communication.
+## What it's like to be DevOps Engineer 3
+As a DevOps engineer 3, you are able to craft solid and maintainable custom solutions to fill business needs. You understand the financial impact of decisions in which you are part; you are able to make business cases for the solutions you bring to the table. You proactively seek out new solutions to improve the performance, cost efficiency and reliability of our systems. You actively seek to fill gaps in the team. You pursue building relationships with members of other departments to facilitate better communication.
 
 You solved work/life balance issues, and have found a path that will not cause burnout.  You have found your fulfillment in the field and know what you love about the job. 
 
@@ -47,7 +47,7 @@ Sumologic:2
 5 of Language:2
 </skills>
 
-<inherit doc="engineering-devops.md"/>
+<inherit doc="engineering-devops-2.md"/>
 
 <searchspring-overview.snippet/>
 

@@ -61,6 +61,11 @@ If you want to run this compilation in a loop use  `watch`
 watch -n 2 go run main.go
 ``` 
 
+Make sure you're on a more recent version of node/npm
+```bash
+nvm use 12
+```
+
 Then run the http server
 
 ```bash

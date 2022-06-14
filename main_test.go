@@ -19,7 +19,7 @@ func TestProcessInherited(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	require.Equal(t, "#original \n##Skills\n<skills>\nbreakdancing\n</skills>\n<skills>\nfigure skating\n</skills>\n<skills>\nkung fu\n</skills>\n   a", result)
+	require.Equal(t, "#original \n##Skills\n<h4>test 1 skills</h4>\n\n<skills>\nbreakdancing\n</skills>\n\n<h4>test 2 skills</h4>\n\n<skills>\nfigure skating\n</skills>\n\n<h4>test 3 skills</h4>\n\n<skills>\nkung fu\n</skills>\n   a", result)
 }
 
 func TestCreateGroup(t *testing.T) {

@@ -6,11 +6,12 @@ import (
 	"os"
 	"regexp"
 	"strings"
+
 	"github.com/russross/blackfriday"
 )
 
 type skillSet struct {
-	name string
+	name   string
 	skills string
 }
 
@@ -19,8 +20,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	os.MkdirAll("docs", os.ModePerm)
+	if err := os.MkdirAll("docs", os.ModePerm); err != nil {
+		log.Fatal(err)
+	}
 	options, err := getOptions(files)
+	if err != nil {
+		log.Fatal(err)
+	}
 	indexHTML := ""
 	for _, file := range files {
 		if strings.HasSuffix(file.Name(), ".md") {
@@ -33,12 +39,18 @@ func main() {
 			text := processText(filename)
 			htmlFilename := file.Name()[:len(file.Name())-3] + ".html"
 			indexHTML += "<a class=\"text-blue-500 hover:underline\" href=\"" + htmlFilename + "\">" + title + "</a><br>"
-			ioutil.WriteFile("docs/"+htmlFilename, []byte(html), 0644)
-			ioutil.WriteFile("docs/hire-"+htmlFilename, []byte(text), 0644)
+			if err := ioutil.WriteFile("docs/"+htmlFilename, []byte(html), 0644); err != nil {
+				log.Fatal(err)
+			}
+			if err := ioutil.WriteFile("docs/hire-"+htmlFilename, []byte(text), 0644); err != nil {
+				log.Fatal(err)
+			}
 		}
 	}
 
-	ioutil.WriteFile("docs/index.html", []byte(createIndexPage(indexHTML)), 0644)
+	if err := ioutil.WriteFile("docs/index.html", []byte(createIndexPage(indexHTML)), 0644); err != nil {
+		log.Fatal(err)
+	}
 }
 
 func getOptions(files []os.FileInfo) (string, error) {
@@ -370,19 +382,10 @@ func makeLevel(level string) string {
 	return ": level " + level
 }
 
-func camel(group string, competency string) string {
-	competency = strings.ReplaceAll(competency, "-", " ")
-	competency = strings.TrimSpace(competency[len(group) : len(competency)-3])
-	return competency
-}
-
 func checkCompetency(file string) bool {
 	filename := "competencies/" + cleanFile(file)
 	_, err := os.Stat(filename)
-	if os.IsNotExist(err) {
-		return false
-	}
-	return true
+	return !os.IsNotExist(err)
 }
 
 func cleanFile(file string) string {
