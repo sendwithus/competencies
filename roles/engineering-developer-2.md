@@ -37,20 +37,20 @@ Docker
 Launch Darkly
 Machine Learning
 Big Data
-Athena
-Elasticsearch Level 1
 Kubernetes
 Customer Empathy
-Part of Successful Projects:1
 Prometheus
 Grafana
 Make
 TDD
 Web API Service Worker
 Web API Web Worker
+Elasticsearch Level 1
+Part of Successful Projects:1
+Athena:1
 1 of Language
 1 of IDE
-1 of DB
+1 of DB:1
 </skills>
 
 <inherit doc="engineering-base.md"/>

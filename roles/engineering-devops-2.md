@@ -39,7 +39,6 @@ Fire Handling
 Fire Response
 Fire Triaging
 Kubernetes
-2 of Language:1
 Linux:2
 Prometheus
 Grafana
@@ -50,6 +49,7 @@ Secrets Management
 Security
 Sumologic
 Trust
+2 of Language:1
 3 of Technical Breadth
 </skills>
 
