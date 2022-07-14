@@ -32,6 +32,7 @@ Athena:2
 Architecture:2
 Git:2
 Github:2
+Github Actions:2
 Deployments:2
 Part of Successful Projects:2
 2 of Language:2
