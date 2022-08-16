@@ -14,7 +14,7 @@ You have uploaded a picture of you to your profile.
 
 You know how to appropriately use @here and @channel, @teams, and @usernames.
 
-You can use a swath of keyboard shortcuts.
+You can use a swath of keyboard shortcuts such as search, jump to a conversation, new message, go back/forward in history, etc.
 
 You have appropriately set keyword notifications.
 
@@ -33,6 +33,8 @@ You have appropriately set notification settings for channels.
 Channels you create have a purpose set as part of the creation.
 
 You know how to use reminders.
+
+You know how to use scheduled messages to send later.
 
 You think about the useful lifespan of a channel and set a reminder in slack to check whether this channel is still useful.
 
