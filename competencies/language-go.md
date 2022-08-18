@@ -24,6 +24,7 @@
 * You understand packaging paradigms for the language for both publishing and dependency management.
 * You understand how to review third party libraries lifecycles and security implications.
 * You can create [reproducible build](https://reproducible-builds.org/) by trimming paths and setting static build id in built binary.
+* You understand how and when to use go workspaces
 
 ## How do you improve it?
 * Open many PRs
@@ -32,3 +33,4 @@
 * Attend [Gophercon](https://www.gophercon.com/)
 * Online [json to struct converter](https://mholt.github.io/json-to-go/)
 * Learn about and do some [fuzzing](https://dgryski.medium.com/go-fuzz-github-com-arolek-ase-3c74d5a3150c)
+* Read [Getting started with multi-module workspaces](https://go.dev/doc/tutorial/workspaces)
