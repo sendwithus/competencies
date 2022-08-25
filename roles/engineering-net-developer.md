@@ -1,12 +1,12 @@
-# Engineering - Developer 2
+# Engineering - .Net Developer
 <welcome.snippet/>
 
-## What it's like to be Developer 2
-As a developer, you spend the first few minutes of the day, reviewing your inbox, asana tasks, outstanding code reviews to make sure you're not blocking anyone on your team.
+## What it's like to be a .Net Developer
+As a developer, you spend the first few minutes of the day, reviewing your inbox, asana tasks, outstanding code reviews to make sure you’re not blocking anyone on your team.
 
 You build code. When you are stuck, or needing to bounce ideas off another, you drag over a colleague to show off what you built and get feedback and input.  You are eager to accept feedback and improve your design of the code.  You demo to the product owner and deploy into production.  You do some documentation and write some more tests.  You have a discussion about tech choices.  You get stuck on something and ask for help.    You design something new and pull people up to the whiteboard to get to the bottom of it.
 
-You find an issue you don't know how to fix and you research intensely amassing information from tens of sources collating information and learning about the problem domain to ultimately make a decision about direction.  You show your decision to a trusted team member.
+You find an issue you don’t know how to fix and you research intensely amassing information from tens of sources collating information and learning about the problem domain to ultimately make a decision about direction.  You show your decision to a trusted team member.
 
 <technologies.snippet/>
 <basecamp.snippet/>
@@ -23,17 +23,14 @@ You enjoy working with others and helping mentor developers at all skill levels.
 ## Skills that are important to this role
 
 <skills>
-Launch Darkly
-Kubernetes
-Prometheus
-Make
-Web API Service Worker
-Web API Web Worker
-Elasticsearch Level 1
-Athena:1
-1 of Language
-1 of IDE
-1 of DB:1
+Language C Sharp:1
+IDE Rider
+Azure Storage
+Azure Portal
+Azure Functions
+Azure Storage Explorer
+Nginx
+
 </skills>
 
 <inherit doc="engineering-full-stack-base.md"/>
