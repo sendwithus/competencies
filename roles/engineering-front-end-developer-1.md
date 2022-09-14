@@ -28,11 +28,11 @@ You enjoy working with others and helping mentor developers at all skill levels.
 Language Javascript
 Coding
 Linux
-Web APIs
+Browser APIs
 Front End
 CSS
 HTML
-Design Patterns
+UI Design Patterns
 Testing
 Browser Dev Tools:1
 1 of IDE
