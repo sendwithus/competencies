@@ -33,3 +33,13 @@ Check out the official [docs](https://reactjs.org/docs/getting-started.html) and
 
 Check out [React Resources](https://reactresources.com/) for a comprehensive list of links to blogs/articles on almost any React topic
 
+Memorize the cheatsheet: [https://devhints.io/react](https://devhints.io/react)
+
+Build react components: [https://reactjs.org/docs/components-and-props.html](https://reactjs.org/docs/components-and-props.html) 
+
+**Install Extensions:**  
+React devtools. Allows the developer to inspect the React component tree and make changes to the state / props in real time.  
+[https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+Redux devtools. Useful for inspect state changes in real time.  
+[https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)

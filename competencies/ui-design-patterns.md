@@ -27,3 +27,5 @@ Patterns are reusable solutions to commonly seen problems. UI design patterns co
 
 Learn about additional design patterns and use them.  
 [Design Patterns](https://ui-patterns.com/patterns)
+
+Learn the laws of UX: [https://lawsofux.com/](https://lawsofux.com/)
